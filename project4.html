@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Baraa Hamodi - Projects</title>
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+		<link href = "css/bootstrap.min.css" rel = "stylesheet">
+		<link href = "css/styles.css" rel = "stylesheet">
+	</head>
+	<body>
+	
+		<div class = "navbar navbar-inverse navbar-fixed-top">
+            <div class = "container">
+				<a href = "http://baraa.ca" class = "navbar-brand">Baraa Hamodi</a>
+				<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                </button>
+                <div class = "collapse navbar-collapse navHeaderCollapse">
+                    <ul class = "nav navbar-nav navbar-right">
+                        <li><a href = "home">Home</a></li>
+                        <li><a href = "resume">Resume</a></li>
+                        <li class = "active"><a href = "projects">Projects</a></li>
+                        <li><a href = "#contact" data-toggle="modal">Contact Me</a></li>
+                    </ul>
+				</div>
+			</div>
+        </div>
+		
+		<div class = "container">
+            <div class = "row">
+                <div class = "col-lg-9">
+                    <div class = "alert alert-danger">This page is currently under development. Please check back in 24 hours. Sorry for the inconvenience.</div>
+					<div class = "panel panel-default">
+                        <div class = "panel-body">
+                            <div class = "page-header">
+								<h2>Autonomous Fuel Cell Car<small> - Hardware/Embedded Software Engineer</small></h2>
+                            </div>
+							<div id = "myCarousel" class = "carousel slide" data-ride = "carousel">
+								<ol class = "carousel-indicators">
+									<li data-target = "#myCarousel" data-slide-to = "0" class = "active"></li>
+									<li data-target = "#myCarousel" data-slide-to = "1" class = "active"></li>
+								</ol>
+								<div class = "carousel-inner">
+									<div class = "item active">
+										<img src = "img/fuelcellcar1_mini.jpg" alt = "ATM1" class = "img-responsive">
+									</div>
+									<div class = "item">
+										<img src = "img/fuelcellcar2_mini.jpg" alt = "ATM1" class = "img-responsive">
+									</div>
+								</div>
+								<a class = "carousel-control left" href = "#myCarousel" data-slide = "prev">
+									<span class = "icon-prev"></span>
+								</a>
+								<a class = "carousel-control right" href = "#myCarousel" data-slide = "next">
+									<span class = "icon-next"></span>
+								</a>
+							</div>
+							<h3>Currently being developed...</h3>
+							<p>For now you can view the source code on my <a href = "https://github.com/bhamodi/Autonomous-Fuel-Cell-Car" target = "_blank">GitHub.</a></p>
+							<h3>General Overview</h3>
+							<p>This was a very interesting project because not only did I combine software, mechanical and electrical principles - I even got to enhance my chemical engineering knowledge. The chemistry behind the fuel cell is very important because it is at the forefront of renewable energy sources which I find very interesting.</p>
+						</div>
+					</div>
+                </div>
+				<div class = "col-lg-3">
+                    <div class = "list-group">
+                        <a href = "project1" class = "list-group-item">
+							<h4 class = "list-group-item-heading">Automated Teller Machine</h4>
+							<p class = "list-group-item-text">RobotC</p>
+                        </a>
+                        <a href = "project2" class = "list-group-item">
+                            <h4 class = "list-group-item-heading">Android Games</h4>
+                            <p class = "list-group-item-text">Java, XML</p>
+                         </a>
+                        <a href = "project3" class = "list-group-item">
+							<h4 class = "list-group-item-heading">Matrix Calculator (Application)</h4>
+                            <p class = "list-group-item-text">C++, Java, XML</p>
+                        </a>
+                        <a href = "project4" class = "list-group-item active">
+                            <h4 class = "list-group-item-heading">Fuel Cell Car</h4>
+                            <p class = "list-group-item-text">C++</p>
+                        </a>
+						<a href = "project5" class = "list-group-item">
+                            <h4 class = "list-group-item-heading">Electric Car Club</h4>
+                            <p class = "list-group-item-text">Mechanical design: AutoCAD, SolidWorks</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<div class = "navbar navbar-inverse navbar-fixed-bottom">
+			<div class = "container">
+                <p class = "navbar-text pull-left">&copy; Baraa Hamodi, 2014</p>
+                <a href = "https://www.linkedin.com/in/baraahamodi" class = "navbar-btn btn-primary btn pull-right description" target = "_blank">Find me on <blackText><strong>Linked</blackText>In</strong></a>
+			</div>
+        </div>
+		
+		<div class = "modal fade" id = "contact" role = "dialog">
+             <div class = "modal-dialog">
+                    <div class = "modal-content">
+						<form name="sentMessage" class="well" id="contactForm"  novalidate>
+							<legend>Contact me</legend>
+								<div class="control-group">
+									<div class="controls">
+										<input type="text" class="form-control" placeholder="Full Name" id="name" required data-validation-required-message="Please enter your name" />
+											<p class="help-block"></p>
+									</div>
+								</div> 	
+								<div class="control-group">
+									<div class="controls">
+										<input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Please enter your email" />
+									</div>
+								</div> 	
+								<div class="control-group">
+									<div class="controls">
+										<textarea rows="8" cols="100" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter your message" minlength="10" 
+														data-validation-minlength-message="Min 10 characters" maxlength="999" style="resize:none"></textarea>
+									</div>
+								</div> 		 
+								<div id="success"> </div> <!-- For success/fail messages -->
+							<button type="submit" class="btn btn-primary pull-right">Send</button><br />
+						</form>
+					</div>
+				</div>
+			</div>
+		
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src = "js/bootstrap.js"></script>
+		<script src = "js/jqBootstrapValidation.js"></script>
+		<script src = "js/contact_me.js"></script>
+	</body>
+</html>
