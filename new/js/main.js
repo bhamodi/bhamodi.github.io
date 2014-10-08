@@ -8,17 +8,14 @@ function initializeSite() {
 	//OUTLINE DIMENSION AND CENTER
 	(function() {
 	    function centerInit(){
-
-			var	parentHeight = $(window).height();
-
-			var heroContent = $('.hero'),
+			var	parentHeight = $(window).height(),
+				heroContent = $('.hero'),
 				heroHeight = heroContent.height(),
 				heroTopMargin = (parentHeight - heroHeight) / 2;
 
 			heroContent.css({
 				"margin-top" : heroTopMargin+"px"
 			});
-
 	    }
 
 	    $(document).ready(centerInit);
