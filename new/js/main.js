@@ -9,14 +9,7 @@ function initializeSite() {
 	(function() {
 	    function centerInit(){
 
-			var sphereContent = $('.sphere'),
-				sphereHeight = sphereContent.height(),
-				parentHeight = $(window).height(),
-				topMargin = (parentHeight - sphereHeight) / 2;
-
-			sphereContent.css({
-				"margin-top" : topMargin+"px"
-			});
+			var	parentHeight = $(window).height();
 
 			var heroContent = $('.hero'),
 				heroHeight = heroContent.height(),
