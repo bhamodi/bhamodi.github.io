@@ -209,6 +209,10 @@ h3 {
 	background: url(../img/codecademy.png) no-repeat center;
 	background-size: 50px 50px;
 }
+.contact .icons .khanacademy {
+	background: url(../img/khanacademy.png) no-repeat center;
+	background-size: 50px 50px;
+}
 .contact .icons .linkedin {
 	background: url(../img/linkedin.png) no-repeat center;
 	background-size: 50px 50px;
