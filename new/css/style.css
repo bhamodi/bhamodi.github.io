@@ -1,6 +1,5 @@
 /* Common Styles
 -------------------------------------------------------------- */
-
 *,
 *:before,
 *:after {
@@ -78,12 +77,10 @@ h3 {
 	margin-bottom: 0px;
 }
 
-
 /* Content Styles
 -------------------------------------------------------------- */
-
 .wrapper {
-  text-align: center;		
+  text-align: center;
   position: absolute;
   overflow: hidden;
   display: table-cell;
@@ -120,7 +117,6 @@ h3 {
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
 
 /* Background */
 .background {
@@ -327,10 +323,8 @@ h3 {
 	top: 0;
 }
 
-
 /* Responsive Styles
 -------------------------------------------------------------- */
-
 /* Landscape Phone */
 @media all and (min-width: 400px) {
 	/* HERO */
@@ -474,7 +468,6 @@ h3 {
 	.depth-1.flake4 { 
 		display: none;
 	}
-	
 }
 
 @media all and (min-width: 900px) {
@@ -818,7 +811,6 @@ h3 {
 
 /* Animation
 -------------------------------------------------------------- */
-
 @-webkit-keyframes wave {
   0% {
     -webkit-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
@@ -876,9 +868,8 @@ h3 {
 }
 
 
-/* 404
+/* 404 Error
 -------------------------------------------------------------- */
-
 .snap {
 	display: block;
 	position: absolute;
@@ -924,7 +915,6 @@ h3 {
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 }
-
 
 @media all and (min-width: 700px) {
 	.button {

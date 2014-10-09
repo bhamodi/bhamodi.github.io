@@ -24,7 +24,6 @@ function initializeSite() {
 
 	// Init effect 
 	$('#scene').parallax();
-
 };
 
 /* Document Ready Trigger

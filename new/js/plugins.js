@@ -489,14 +489,7 @@
 
 })(window.jQuery || window.Zepto, window, document);
 
-/**
- * Request Animation Frame Polyfill.
- * @author Tino Zijdel
- * @author Paul Irish
- * @see https://gist.github.com/paulirish/1579671
- */
 ;(function() {
-
   var lastTime = 0;
   var vendors = ['ms', 'moz', 'webkit', 'o'];
 
@@ -521,5 +514,5 @@
       clearTimeout(id);
     };
   }
-  
+
 }());
