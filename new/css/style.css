@@ -72,7 +72,7 @@ h3 {
 }
 
 .sub-title {
-	font-size: 18px;
+	font-size: 20px;
 	margin-top: 5px;
 	margin-bottom: 0px;
 }
@@ -223,7 +223,7 @@ h3 {
 
 .contact a.mail {
 	text-decoration: none;
-	color: #161a1b;
+	color: #000000;
 	padding-bottom: 8px;
 	font-size: 20px;
 }
@@ -881,17 +881,16 @@ h3 {
 	background-size: cover;
 	text-align: center;
 }
-
 .snap .line { margin-bottom: 70px; }
 
 .button {
-	display: inline-block;
+	width: 280px;
+	left: calc(50% - 140px);
 	position: absolute;
-	bottom: 25%;
-	left: 50%;
+	bottom: 22%;
 	text-decoration: none;
 	font-family: "Montserrat", arial, sans-serif;
-	font-size: 9px;
+	font-size: 16px;
 	font-weight: 700;
 	line-height: 1em;
 	letter-spacing: 0.2em;
@@ -908,7 +907,6 @@ h3 {
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 }
-
 .button:hover {
 	background: rgb(23,26,28);
 	color: #fff;
@@ -920,7 +918,6 @@ h3 {
 
 @media all and (min-width: 700px) {
 	.button {
-		font-size: 12px;
 		border-radius: 10px;
 		padding: 25px 45px;
 	}
