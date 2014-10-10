@@ -124,7 +124,7 @@ h3 {
   bottom: -20px;
   background-size: cover;
   position: absolute;
-  width: 110%;
+  width: 125%;
   left: -5%;
   top: -5%;
 }
@@ -886,7 +886,9 @@ h3 {
 
 .button {
 	display: inline-block;
-	margin-top: 80px;
+	position: absolute;
+	bottom: 25%;
+	left: 50%;
 	text-decoration: none;
 	font-family: "Montserrat", arial, sans-serif;
 	font-size: 9px;
