@@ -887,7 +887,7 @@ h3 {
 	width: 280px;
 	left: calc(50% - 140px);
 	position: absolute;
-	bottom: 22%;
+	bottom: 23%;
 	text-decoration: none;
 	font-family: "Montserrat", arial, sans-serif;
 	font-size: 16px;
@@ -920,5 +920,41 @@ h3 {
 	.button {
 		border-radius: 10px;
 		padding: 25px 45px;
+	}
+}
+
+@media all and (max-height: 850px) {
+	.sub-title {
+		color: #000000;
+	}
+}
+
+@media all and (max-height: 650px) {
+	.button {
+		padding: 15px 25px;
+		bottom: 27%;
+	}
+	h1 {
+		line-height: 60px;
+		font-size: 100px;
+	}
+	.contact {
+		bottom: 6%;
+	}
+	.contact .icons {
+		margin-bottom: 0px;
+	}
+}
+
+@media all and (max-height: 450px) {
+	h1 {
+		font-size: 90px;
+	}
+	.contact {
+		bottom: 2%;
+	}
+	.button {
+		bottom: 25%;
+		padding: 10px 20px;
 	}
 }
