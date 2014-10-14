@@ -736,6 +736,43 @@ html, body {
 	background: url("../img/05.png") center center repeat;
 }
 
+/* Project Feature Scroller and Popup */
+.tag-project{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #929292;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 3px;
+}
+.controller-3{
+	float: right;
+	right: 50%;
+	position: relative;
+	margin: 0 0 60px;
+}
+.controller-3 ul{
+	padding: 0;
+	float: right;
+	right: -50%;
+	position: relative;
+}
+.controller-3 ul li{
+	list-style: none;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	background: #fff;
+	float: left;
+	margin: 0 7px;
+	cursor: pointer;
+	margin: 35px 0 0 15px;
+}
+.controller-3 ul li:hover{border: 2px solid #4ad8ed; background: #4ad8ed;}
+.controller-3 ul li:first-child{margin-left: 0px;}
+.controller-3 ul li:last-child{margin-right: 0px;}
+
 /* Services */
 .services{
 	position: relative;

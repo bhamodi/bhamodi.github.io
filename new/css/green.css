@@ -5,6 +5,6 @@
 .green .f-image .f-category{background-position: -88px 0;}
 .green .f-single:hover .f-info,.green .btn-featured,.green .spacer,.green .folio-btn:hover,.green .p-roll,.green .contour-btn,.green .folio-btn.selected,.green .logo span span{background: #77be32;}
 .green .logo span{background: #77be32; background: rgba(119,190,50,0.5);}
-.green .selected{border: 2px solid #77be32 !important; background: #77be32 !important;}
+.green .selected,.green .controller-3 ul li:hover{border: 2px solid #77be32 !important; background: #77be32 !important;}
 .green .buy-logo{border-color: #77be32;}
 .green ::selection{background-color: #77be32;}
