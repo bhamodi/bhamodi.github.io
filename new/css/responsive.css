@@ -24,6 +24,8 @@
 	.f-data span{padding-left: 5px;}
 	.footer-container span{font-size: 13px;}
 	.footer-container{width: 959px; font-size: 15px;}
+	.project-content{width: 900px;}
+	.project-content img{width: 900px;}
 	.we-are{font-size: 110px;}
 	.s-container{width: 960px;}
 	.sl-element{width: 192px;}
@@ -35,8 +37,10 @@
 	.slider-controls li a {top: 41%;}
 	.s-next {margin-right: 30px;}
 	.s-prev {margin-left: 30px;}
+	.ch-grid div span {margin: 50% 20px 0px 20px; font-size: 15px;}
 	.main-title .spacer {margin: 5px auto 25px;}
 	.main-title ul {margin: 0;}
+	.p-category {top: 25%;}
 }
 
 /* Smaller than standard 960 (devices and browsers) */
@@ -63,6 +67,8 @@
 	.f-ico {margin: 0 auto;}
 	.highlight{font-size: 40px;}
 	.s-info{margin-bottom: 50px;}
+	.project-content {width: 700px;}
+	.project-content img{width: 700px;}
 	.logos{width: 680px; margin: 70px auto 150px}
 	.img-spacer{width: 700px; margin-top: 150px;}
 	.img-spacer img{width: 700px;}
@@ -108,6 +114,8 @@
 	.f-element{width: 100%;}
 	#filters{padding: 0 40px;}
 	.bottom-line{width: 400px;}
+	.project-content{width: 400px;}
+	.project-content img{width: 400px;}
 	.logos{width: 400px; margin: 70px auto 50px;}
 	.img-spacer{width: 400px; margin-top: 50px;}
 	.img-spacer img{width: 400px;}
@@ -153,6 +161,8 @@
 	.f-element{width: 100%;}
 	#filters{padding: 0 40px;}
 	.bottom-line{width: 300px;}
+	.project-content{width: 300px;}
+	.project-content img{width: 300px;}
 	.logos{width: 300px; margin: 70px auto 50px;}
 	.img-spacer{width: 300px; margin-top: 0;}
 	.img-spacer img{width: 300px;}

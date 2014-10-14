@@ -873,6 +873,29 @@ html, body {
 .sl-pointer{background-position: -330px 0;}
 .sl-clock{background-position: -440px 0;}
 
+/* Portfolio */
+.p-category{
+	text-decoration: none;
+	position: relative;
+	margin: 0 auto;
+	z-index: 20;
+	display: block;
+	width: 44px;
+	height: 44px;
+	text-align: center;
+	line-height: 44px;
+	zoom: 1;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	background: url("../img/color-icons.png") 0 -88px no-repeat;
+	cursor: pointer;
+	
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.ch-grid:hover .p-category{opacity: 1;}
 .nav-wrapper{position: relative;}
 .nav-wrapper:hover .nav-work{opacity: 1}
 .nav-work{
@@ -896,6 +919,7 @@ html, body {
 .w-arrows .close{
 	background-position: -264px bottom;
 	border: none;
+	border-radius: none;
 }
 .w-arrows .btn-next{background-position: right bottom; }
 .w-arrows .btn-prev{background-position: -218px bottom;}
@@ -918,7 +942,76 @@ html, body {
 	width: 205px;
 	margin: 20px auto 20px;
 }
+
 .w-arrows.last{ margin: 120px auto 150px;}
+
+.ch-item{float: left; width: 100%; cursor: pointer;}
+.ch-item img{width: 100%;}
+.ch-grid img{
+    opacity: 1;
+	
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.ch-grid:hover img{
+    opacity: 0.1;
+	
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.ch-grid:hover div{
+	opacity: 1;
+	
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.ch-grid {
+    overflow: hidden;
+	background-color: #4cddf3;
+}
+.ch-grid div {
+	cursor: pointer;
+    position: absolute;
+	/*background: #4cddf3;
+    background: rgba(76,221,243,0.8);*/
+    width: 100%;
+    height: 100%;
+	left: 100%;
+	opacity: 0;
+	
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.ch-grid div span {
+	display: block;
+	padding: 0 0;
+	margin: 20% 20px;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing:1px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+}
+.ch-grid div span span {
+	margin: auto;
+	text-transform: lowercase;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.ch-grid div span span.p-category { margin-bottom:15px;}
+
+.ch-grid div span span.cat2{ color:#555; padding:0; font-size:13px; text-transform:uppercase;}
 
 #options {
 	float: right;
@@ -932,7 +1025,37 @@ html, body {
 	right: -50%;
 	position: relative;
 }
-
+.folio-btn{
+	list-style: none;
+	background: #fff;
+	float: left;
+	cursor: pointer;
+	border-radius: 3px;
+	padding: 0px 22px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	color: #c1c1c1;
+	font-weight: 400;
+	line-height: 32px;
+	text-decoration: none;
+	margin: 0 5px 10px;
+	
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}.folio-btn:hover{
+	background: #4cddf3;
+	color: #fff;
+	
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	}
+.folio-btn:first-child{margin-left: 0;}
+.folio-btn:last-child{margin-right: 0;}
+.folio-btn.selected {border: none !important; background: #4ad8ed !important; color: #fff !important;}
 .p-roll{
 	position: absolute;
 	width: 100%;
@@ -954,6 +1077,7 @@ html, body {
 	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 }
+.ch-grid{position: relative; list-style: none;}
 .bottom-line{
 	border-bottom: solid 1px #f7f7f7;
 	width: 1180px;
@@ -1175,6 +1299,16 @@ html, body {
 }
 
 /* Project Window Ajax */
+.project-show{overflow: auto;}
+.project-window{
+	width: 100%;
+}
+.project-content{
+	width: 1180px;
+	margin: auto;
+}
+.project-content img{width: 1180px;}
+
 .wrapper-project{
 	overflow: hidden;
 	width: 100%;
@@ -1192,6 +1326,7 @@ html, body {
 	background: #4cddf3;
 	border-radius: 50%;*/
 }
+.project-content .img-project:first-child{border-top: solid 1px #f7f7f7;}
 .description{
 	color: #646464;
 	font-size: 14px;
