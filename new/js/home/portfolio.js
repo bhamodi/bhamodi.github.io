@@ -27,7 +27,7 @@ function obre(quin, dummy){
 			
 			if(dummy!=1){
 //				if(obert!=true){
-					$("html, body").animate({ scrollTop: $('#anchor5').offset().top }, 300, function(){
+					$("html, body").animate({ scrollTop: $('#anchor4').offset().top }, 300, function(){
 						$('.project-window').show(0);
 						$('.project-window').animate({height:900}, 500,function(){
 							$('.project-window').css('height','auto');
@@ -36,7 +36,7 @@ function obre(quin, dummy){
 						});				
 					});
 /*				}else{
-					$("html, body").animate({ scrollTop: $('#anchor5').offset().top }, 300, function(){
+					$("html, body").animate({ scrollTop: $('#anchor4').offset().top }, 300, function(){
 						$('.project-window').show(0);
 						$(".project-content").fadeIn("slow");
 					});

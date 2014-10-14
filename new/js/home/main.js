@@ -157,20 +157,6 @@ $(document).ready(function() {
 		});
 	}
 
-	/* Small Funtions */
-	function loadSmall() {
-		/* Call LightBox Featured Works */
-		$('.image-link').magnificPopup({type:'image'});
-		$('.ca-wrapper').magnificPopup({
-			delegate: 'a', // child items selector, by clicking on it popup will open
-			type: 'image',
-			// other options
-			gallery:{
-				enabled:true
-			}
-		});
-	}
-
 	/* Isotope/ Portfolio Filter PlugIn */    
 	var container = $('#i-portfolio');	
 	container.isotope({
@@ -256,11 +242,6 @@ $(document).ready(function() {
 		});	
 	}
 	
-	/* Call Featured Carousel Container */
-	function loadContentCarousel() {
-		$('#ca-container').contentcarousel();
-	}
-	
 	/* Scroll */
 	$(window).bind("scroll", function() { //when the user is scrolling...
 		/* Parallax */
@@ -344,7 +325,6 @@ $(document).ready(function() {
 	
 	/* Load Functions */
 	loadServices();
-	//loadTall();
 	loadJump();
 	
 	if ($(window).width()>974) {	
@@ -354,11 +334,9 @@ $(document).ready(function() {
 			$(this).html($(this).parent().attr('data-perc'));
 		});
 	}
-	loadSmall();
 	loadTitleAnimated();
 	loadMenuSelector();
 	loadIsotope();
 	loadHoverDir();
 	loadLogos();
-	loadContentCarousel();
 });
