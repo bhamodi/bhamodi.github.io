@@ -12,10 +12,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-input,
-button,
-select,
-textarea {
+input, button, select, textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -278,19 +275,16 @@ h3 {
 .depth-3.flake1 {
 	display: none;
 }
-
 .depth-3.flake2 {
 	position: absolute;
 	right: 16%;
 	bottom: 20%;
 }
-
 .depth-3.flake3 {
 	position: absolute;
 	left: 10%;
 	bottom: 16%;
 }
-
 .depth-3.flake4 {
 	display: none;
 }
@@ -298,7 +292,6 @@ h3 {
 .depth-2.flake1 { 
 	display: none;
 }
-
 .depth-2.flake2 {
 	display: none;
 }
@@ -306,17 +299,14 @@ h3 {
 .depth-1.flake1 {
 	display: none;
 }
-
 .depth-1.flake2 { 
 	position: absolute;
 	right: 40%;
 	top: 50%;
 }
-
 .depth-1.flake3 { 
 	display: none;
 }
-
 .depth-1.flake4 { 
 	position: absolute;
 	right: 0;
@@ -348,19 +338,16 @@ h3 {
 	.depth-3.flake1 {
 		display: none;
 	}
-
 	.depth-3.flake2 {
 		position: absolute;
 		right: 16%;
 		bottom: 20%;
 	}
-
 	.depth-3.flake3 {
 		position: absolute;
 		left: 10%;
 		bottom: 16%;
 	}
-
 	.depth-3.flake4 {
 		display: none;
 	}
@@ -368,7 +355,6 @@ h3 {
 	.depth-2.flake1 { 
 		display: none;
 	}
-
 	.depth-2.flake2 {
 		display: none;
 	}
@@ -376,17 +362,14 @@ h3 {
 	.depth-1.flake1 {
 		display: none;
 	}
-
 	.depth-1.flake2 { 
 		position: absolute;
 		right: 40%;
 		top: 40%;
 	}
-
 	.depth-1.flake3 { 
 		display: none;
 	}
-
 	.depth-1.flake4 { 
 		position: absolute;
 		right: 0;
@@ -425,17 +408,14 @@ h3 {
 	.depth-3.flake1 {
 		display: none;
 	}
-
 	.depth-3.flake2 {
 		right: 25%;
 		bottom: 25%;
 	}
-
 	.depth-3.flake3 {
 		left: 20%;
 		bottom: 20%;
 	}
-
 	.depth-3.flake4 {
 		display: block;
 		position: absolute;
@@ -446,7 +426,6 @@ h3 {
 	.depth-2.flake1 {
 		display: none;
 	}
-
 	.depth-2.flake2 {
 		display: none;
 	}
@@ -454,17 +433,14 @@ h3 {
 	.depth-1.flake1 {
 		display: none;
 	}
-
 	.depth-1.flake2 { 
 		display: block;
 		left: 15%;
 		top: 25%;
 	}
-
 	.depth-1.flake3 { 
 		display: none;
 	}
-
 	.depth-1.flake4 { 
 		display: none;
 	}
@@ -499,17 +475,14 @@ h3 {
 	.depth-3.flake1 {
 		display: none;
 	}
-
 	.depth-3.flake2 {
 		right: 25%;
 		bottom: 25%;
 	}
-
 	.depth-3.flake3 {
 		left: 20%;
 		bottom: 20%;
 	}
-
 	.depth-3.flake4 {
 		display: block;
 		position: absolute;
@@ -520,7 +493,6 @@ h3 {
 	.depth-2.flake1 {
 		display: none;
 	}
-
 	.depth-2.flake2 {
 		display: none;
 	}
@@ -528,17 +500,14 @@ h3 {
 	.depth-1.flake1 {
 		display: none;
 	}
-
 	.depth-1.flake2 { 
 		display: block;
 		left: 15%;
 		top: 25%;
 	}
-
 	.depth-1.flake3 { 
 		display: none;
 	}
-
 	.depth-1.flake4 { 
 		display: none;
 	}
@@ -578,24 +547,20 @@ h3 {
 		-moz-animation: wave 6s 0.1s infinite linear;
 		animation: wave 6s 0.1s infinite linear;
 	}
-
 	.depth-3.flake1 {
 		display: block;
 		position: absolute;
 		left: 20%;
 		top: 40%;
 	}
-
 	.depth-3.flake2 {
 		right: 25%;
 		bottom: 25%;
 	}
-
 	.depth-3.flake3 {
 		left: 20%;
 		bottom: 20%;
 	}
-
 	.depth-3.flake4 {
 		display: block;
 		position: absolute;
@@ -608,14 +573,12 @@ h3 {
 		-moz-animation: wave 5s 0.1s infinite linear;
 		animation: wave 5s 0.1s infinite linear;
 	}
-
 	.depth-2.flake1 { 
 		display: block;
 		position: absolute;
 		right: 40%;
 		top: 40%;
 	}
-
 	.depth-2.flake2 { 
 		display: none;
 	}
@@ -625,24 +588,20 @@ h3 {
 		-moz-animation: wave 4s 0.1s infinite linear;
 		animation: wave 4s 0.1s infinite linear;
 	}
-
 	.depth-1.flake1 {
 		display: block;
 		position: absolute;
 		left: 30%;
 		bottom: 20%;
 	}
-
 	.depth-1.flake2 { 
 		display: block;
 		left: 15%;
 		top: 25%;
 	}
-
 	.depth-1.flake3 { 
 		display: none;
 	}
-
 	.depth-1.flake4 { 
 		display: none;
 	}
@@ -669,17 +628,14 @@ h3 {
 		left: 20%;
 		top: 40%;
 	}
-
 	.depth-3.flake2 {
 		right: 25%;
 		bottom: 25%;
 	}
-
 	.depth-3.flake3 {
 		left: 40%;
 		bottom: 20%;
 	}
-
 	.depth-3.flake4 {
 		display: block;
 		position: absolute;
@@ -693,7 +649,6 @@ h3 {
 		right: 40%;
 		top: 40%;
 	}
-
 	.depth-2.flake2 { 
 		display: none;
 	}
@@ -704,20 +659,17 @@ h3 {
 		left: 30%;
 		bottom: 30%;
 	}
-
 	.depth-1.flake2 { 
 		display: block;
 		left: 15%;
 		top: 25%;
 	}
-
 	.depth-1.flake3 { 
 		display: block;
 		position: absolute;
 		bottom: 20%;
 		right: 40%;
 	}
-
 	.depth-1.flake4 { 
 		display: block;
 		right: 40%;
@@ -753,17 +705,14 @@ h3 {
 		left: 20%;
 		top: 40%;
 	}
-
 	.depth-3.flake2 {
 		right: 25%;
 		bottom: 25%;
 	}
-
 	.depth-3.flake3 {
 		left: 40%;
 		bottom: 20%;
 	}
-
 	.depth-3.flake4 {
 		display: block;
 		position: absolute;
@@ -777,7 +726,6 @@ h3 {
 		right: 40%;
 		top: 40%;
 	}
-
 	.depth-2.flake2 { 
 		display: none;
 	}
@@ -788,20 +736,17 @@ h3 {
 		left: 30%;
 		bottom: 30%;
 	}
-
 	.depth-1.flake2 { 
 		display: block;
 		left: 20%;
 		top: 30%;
 	}
-
 	.depth-1.flake3 { 
 		display: block;
 		position: absolute;
 		bottom: 30%;
 		right: 40%;
 	}
-
 	.depth-1.flake4 { 
 		display: block;
 		right: 40%;
