@@ -793,20 +793,6 @@ html, body {
 	font-weight: 400;
 }
 .footer-container span{font-size: 13px;}
-.foot-third{
-	float: left;
-	width: 365px;
-	padding: 0 0 0 28px;
-	line-height: 25px;
-}
-.f-title-one{
-	font-weight: 400;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 15px;
-	color: #d7d9da;
-	text-transform: uppercase;
-	margin-bottom: 5px;
-}
 .title-one, .title-full-one{
 	font-weight: 400;
 	text-align: center;
@@ -815,26 +801,6 @@ html, body {
 	color: #d7d9da;
 	text-transform: uppercase;
 }
-.f-title-two{
-	font-weight: 300;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 28px;
-	color: #434343;
-	margin-bottom: 45px;
-}
-.f-data{
-	color: #3f3f3f;
-	font-size: 15px;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
-	line-height: 30px;
-}
-.f-data span{color: #a8a8a8; padding-left: 15px;}
-.f-data.phone span{padding-left: 19px;}
-.f-data.e-mail span{padding-left: 27px;}
-.f-data.hour-2 span{padding-left: 63px;}
-.f-data.hour-3 span{padding-left: 57px;}
-.f-data img{margin-right: 10px;}
 .no-top{padding-top:0 !important;}
 .f-bottom{margin-bottom: 115px !important;}
 
@@ -879,7 +845,6 @@ html, body {
 	font-family: 'Montserrat', sans-serif;
 	background: #fbfbfb;
 	}
-/*.foot-third:last-child {padding-left: 0;}*/
 .controls.send-btn{
 	background: none;
 }

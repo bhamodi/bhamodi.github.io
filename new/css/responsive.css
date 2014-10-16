@@ -16,9 +16,6 @@
 	.img-spacer{width: 900px; margin-top: 190px;}
 	.img-spacer img{width: 900px;}
 	.img-item{top: -125px;}
-	.foot-third{width: 280px;}
-	.f-data{font-size: 14px;}
-	.f-data span{padding-left: 5px;}
 	.footer-container span{font-size: 13px;}
 	.footer-container{width: 959px; font-size: 15px;}
 	.project-content{width: 900px;}
@@ -66,8 +63,6 @@
 	.img-spacer img{width: 700px;}
 	.img-item{top: -80px;}
 	.footer-container {width: 700px; padding: 90px 0;}
-	.foot-third {width: 320px; padding: 0 0 0 30px;}
-	.foot-third:last-child {margin-top: 50px; width: 640px; padding: 0 30px;}
 	.milestone-details{font-size: 15px; padding: 0px 0 100px;}
 	.s-info span {font-size: 17px;}
 	.sl-element{width: 200px;}
@@ -108,8 +103,6 @@
 	.img-spacer img{width: 400px;}
 	.img-item {top: 10px;}
 	.footer-container {width: 400px;}
-	.foot-third{float: none; width: 100%; padding: 0; margin-top: 50px;}
-	.foot-third:first-child{margin-top: 0;}
 	.sl-element{width: 200px;}
 	.p-image-01 {margin-left: -230px; width: 460px;}
 	.p-image-01 img{width: 460px;}
@@ -151,8 +144,6 @@
 	.img-spacer img{width: 300px;}
 	.img-item {display: none;}
 	.footer-container {width: 300px;}
-	.foot-third{float: none; width: 100%; padding: 0; margin-top: 50px;}
-	.foot-third:first-child{margin-top: 0;}
 	.s-element{width: 300px;}
 	.sl-element{width: 300px; margin-bottom:30px;}
 	.p-image-01 {margin-left: -150px; width: 300px;}
@@ -167,7 +158,5 @@
 	.p-title-one{ padding-top:40px;}
 	.scrollup{display: none !important;}
 	.mk-video-mask {opacity: 0.5; background:none;}
-	.f-title-one{ text-align:center;}
-	.f-title-two{ text-align:center;}
 	.list_carousel.responsive{ margin-bottom:0; margin-top:50px;}
 }
