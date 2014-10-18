@@ -1,23 +1,13 @@
 /* Main INIT Function
 -------------------------------------------------------------- */
-
 function initializeSite() {
-
 	"use strict";
-
 	//OUTLINE DIMENSION AND CENTER
 	(function() {
-	    function centerInit(){
-			var	parentHeight = $(window).height(),
-				heroContent = $('.hero'),
-				heroHeight = heroContent.height(),
-				heroTopMargin = (parentHeight - heroHeight) / 2;
-
-			heroContent.css({
-				"margin-top" : heroTopMargin+"px"
-			});
+	    function centerInit() {
+			var	mainTitle = $('.main-title');
+			mainTitle.css({"margin-top" : (($(window).height() - mainTitle.height()) / 2)+"px"});
 	    }
-
 	    $(document).ready(centerInit);
 		$(window).resize(centerInit);
 	})();
@@ -26,9 +16,8 @@ function initializeSite() {
 	$('#scene').parallax();
 };
 
-/* Document Ready Trigger
--------------------------------------------------------------- */
-$(window).load(function(){
+/* Document Ready Trigger */
+$(window).load(function() {
 	initializeSite();
 	(function() {
 		setTimeout(function(){window.scrollTo(0,0);},0);

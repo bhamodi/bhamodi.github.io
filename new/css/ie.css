@@ -5,11 +5,9 @@
 	border-bottom: 5px solid transparent;
 }
 
-/* HERO */
+/* TITLE & CONTACT */
 h1 { font-size: 120px; line-height: 120px; }
 .sub-title { font-size: 20px; line-height: 20px; margin-top: 20px; }
-
-/* TITLE & CONTACT */
 .title { top: 15%;}
 .contact { bottom: 8%; }
 .contact .icons { margin-bottom: 12px; }

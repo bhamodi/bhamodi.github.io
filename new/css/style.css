@@ -36,7 +36,6 @@ section { overflow: hidden; }
 ::selection { background: #161a1b; color: #fff; }
 ::-moz-selection { background: #161a1b; color: #fff; }
 
-
 /* Typography
 -------------------------------------------------------------- */
 h1, h2, h3 { margin: 0; }
@@ -302,10 +301,9 @@ h3 {
 -------------------------------------------------------------- */
 /* Landscape Phone */
 @media all and (min-width: 400px) {
-	/* HERO */
+	/* TITLE & CONTACT */
 	h1 { font-size: 69px; line-height: 69px; }
 	.sub-title { font-size: ; line-height: ; margin-top: 10px; }
-	/* TITLE & CONTACT */
 	.title { top: 15%;}
 	.contact .icons { margin-bottom: 0px; }
 	/* POSITIONING */
@@ -360,10 +358,9 @@ h3 {
 
 /* Tablet Portrait */
 @media all and (min-width: 700px) {
-	/* HERO */
+	/* TITLE & CONTACT */
 	h1 { font-size: 110px; line-height: 130px; }
 	.sub-title { font-size: 20px; line-height: 20px; margin-top: 10px; }
-	/* TITLE & CONTACT */
 	.title { top: 18%;}
 	.line { margin-top: 20px; }
 	.contact { bottom: 10%; }
@@ -424,10 +421,9 @@ h3 {
 }
 
 @media all and (min-width: 900px) {
-	/* HERO */
+	/* TITLE & CONTACT */
 	h1 { font-size: 120px; line-height: 120px; }
 	.sub-title { font-size: 20px; line-height: 20px; margin-top: 20px; }
-	/* TITLE & CONTACT */
 	.title { top: 15%;}
 	.contact { bottom: 8%; }
 	.contact .icons { margin-bottom: 12px; }
@@ -487,7 +483,7 @@ h3 {
 }
 
 @media all and (min-width: 1200px) {
-	/* HERO */
+	/* TITLE */
 	h1 { font-size: 140px; line-height: 150px; }
 	.sub-title { font-size: 25px; line-height: 25px; margin-top: 20px; }
 	/* SIZES */
@@ -577,7 +573,7 @@ h3 {
 }
 
 @media all and (min-width: 1400px) {
-	/* HERO */
+	/* TITLE */
 	h1 { font-size: 150px; line-height: 160px; }
 	.sub-title { font-size: 25px; line-height: 25px; margin-top: 20px; }
 	/* POSITIONING */
@@ -643,14 +639,13 @@ h3 {
 }
 
 @media all and (min-width: 1600px) {
-	/* HERO */
+	/* TITLE */
 	h1 { font-size: 160px; line-height: 180px; }
 	.sub-title { font-size: 25px; line-height: 25px; margin-top: 25px; }
 }
 
-
 @media all and (min-width: 1920px) {
-	/* HERO */
+	/* TITLE */
 	h1 { font-size: 170px; line-height: 200px; }
 	.sub-title { font-size: 30px; line-height: 30px; margin-top: 30px; }
 	/* POSITIONING */
@@ -772,7 +767,6 @@ h3 {
     transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
   }
 }
-
 
 /* 404 Error
 -------------------------------------------------------------- */

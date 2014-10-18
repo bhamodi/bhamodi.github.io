@@ -106,7 +106,6 @@
         };
     }();
 
-
     $.fn.smoothWheel = function () {
         //  var args = [].splice.call(arguments, 0);
         var options = jQuery.extend({}, arguments[0]);
