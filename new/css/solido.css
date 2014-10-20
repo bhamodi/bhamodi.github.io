@@ -269,7 +269,7 @@ html, body {
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 }
-.title.one{color: #404141; font-size: 37px; letter-spacing: 5px; padding: 120px 0 30px; text-transform: uppercase;}
+.title.one{color: #404141; font-size: 37px; letter-spacing: 5px; padding: 80px 0 30px; text-transform: uppercase;}
 .title.two{color: #757575; font-size: 17px; font-family: 'Open Sans', sans-serif; width: 680px; margin: 50px auto;}
 .light{background: #fff; position: relative;}
 .dark:after {
@@ -615,7 +615,7 @@ html, body {
 	margin: 20px auto 20px;
 }
 
-.w-arrows.last{ margin: 120px auto 150px;}
+.w-arrows.last{ margin: 40px auto 50px;}
 
 .ch-item{float: left; width: 100%; cursor: pointer;}
 .ch-item img{width: 100%;}
@@ -801,7 +801,6 @@ html, body {
 	color: #d7d9da;
 	text-transform: uppercase;
 }
-.no-top{padding-top:0 !important;}
 .f-bottom{margin-bottom: 115px !important;}
 
 /* Form */

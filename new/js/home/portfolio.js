@@ -12,7 +12,7 @@ $(".folio-btn").click(function() {
 		obert=false;
 });
 
-obre('portfolio-1.html',1);
+obre('portfolio-01.html',1);
 
 function obre(quin, dummy){
 	$.ajax({
