@@ -1,5 +1,4 @@
-/* Common Styles
--------------------------------------------------------------- */
+/* Common Styles -------------------------------------------------------------- */
 *,
 *:before,
 *:after {
@@ -36,8 +35,7 @@ section { overflow: hidden; }
 ::selection { background: #161a1b; color: #fff; }
 ::-moz-selection { background: #161a1b; color: #fff; }
 
-/* Typography
--------------------------------------------------------------- */
+/* Typography -------------------------------------------------------------- */
 h1, h2, h3 { margin: 0; }
 
 h1 {
@@ -72,8 +70,7 @@ h3 {
 	margin-bottom: 0px;
 }
 
-/* Content Styles
--------------------------------------------------------------- */
+/* Content Styles -------------------------------------------------------------- */
 .wrapper {
   text-align: center;
   position: absolute;
@@ -297,8 +294,7 @@ h3 {
 	top: 0;
 }
 
-/* Responsive Styles
--------------------------------------------------------------- */
+/* Responsive Styles -------------------------------------------------------------- */
 /* Landscape Phone */
 @media all and (min-width: 400px) {
 	/* TITLE & CONTACT */
@@ -710,8 +706,7 @@ h3 {
 	}
 }
 
-/* Animation
--------------------------------------------------------------- */
+/* Animation -------------------------------------------------------------- */
 @-webkit-keyframes wave {
   0% {
     -webkit-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
@@ -768,21 +763,7 @@ h3 {
   }
 }
 
-/* 404 Error
--------------------------------------------------------------- */
-.snap {
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: url(../img/404-background.jpg) no-repeat center;
-	background-size: cover;
-	text-align: center;
-}
-.snap .line { margin-bottom: 70px; }
-
+/* Button -------------------------------------------------------------- */
 .button {
 	width: 280px;
 	left: calc(50% - 140px);
