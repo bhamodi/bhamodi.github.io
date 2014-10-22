@@ -9,7 +9,6 @@ $(document).ready(function() {
 		$('#home').addClass('video-section');
 		/* hide player */
 		$(".player").hide();
-		
 		$("#video-volume").hide();
 	}
 });

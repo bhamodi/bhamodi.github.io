@@ -67,7 +67,7 @@ html, body {
 }
 /* Home Slider */
 #video-volume {
-	bottom: 30px;
+	bottom: 80px;
 	color: #FFFFFF;
 	cursor: pointer;
 	font-size: 24px;
@@ -79,6 +79,20 @@ html, body {
 	z-index: 10;
 	background: url("../img/audio.png") no-repeat;
 	opacity: 0.5;
+}
+.bounce {
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	background: url("../img/arrow-down.png") no-repeat;
+	margin-left: -16px;
+	-webkit-animation: bounce 1s infinite;
+}
+@-webkit-keyframes bounce {
+	0% {bottom: 45px;}
+	25%, 75% {bottom: 55px;}
+	50% {bottom: 60px;}
+	100% {bottom: 40;}
 }
 .welcome{
 	font-family: Georgia, "Times New Roman", Times, serif;
