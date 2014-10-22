@@ -460,12 +460,6 @@ html, body {
 }
 .visible {display: block;}
 .s-container{position: relative; width: 1180px; margin: auto;}
-.s-element{
-	width: 393px;
-	height: auto;
-	float: left;
-	text-align: center;
-}
 .s-info{padding: 0 45px;}
 .s-ico{
 	width: 170px;
@@ -506,7 +500,7 @@ html, body {
 	font-size: 22px;
 }
 .sl-element {
-	width: 236px;
+	width: 295px;
 	height: auto;
 	float: left;
 	text-align: center;
@@ -515,35 +509,30 @@ html, body {
 }
 .sl-title{
 	font-family: 'Open Sans', sans-serif;
-	color: #434242;
-	font-size: 18px;
+	color: #FFFFFF;
+	font-size: 24px;
 	font-weight: 400;
 	text-transform: uppercase;
+	padding-top: 63px;
 }
 .sl-ico{
 	cursor: crosshair !important;
-	background-image: url("../img/sl-icons.png");
-	width: 110px;
-	height: 110px;
+	width: 160px;
+	height: 160px;
 	background-color: #4cddf3;
 	cursor: pointer;
 	border-radius: 50%;
-	margin: 10px auto 30px;
+	margin: 40px auto 30px;
 	background-position: center center;
 	background-repeat: no-repeat;
 	
-	/*-webkit-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;*/
+	transition: all 0.2s ease-in-out;
 }.sl-ico:hover{
 	background-color: #e6e6e6 !important;
 }
-.sl-config{background-position: 0 0;}
-.sl-globe{background-position: -110px 0;}
-.sl-diamond{background-position: -220px 0;}
-.sl-pointer{background-position: -330px 0;}
-.sl-clock{background-position: -440px 0;}
 
 /* Portfolio */
 .p-category{
