@@ -50,7 +50,7 @@ function obre(quin, dummy){
 function tanca(){
 	$(".close").click(function() {
 		$(".project-window").slideUp("slow");
-		$("html, body").animate({ scrollTop: $('#portfolio').offset().top }, 1000);
+		$("html, body").animate({ scrollTop: $('#anchor4').offset().top }, 1000);
 		obert=false;
 	});
 }
