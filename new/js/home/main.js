@@ -1,11 +1,19 @@
 "use strict";
 
 $(window).load(function() {
-	$(".loader").delay(1000).fadeOut();
+	$(".loader").delay(500).fadeOut();
 	$("#mask").delay(500).fadeOut("slow");
 });
 
 $(document).ready(function() {
+	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+		// Hide player and display a background picture instead of a video.
+		$('#home').css('display','none');
+		$('#homedevice').css('display','block');
+	} else {
+		$(".player").mb_YTPlayer();
+	}
+
 	$('body').addClass('green');
 	$(".header").sticky({ topSpacing: 0 });
 

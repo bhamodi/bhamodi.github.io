@@ -49,7 +49,7 @@
         <!--[if lte IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div id="mask">   
+        <div id="mask">
             <div class="loader">
                 <img src="img/loading.gif" alt='loading'>
             </div>
@@ -58,11 +58,11 @@
         <section id="home" class="clear">
             <div>
                 <div class="mk-video-mask"></div>
-                <a id="video-volume" onclick="$('#bgndVideo').toggleVolume()"><i class="icon-volume-down"></i></a>
+                <a id="video-volume" onclick="$('#bgndVideo').toggleVolume()"></a>
                 <div class="bounce"></div>
                 
                 <!-- Video Background -->
-                <a id="bgndVideo" class="player mb_YTVPlayer" data-property="{videoURL:'http://www.youtube.com/watch?v=kn-1D5z3-Cs',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}" style="display: none; background-image: none; background-position: initial initial; background-repeat: initial initial;" title="New York &quot;Afterglow&quot;">youtube</a>
+                <a id="bgndVideo" class="player mb_YTVPlayer" data-property="{videoURL:'http://www.youtube.com/watch?v=kn-1D5z3-Cs',containment:'body',autoPlay:true, mute:false, startAt:0, opacity:1}" style="display: none; background-image: none; background-position: initial initial; background-repeat: initial initial;" title="New York &quot;Afterglow&quot;">youtube</a>
             </div>
         </section>
         <section id="homedevice" class="clear"></section>        
@@ -512,6 +512,5 @@
         <script src="js/home/video/jquery.YTPlayer.js"></script>
         <script src="js/home/jquery.validate.js"></script>
         <script src="js/home/jquery.form.min.js"></script>
-        <script src="js/home/devices.js"></script>
     </body>
 </html>
