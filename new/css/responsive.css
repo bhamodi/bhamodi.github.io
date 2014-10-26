@@ -88,19 +88,19 @@
 
 /* All mobile sizes (devices and browser) */
 @media only screen and (max-width: 795px) {
-	.main-title ul { margin-top:0; height:80px;}
+	.main-title ul {margin-top:0; height:80px;}
 	.main-title .spacer { margin:20px auto;}
 }
 
 /* Mobile landscape size to tablet portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 795px) {
-	.p-image-02 div { left:50%;}
+	.p-image-02 div {left:50%;}
 	.p-image-first {margin-left:-225px;}
-	.p-image-first img { width:450px}
+	.p-image-first img {width:450px}
 	.p-image-second {margin-left:-300px;}	
-	.p-image-second img { width:600px}
-	.vegas-overlay { display:none;}
-	.main-title ul { font-size:20px;}
+	.p-image-second img {width:600px}
+	.vegas-overlay {display:none;}
+	.main-title ul {font-size:20px;}
 	.main-title .second-title { width:345px;}
 	.full {width: 466px;}
 	.title.one {font-size: 40px; padding: 60px 40px 11px;}
@@ -171,4 +171,15 @@
 	.scrollup {display: none !important;}
 	.mk-video-mask {opacity: 0.5; background:none;}
 	.list_carousel.responsive { margin-bottom:0; margin-top:50px;}
+}
+
+/* Mobile portrait size to mobile landscape size (devices and browsers) */
+@media only screen and (max-height: 600px) {
+	#video-volume{bottom: 50px;}
+}
+
+/* Mobile portrait size to mobile landscape size (devices and browsers) */
+@media only screen and (max-height: 500px) {
+	#video-volume{bottom: 10px;}
+	.bounce{display: none;}
 }
