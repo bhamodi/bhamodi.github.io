@@ -118,21 +118,7 @@ $(document).ready(function() {
             }
         });
     };
-	
-	/* Portfolio HoverDir Roll-Over */
-	function mosaicInit() {
-		$('.mosaic').mixitup({
-			targetSelector: '.mosaic__item',
-			filterSelector: '.mosaic__filter-item',
-			effects: ['fade','scale'],
-			easing: 'snap',
-			transitionSpeed: 850,
-		});
-		$('.mosaic__item .image_item-meta--portfolio .image_item-table').each(function() {
-			$(this).hoverdir();
-		});
-	}
-	
+
 	/* Slider AutoChanging Title */
 	function loadTitleAnimated() {
 		var myInterval;
