@@ -41,8 +41,6 @@
         <link rel="stylesheet" href="css/jquery.vegas.css">
         <link rel="stylesheet" href="css/magnific-popup.css">
         <link rel="stylesheet" href="css/green.css">
-        
-        <script src="js/home/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     
     <body>
@@ -58,11 +56,11 @@
         <section id="home" class="clear">
             <div>
                 <div class="mk-video-mask"></div>
-                <a id="video-volume" onclick="$('#bgndVideo').toggleVolume()"></a>
+                <a id="video-volume" onclick="$('#background-video').toggleVolume()"></a>
                 <div class="bounce"></div>
                 
                 <!-- Video Background -->
-                <a id="bgndVideo" class="player mb_YTVPlayer" data-property="{videoURL:'http://www.youtube.com/watch?v=kn-1D5z3-Cs',containment:'body',autoPlay:true, mute:false, startAt:0, opacity:1}" style="display: none; background-image: none; background-position: initial initial; background-repeat: initial initial;" title="New York &quot;Afterglow&quot;">youtube</a>
+                <a id="background-video" class="player mb_YTVPlayer" data-property="{videoURL:'http://www.youtube.com/watch?v=kn-1D5z3-Cs'}" style="display: none; background-image: none; background-position: initial initial; background-repeat: initial initial;" title="New York &quot;Afterglow&quot;">youtube</a>
             </div>
         </section>
         <section id="homedevice" class="clear"></section>        
@@ -423,9 +421,7 @@
                 </div>
             </div>
             <div class="clear"></div>
-        </article>
-
-        <section class="list_carousel responsive hideme dontHide">
+            <section class="list_carousel responsive hideme dontHide">
             <ul id="logos">
                 <li><img src="img/logos/logo-01.png" alt="logo"></li>
                 <li><img src="img/logos/logo-02.png" alt="logo"></li>
@@ -441,12 +437,15 @@
         <section class="img-spacer">
           <div class="img-item hideme dontHide"><img src="img/imac.png" alt='img'></div>
         </section>
+        </article>
+
+        
 
         <footer class="footer light">
             <div class="footer-container">
                 <div id="anchor5" class="title one">Contact</div>
                 <div class="spacer"></div>
-                <div class="title two f-bottom">I like to create things with fun, like-minded people.<br>Feel free to say hello!</div>
+                <div class="title two">I like to create things with fun, like-minded people.<br>Feel free to say hello!</div>
                 <div class="hideme dontHide">
                     <form method="post" id="contact" class="peThemeContactForm" action="mail.php">
                         <div id="personal" class="bay form-horizontal">
@@ -479,24 +478,24 @@
                         </div>
                     </form>
                 </div>
+                <div class="contact">
+                    <ul class="icons">
+                        <li><a class="github" target="_blank" href="https://github.com/bhamodi"></a></li>
+                        <li><a class="stackoverflow" target="_blank" href="http://stackoverflow.com/users/3474514/baraa-h"></a></li>
+                        <li><a class="codecademy" target="_blank" href="http://www.codecademy.com/bhamodi"></a></li>
+                        <li><a class="khanacademy" target="_blank" href="https://www.khanacademy.org/profile/BaraaHamodi"></a></li>
+                        <li><a class="linkedin" target="_blank" href="https://www.linkedin.com/in/baraahamodi"></a></li>
+                    </ul>
+                    <div class="copy-right">2014 © Baraa Hamodi | All rights reserved.</div>
+                </div>
             </div>
         </footer>
 
         <a href="#" class="scrollup">^</a>
 
-        <div class="contact">
-            <ul class="icons">
-                <li><a class="github" target="_blank" href="https://github.com/bhamodi"></a></li>
-                <li><a class="stackoverflow" target="_blank" href="http://stackoverflow.com/users/3474514/baraa-h"></a></li>
-                <li><a class="codecademy" target="_blank" href="http://www.codecademy.com/bhamodi"></a></li>
-                <li><a class="khanacademy" target="_blank" href="https://www.khanacademy.org/profile/BaraaHamodi"></a></li>
-                <li><a class="linkedin" target="_blank" href="https://www.linkedin.com/in/baraahamodi"></a></li>
-            </ul>
-            <div class="copy-right">2014 © Baraa Hamodi | All rights reserved.</div>
-        </div>
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+        <script src="js/home/vendor/modernizr-2.6.2.min.js"></script>
         <script src="js/home/main.js"></script>
         <script src="js/home/jquery.carouFredSel-6.2.1-packed.js"></script>
         <script src="js/home/jquery.smoothwheel.js"></script>
@@ -509,7 +508,7 @@
         <script src="js/home/jquery.nav.js"></script>
         <script src="js/home/popup/jquery.magnific-popup.js"></script>
         <script src="js/home/jquery.isotope.min.js"></script>
-        <script src="js/home/video/jquery.YTPlayer.js"></script>
+        <script src="js/home/video/jquery.mb.YTPlayer.js"></script>
         <script src="js/home/jquery.validate.js"></script>
         <script src="js/home/jquery.form.min.js"></script>
     </body>
