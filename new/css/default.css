@@ -82,6 +82,7 @@ html, body {
 	background: url("../img/audio.png") no-repeat;
 	opacity: 0.5;
 }
+/*
 .bounce {
 	bottom: 40px;
 	margin-left: -16px;
@@ -99,6 +100,7 @@ html, body {
 	50% {bottom: 60px;}
 	100% {bottom: 40px;}
 }
+*/
 .welcome {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
