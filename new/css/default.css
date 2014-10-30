@@ -435,7 +435,7 @@ html, body {
 	width: 220px;
 	background: #000;
 	top: auto;
-	bottom: 100%;
+	bottom: 75%;
 	left: 50%;
 	margin-left: -130px;
 	padding: 5px 23px;
@@ -447,7 +447,7 @@ html, body {
 	left: 50%;
 	margin-left: -8px;
 	top: auto;
-	bottom: 100%;
+	bottom: 75%;
 	margin-bottom: 22px;
 	width: 0;
 	height: 0;

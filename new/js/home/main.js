@@ -190,7 +190,7 @@ $(document).ready(function() {
 		var winWidth = $(window).width(), 
 			columnNumb = splitColumns(), 
 			postWidth = Math.floor(winWidth / columnNumb),
-			postHeight = Math.floor(postWidth * 0.8);
+			postHeight = Math.floor(postWidth * 0.75);
 		container.find('.element').each(function() { 
 			$(this).css({ 
 				width : postWidth + 'px',
