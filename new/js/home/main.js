@@ -175,11 +175,11 @@ $(document).ready(function() {
 		var winWidth = $(window).width(), 
 			columnNumb = 1;
 		if (winWidth > 1200) {
-			columnNumb = 5;
-		} else if (winWidth > 900) {
 			columnNumb = 4;
-		} else if (winWidth > 600) {
+		} else if (winWidth > 900) {
 			columnNumb = 3;
+		} else if (winWidth > 600) {
+			columnNumb = 2;
 		} else if (winWidth > 300) {
 			columnNumb = 1;
 		}
@@ -189,10 +189,12 @@ $(document).ready(function() {
 	function setColumns() { 
 		var winWidth = $(window).width(), 
 			columnNumb = splitColumns(), 
-			postWidth = Math.floor(winWidth / columnNumb);
+			postWidth = Math.floor(winWidth / columnNumb),
+			postHeight = Math.floor(postWidth * 0.8);
 		container.find('.element').each(function() { 
 			$(this).css({ 
-				width : postWidth + 'px' 
+				width : postWidth + 'px',
+				height : postHeight + 'px'
 			});
 			var marhei = ($(this).find('div').height()/2)-49;
 			$(this).find('div > span').css({ 
