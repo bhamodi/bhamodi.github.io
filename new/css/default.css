@@ -715,7 +715,7 @@ html, body {
 }
 .folio-btn:first-child {margin-left: 0;}
 .folio-btn:last-child {margin-right: 0;}
-.folio-btn.selected {border: none !important; background: #4ad8ed !important; color: #fff !important;}
+.folio-btn.active {background: #77be32 !important; color: #fff !important;}
 .p-roll {
 	position: absolute;
 	width: 100%;
