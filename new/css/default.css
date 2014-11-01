@@ -29,23 +29,6 @@ html, body {
 	transition: all 1.5s ease-in-out;
 }
 
-/* Loading */
-#mask {
-    background-color: #FFFFFF;
-    height: 100%;
-    position: fixed;
-    width: 100%;
-    z-index: 100000;
-}
-.loader {
-  position: absolute;
-  width: 40px;
-  height:40px;
-  margin: -20px 0 0 -20px;
-  top:50%;
-  left:50%;
-}
-
 /* JumpMenu Styles */
 .jump-menu {
 	display: none;
