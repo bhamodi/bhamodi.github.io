@@ -253,7 +253,7 @@ $(document).ready(function() {
 	
 	/* Resize */
 	function resizedw() {
-	// Haven't resized in 500ms!
+		// Haven't resized in 500ms!
 		setProjects();
 		loadTall();
 	}
