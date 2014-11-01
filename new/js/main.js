@@ -1,5 +1,4 @@
-/* Main INIT Function
--------------------------------------------------------------- */
+/* Main INIT Function */
 function initializeSite() {
 	"use strict";
 	//OUTLINE DIMENSION AND CENTER
@@ -18,6 +17,7 @@ function initializeSite() {
 
 /* Document Ready Trigger */
 $(window).load(function() {
+	$('.preloader').fadeOut('slow');
 	initializeSite();
 	(function() {
 		setTimeout(function(){window.scrollTo(0,0);},0);

@@ -47,9 +47,6 @@
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" href="css/ie.css" />
 	<![endif]-->
-
-	<!-- jQuery -->
-	<script src="js/jquery.js"></script>
 </head>
 <body>
 	<div class="preloader">
@@ -57,11 +54,6 @@
 			<h3>Loading...</h3>
 			<span class="progress"></span>
 		</div>
-		<script>
-			$(window).load(function(){
-			     $('.preloader').fadeOut('slow');
-			});
-		</script>
 	</div>
 	<div class="wrapper">
 		<ul id="scene" class="scene unselectable"
@@ -116,8 +108,9 @@
 	</div>
 
 	<!-- Javascript -->
-	<script src="js/plugins.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/plugins.js"></script>
 
 	<!-- Google Analytics -->
 	<script>

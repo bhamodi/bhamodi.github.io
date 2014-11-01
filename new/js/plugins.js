@@ -1,5 +1,4 @@
 ;(function($, window, document, undefined) {
-
   // Strict Mode
   'use strict';
 
@@ -514,5 +513,4 @@
       clearTimeout(id);
     };
   }
-
 }());
