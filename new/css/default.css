@@ -4,7 +4,7 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700");
 
 ::selection {
-	background-color: #4cddf3;
+	background-color: #77be32;
 	color: #fff;
 }
 html, body {
@@ -91,13 +91,10 @@ html, body {
 	letter-spacing: 3px;
 	text-transform: none;
 }
-#home-fullWidth div,#home div {
+#home div {
 	position: relative;
 	width: 100%;
 	height: 100%;
-}
-#home-fullWidth {
-	height: 700px;
 }
 .mk-video-mask {
 	position: absolute;
@@ -201,7 +198,7 @@ html, body {
 	font-family: 'Open Sans', sans-serif;
 	padding: 11px 25px 11px;
 	cursor: pointer;
-	border: 2px solid #4cddf3;
+	border: 2px solid #77be32;
 	border-radius: 2px;
 	letter-spacing: 2px;
 	pointer-events: auto;
@@ -211,7 +208,6 @@ html, body {
 	transition: all 0.1s ease-in-out;
 }
 .buy-logo:hover {border: 2px solid #fff !important; background-color: #77be32;}
-.buy-logo a {text-decoration: none; color: #fff;}
 .main-title {
 	color: #fff;
 	height: 385px;
@@ -224,7 +220,6 @@ html, body {
 	text-align: center;
 	z-index:10;
 }
-.main-title.title-fullWidth {top: 174px; margin-top: 0;}
 .main-title a {text-decoration: none;}
 .main-title .spacer {width: 60px; margin: 30px auto 40px;}
 .title-container {
@@ -333,7 +328,6 @@ html, body {
 .parallax.p-one {height: 680px;}
 .p-one {background: url("../img/parallax/parallax-01.jpg") repeat}
 .p-two {background: url("../img/parallax/parallax-02.png") repeat; background-color: #4cddf3;}
-.p-three {background: url("../img/parallax/parallax-01.jpg") repeat}
 .p-title-one {
 	font-weight: 400;
 	text-align: center;
@@ -351,15 +345,6 @@ html, body {
 	font-size: 35px;
 	color: #fff;
 	padding: 10px 0 30px;
-}
-.p-info {
-	color: #fff;
-	font-size: 16px;
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
-	width: 650px;
-	margin: 50px auto 0;
-	font-weight: 300;
 }
 .spacer {
 	width: 100px;
@@ -459,7 +444,6 @@ html, body {
 }
 .visible {display: block;}
 .s-container {position: relative; width: 1180px; margin: auto;}
-.s-info {padding: 0 45px;}
 .s-ico {
 	width: 170px;
 	height: 170px;
@@ -484,18 +468,6 @@ html, body {
 .f-ico.s-two {background-position: -73px 0;}
 .f-ico.s-three {background-position: -146px 0;}
 .f-ico.s-four {background-position: -219px 0;}
-.s-info {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	color: #b4b4b4;
-	font-weight: 400;
-	line-height: 25px;
-}
-.s-info span {
-	font-family: 'Montserrat', sans-serif;
-	color: #434242;
-	font-size: 22px;
-}
 .sl-element {
 	width: 295px;
 	height: auto;
@@ -599,7 +571,6 @@ html, body {
 }
 .w-arrows.last { margin: 40px auto 50px;}
 .ch-item {float: left; width: 100%; height: 100%; cursor: pointer;}
-.ch-item img {width: 100%; height: 100%;}
 .ch-grid img {
     opacity: 1;
 	-webkit-transition: all 0.2s ease-in-out;
@@ -699,26 +670,6 @@ html, body {
 .folio-btn:first-child {margin-left: 0;}
 .folio-btn:last-child {margin-right: 0;}
 .folio-btn.active {background: #77be32 !important; color: #fff !important;}
-.p-roll {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	cursor: pointer;
-	background: #4cddf3;
-	color: #fff;
-	opacity: 0;
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-}
-.p-roll:hover {
-	opacity: 0.7;
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-}
 .ch-grid {position: relative; list-style: none;}
 
 /* Logos Caroussel */
@@ -761,7 +712,6 @@ html, body {
 	font-size: 17px;
 	font-weight: 400;
 }
-.footer-container span {font-size: 13px;}
 .title-one, .title-full-one {
 	font-weight: 400;
 	text-align: center;
@@ -931,12 +881,6 @@ html, body {
 	text-align: center;
 	font-weight: 300;
 }
-.title-project span {
-	font-size: 16px;
-	text-transform:none;
-	font-style: italic;
-	color: #646464
-}
 
 /* Social Contact Footer */
 .contact {
@@ -1093,3 +1037,10 @@ html, body {
 	}
 }
 #homedevice {height:100%; display:none; background-image: url("../img/bg.jpg"); background-size: cover;}
+
+/* Green Shaders */
+.green .s-ico,.green .sl-ico,.green .ch-grid,.green .f-ico,.green .scrollup,.green .list-dot,.green .p-two {background-color: #77be32;}
+.green .menu a:hover,.green #nav .current a,.green .contour-btn:hover,.green .second-title span {color: #77be32 !important;}
+.green .spacer,.green .folio-btn:hover,.green .contour-btn,.green .folio-btn.selected,.green .logo span span {background: #77be32;}
+.green .logo span {background: #77be32; background: rgba(119,190,50,0.5);}
+.green .selected,.green .controller-3 ul li:hover {border: 2px solid #77be32 !important; background: #77be32 !important;}

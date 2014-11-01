@@ -11,7 +11,6 @@
 	.img-spacer {width: 900px; margin-top: 190px;}
 	.img-spacer img {width: 900px;}
 	.img-item {top: -125px;}
-	.footer-container span {font-size: 13px;}
 	.footer-container {width: 959px; font-size: 15px;}
 	.project-content {width: 900px;}
 	.project-content img {width: 900px;}
@@ -64,13 +63,10 @@
 	.main-title ul { font-size:40px;}
 	.full {width: 783px;}
 	.s-container {width: 705px;}
-	.s-info {padding: 0 10px; font-size: 13px;}
-	.s-info span {font-size: 17px;}
 	.sl-element {width: 235px;}
 	.f-element {width: 180px; padding-left: 10px;}
 	.f-ico {margin: 0 auto;}
 	.highlight {font-size: 40px;}
-	.s-info {margin-bottom: 50px;}
 	.project-content {width: 700px;}
 	.project-content img {width: 700px;}
 	.logos {width: 680px; margin: 70px auto 150px}
@@ -104,7 +100,6 @@
 	.full {width: 466px;}
 	.title.one {font-size: 40px; padding: 60px 40px 11px;}
 	.title.two {font-size: 17px; padding: 0px 40px; width: auto;}
-	.p-info {width: 400px;}
 	.s-container {width: 440px}
 	.sl-element {width: 220px;}
 	.f-element {width: 100%;}
@@ -144,7 +139,6 @@
 	.title.one {font-size: 19px; padding: 40px 40px 50px; width: auto;}
 	.title.two {font-size: 17px; padding: 0px 40px; width: auto;}
 	.p-title-two { font-size:14px;}
-	.p-info {width: 300px;}
 	.f-element {width: 100%;}
 	#filters {padding: 0 40px;}
 	.project-content {width: 300px;}
