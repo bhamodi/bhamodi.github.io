@@ -833,7 +833,7 @@ html, body {
 	bottom: 50px;
 	right: 40px;
 	display: none;
-	background: #4ad8ed;
+	background: #77be32;
 	color: #fff;
 	line-height: 55px;
 	text-decoration: none;
@@ -1039,7 +1039,7 @@ html, body {
 #homedevice {height:100%; display:none; background-image: url("../img/bg.jpg"); background-size: cover;}
 
 /* Green Shaders */
-.green .s-ico,.green .sl-ico,.green .ch-grid,.green .f-ico,.green .scrollup,.green .list-dot,.green .p-two {background-color: #77be32;}
+.green .s-ico,.green .sl-ico,.green .ch-grid,.green .f-ico,.green .list-dot,.green .p-two {background-color: #77be32;}
 .green .menu a:hover,.green #nav .current a,.green .contour-btn:hover,.green .second-title span {color: #77be32 !important;}
 .green .spacer,.green .folio-btn:hover,.green .contour-btn,.green .folio-btn.selected,.green .logo span span {background: #77be32;}
 .green .logo span {background: #77be32; background: rgba(119,190,50,0.5);}
