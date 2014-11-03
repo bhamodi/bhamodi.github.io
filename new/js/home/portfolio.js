@@ -4,12 +4,12 @@
 var $actual= null;
 var obert=false;
 $(".ch-grid").click(function() {
-		obre($(this).attr('id'));
-		$actual=$(this);
+	obre($(this).attr('id'));
+	$actual=$(this);
 });
 $(".folio-btn").click(function() {
-		$(".project-window").slideUp("slow");
-		obert=false;
+	$(".project-window").slideUp("slow");
+	obert=false;
 });
 
 obre('portfolio-01.html',1);
@@ -26,22 +26,13 @@ function obre(quin, dummy){
 			worksCarousel();
 			
 			if(dummy!=1){
-//				if(obert!=true){
-					$("html, body").animate({ scrollTop: $('#anchor4').offset().top }, 300, function(){
-						$('.project-window').show(0);
-						$('.project-window').animate({height:900}, 500,function(){
-							$('.project-window').css('height','auto');
-//						$(".project-window").slideDown(1500, function() {
-							$(".project-content").fadeIn("slow");
-						});				
-					});
-/*				}else{
-					$("html, body").animate({ scrollTop: $('#anchor4').offset().top }, 300, function(){
-						$('.project-window').show(0);
-						$(".project-content").fadeIn("slow");
-					});
-				}
-				obert=true;	*/
+				$("html, body").animate({ scrollTop: $('#anchor4').offset().top }, 300, function(){
+					$('.project-window').show(0);
+					$('.project-window').animate({height:900}, 500,function(){
+					$('.project-window').css('height','auto');
+					$(".project-content").fadeIn("slow");
+					});				
+				});
 			}
 		}
 	});
@@ -74,7 +65,6 @@ function enrera(){
 	}else{
 		$actual=$($actual.prev());
 	}
-
 	if($actual.hasClass('isotope-hidden')){
 		enrera();
 	}else{
