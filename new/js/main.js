@@ -15,7 +15,6 @@ function initializeSite() {
 	$('#scene').parallax();
 };
 
-/* Document Ready Trigger */
 $(window).load(function() {
 	$('.preloader').fadeOut('slow');
 	initializeSite();

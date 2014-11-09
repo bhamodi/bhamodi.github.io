@@ -1,4 +1,9 @@
 "use strict";
+
+$(window).load(function() {
+	$('.preloader').fadeOut('slow');
+});
+
 $(document).ready(function() {
 	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
 		// Hide player and display a background picture instead of a video.
