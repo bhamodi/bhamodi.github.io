@@ -13,13 +13,13 @@ $(document).ready(function() {
 
 	/* Menu Anchors */
 	$('a[href*=#]').click(function() {
-	 if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
-		 var $target = $(this.hash);
-		 $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-		 if ($target.length) {
-			 var targetOffset = $target.offset().top;
-			 $('html,body').animate({scrollTop: targetOffset-75}, 2000);
-			 return false;
+		if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
+			var $target = $(this.hash);
+			$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+			if ($target.length) {
+				var targetOffset = $target.offset().top;
+				$('html,body').animate({scrollTop: targetOffset-75}, 2000);
+				return false;
 			}
 		}
 	});
@@ -233,7 +233,7 @@ $(document).ready(function() {
 	}
 	
 	/* Scroll */
-	$(window).bind("scroll", function() { //when the user is scrolling...
+	$(window).bind("scroll", function() {
 		/* Parallax */
 		Move('.paraOn'); //move the background images in relation to the movement of the scrollbar
 		
