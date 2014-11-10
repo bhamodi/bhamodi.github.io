@@ -296,39 +296,49 @@ $(document).ready(function() {
 		});
 		
 		/* Facts Counter */
-		var count=0;
+		var count = 0;
 		var dataperc;
-		//mobile counter
-		$('.milestone-counter').bind('inview', function (event, visible) {
-			if (visible === true && count === 0) {
-			// element is now visible in the viewport
+		$('.milestone-counter1').bind('inview', function (event, visible) {
+			loadInviewHelper('.milestone-counter1');
+		});
+		$('.milestone-counter2').bind('inview', function (event, visible) {
+			loadInviewHelper('.milestone-counter2');
+		});
+		$('.milestone-counter3').bind('inview', function (event, visible) {
+			loadInviewHelper('.milestone-counter3');
+		});
+		$('.milestone-counter4').bind('inview', function (event, visible) {
+			loadInviewHelper('.milestone-counter4');
+		});
+	}
+
+	function loadInviewHelper(selector) {
+		if (visible === true && count === 0) {
+			// Element is now visible in the viewport
 			count++;
-			$('.milestone-counter').each(function() {
+			$(selector).each(function() {
 				dataperc = $(this).attr('data-perc'),
 				$(this).find('.milestone-count').delay(6000).countTo({
 					from: 0,
 					to: dataperc,
-					speed: 2500,
-					refreshInterval: 80
+					speed: 3500,
+					refreshInterval: 30
 				});
 			});
-			} else {
-				// element has gone out of viewport
-			}
-		});
+		}
 	}
 	
 	/* Load Functions */
 	loadServices();
 	loadJump();
 	
-	if ($(window).width()>974) {	
+	//if ($(window).width()>974) {	
 		loadInview();
-	} else {
+	//} else {
 		$('.milestone-count.highlight').each(function() {
 			$(this).html($(this).parent().attr('data-perc'));
 		});
-	}
+	//}
 	loadTitleAnimated();
 	loadMenuSelector();
 	loadIsotope();
