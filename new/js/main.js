@@ -11,7 +11,7 @@ function initializeSite() {
 		$(window).resize(centerInit);
 	})();
 
-	// Init effect 
+	// Init effect
 	$('#scene').parallax();
 };
 

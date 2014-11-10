@@ -44,7 +44,7 @@ h1 {
 	font-weight: 700;
 	line-height: 80px;
 	letter-spacing: -0.08em;
-	color: #161a1b; 
+	color: #161a1b;
 }
 h2 {
 	font-family: "Montserrat", arial, sans-serif;
@@ -270,7 +270,7 @@ h3 {
 	display: none;
 }
 
-.depth-2.flake1 { 
+.depth-2.flake1 {
 	display: none;
 }
 .depth-2.flake2 {
@@ -280,15 +280,15 @@ h3 {
 .depth-1.flake1 {
 	display: none;
 }
-.depth-1.flake2 { 
+.depth-1.flake2 {
 	position: absolute;
 	right: 40%;
 	top: 50%;
 }
-.depth-1.flake3 { 
+.depth-1.flake3 {
 	display: none;
 }
-.depth-1.flake4 { 
+.depth-1.flake4 {
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -328,7 +328,7 @@ h3 {
 	.depth-3.flake4 {
 		display: none;
 	}
-	.depth-2.flake1 { 
+	.depth-2.flake1 {
 		display: none;
 	}
 	.depth-2.flake2 {
@@ -337,15 +337,15 @@ h3 {
 	.depth-1.flake1 {
 		display: none;
 	}
-	.depth-1.flake2 { 
+	.depth-1.flake2 {
 		position: absolute;
 		right: 40%;
 		top: 40%;
 	}
-	.depth-1.flake3 { 
+	.depth-1.flake3 {
 		display: none;
 	}
-	.depth-1.flake4 { 
+	.depth-1.flake4 {
 		position: absolute;
 		right: 0;
 		top: 0;
@@ -403,15 +403,15 @@ h3 {
 	.depth-1.flake1 {
 		display: none;
 	}
-	.depth-1.flake2 { 
+	.depth-1.flake2 {
 		display: block;
 		left: 15%;
 		top: 25%;
 	}
-	.depth-1.flake3 { 
+	.depth-1.flake3 {
 		display: none;
 	}
-	.depth-1.flake4 { 
+	.depth-1.flake4 {
 		display: none;
 	}
 }
@@ -465,15 +465,15 @@ h3 {
 	.depth-1.flake1 {
 		display: none;
 	}
-	.depth-1.flake2 { 
+	.depth-1.flake2 {
 		display: block;
 		left: 15%;
 		top: 25%;
 	}
-	.depth-1.flake3 { 
+	.depth-1.flake3 {
 		display: none;
 	}
-	.depth-1.flake4 { 
+	.depth-1.flake4 {
 		display: none;
 	}
 }
@@ -535,13 +535,13 @@ h3 {
 		-moz-animation: wave 5s 0.1s infinite linear;
 		animation: wave 5s 0.1s infinite linear;
 	}
-	.depth-2.flake1 { 
+	.depth-2.flake1 {
 		display: block;
 		position: absolute;
 		right: 40%;
 		top: 40%;
 	}
-	.depth-2.flake2 { 
+	.depth-2.flake2 {
 		display: none;
 	}
 	.depth-1 {
@@ -555,15 +555,15 @@ h3 {
 		left: 30%;
 		bottom: 20%;
 	}
-	.depth-1.flake2 { 
+	.depth-1.flake2 {
 		display: block;
 		left: 15%;
 		top: 25%;
 	}
-	.depth-1.flake3 { 
+	.depth-1.flake3 {
 		display: none;
 	}
-	.depth-1.flake4 { 
+	.depth-1.flake4 {
 		display: none;
 	}
 }
@@ -601,13 +601,13 @@ h3 {
 		left: 10%;
 		bottom: 40%;
 	}
-	.depth-2.flake1 { 
+	.depth-2.flake1 {
 		display: block;
 		position: absolute;
 		right: 40%;
 		top: 40%;
 	}
-	.depth-2.flake2 { 
+	.depth-2.flake2 {
 		display: none;
 	}
 	.depth-1.flake1 {
@@ -616,18 +616,18 @@ h3 {
 		left: 30%;
 		bottom: 30%;
 	}
-	.depth-1.flake2 { 
+	.depth-1.flake2 {
 		display: block;
 		left: 15%;
 		top: 25%;
 	}
-	.depth-1.flake3 { 
+	.depth-1.flake3 {
 		display: block;
 		position: absolute;
 		bottom: 20%;
 		right: 40%;
 	}
-	.depth-1.flake4 { 
+	.depth-1.flake4 {
 		display: block;
 		right: 40%;
 		top: 25%;
@@ -673,13 +673,13 @@ h3 {
 		left: 10%;
 		bottom: 40%;
 	}
-	.depth-2.flake1 { 
+	.depth-2.flake1 {
 		display: block;
 		position: absolute;
 		right: 40%;
 		top: 40%;
 	}
-	.depth-2.flake2 { 
+	.depth-2.flake2 {
 		display: none;
 	}
 	.depth-1.flake1 {
@@ -688,18 +688,18 @@ h3 {
 		left: 30%;
 		bottom: 30%;
 	}
-	.depth-1.flake2 { 
+	.depth-1.flake2 {
 		display: block;
 		left: 20%;
 		top: 30%;
 	}
-	.depth-1.flake3 { 
+	.depth-1.flake3 {
 		display: block;
 		position: absolute;
 		bottom: 30%;
 		right: 40%;
 	}
-	.depth-1.flake4 { 
+	.depth-1.flake4 {
 		display: block;
 		right: 40%;
 		top: 25%;

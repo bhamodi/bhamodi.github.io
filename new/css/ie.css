@@ -54,14 +54,14 @@ h1 { font-size: 120px; line-height: 120px; }
 .depth-1.flake1 {
 	display: none;
 }
-.depth-1.flake2 { 
+.depth-1.flake2 {
 	display: block;
 	left: 15%;
 	top: 25%;
 }
-.depth-1.flake3 { 
+.depth-1.flake3 {
 	display: none;
 }
-.depth-1.flake4 { 
+.depth-1.flake4 {
 	display: none;
 }

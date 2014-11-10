@@ -90,7 +90,7 @@ function worksCarousel(){
 	var ampleTotalWorks = totalWorks*ampleWork;
 	$('.wrapper-project ul').css('width',ampleTotalWorks)
 		
-	var fragment = document.createDocumentFragment(), 
+	var fragment = document.createDocumentFragment(),
 	li = document.createElement('li');
 	while (totalWorks--) {
 		fragment.appendChild(li.cloneNode(true));

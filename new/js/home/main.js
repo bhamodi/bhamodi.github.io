@@ -68,7 +68,7 @@ $(document).ready(function() {
 		});
 	}
 	
-	/* Scroll Up */ 
+	/* Scroll Up */
 	$('.scrollup').click(function() {
 		$("html,body").animate({ scrollTop: 0 }, 3000);
 		return false;
@@ -150,7 +150,7 @@ $(document).ready(function() {
 		});
 	}
 
-	/* Isotope/ Portfolio Filter PlugIn */    
+	/* Isotope/ Portfolio Filter PlugIn */
 	var container = $('#i-portfolio');	
 	container.isotope({
 		animationEngine : 'best-available',
@@ -170,8 +170,8 @@ $(document).ready(function() {
 		return false;
 	});
 	
-	function splitColumns() { 
-		var winWidth = $(window).width(), 
+	function splitColumns() {
+		var winWidth = $(window).width(),
 			columnNumb = 1;
 		if (winWidth > 1200) {
 			columnNumb = 4;
@@ -183,31 +183,31 @@ $(document).ready(function() {
 			columnNumb = 1;
 		}
 		return columnNumb;
-	}		
+	}
 	
-	function setColumns() { 
-		var winWidth = $(window).width(), 
-			columnNumb = splitColumns(), 
+	function setColumns() {
+		var winWidth = $(window).width(),
+			columnNumb = splitColumns(),
 			postWidth = Math.floor(winWidth / columnNumb),
 			postHeight = Math.floor(postWidth * 0.75);
-		container.find('.element').each(function() { 
-			$(this).css({ 
+			container.find('.element').each(function() {
+			$(this).css({
 				width : postWidth + 'px',
 				height : postHeight + 'px'
 			});
 			var marhei = ($(this).find('div').height()/2)-49;
-			$(this).find('div > span').css({ 
-				margin : marhei+'px 20px' 
+			$(this).find('div > span').css({
+				margin : marhei+'px 20px'
 			});
 		});
 	}
-	function setProjects() { 
+	function setProjects() {
 		setColumns();
 		container.isotope('reLayout');
 	}
 	
 	function loadIsotope() {
-		container.imagesLoaded(function () {setProjects();});
+		container.imagesLoaded(function(){ setProjects(); });
 		setProjects();
 	}
 	
@@ -228,7 +228,7 @@ $(document).ready(function() {
 			scroll: 1,
 			items: {
 				width: 400,
-			//	height: '30%',	//	optionally resize item-height
+				//height: '30%', //optionally resize item-height
 				visible: {
 					min: 1,
 					max: 6
@@ -258,7 +258,7 @@ $(document).ready(function() {
 	}
 	
 	var doit;
-	$(window).bind('resize', function () { 
+	$(window).bind('resize', function () {
 		clearTimeout(doit);
 		doit = setTimeout(resizedw, 1000);
 	});		
@@ -298,47 +298,27 @@ $(document).ready(function() {
 		/* Facts Counter */
 		var count = 0;
 		var dataperc;
-		$('.milestone-counter1').bind('inview', function (event, visible) {
-			loadInviewHelper('.milestone-counter1');
-		});
-		$('.milestone-counter2').bind('inview', function (event, visible) {
-			loadInviewHelper('.milestone-counter2');
-		});
-		$('.milestone-counter3').bind('inview', function (event, visible) {
-			loadInviewHelper('.milestone-counter3');
-		});
-		$('.milestone-counter4').bind('inview', function (event, visible) {
-			loadInviewHelper('.milestone-counter4');
-		});
-	}
-
-	function loadInviewHelper(selector) {
-		if (visible === true && count === 0) {
-			// Element is now visible in the viewport
-			count++;
-			$(selector).each(function() {
-				dataperc = $(this).attr('data-perc'),
-				$(this).find('.milestone-count').delay(6000).countTo({
-					from: 0,
-					to: dataperc,
-					speed: 3500,
-					refreshInterval: 30
+		$('.milestone-counter').bind('inview', function (event, visible) {
+			if (visible === true && count === 0) {
+				// Element is now visible in the viewport
+				count++;
+				$('.milestone-counter').each(function() {
+					dataperc = $(this).attr('data-perc'),
+					$(this).find('.milestone-count').delay(6000).countTo({
+						from: 0,
+						to: dataperc,
+						speed: 3500,
+						refreshInterval: 30
+					});
 				});
-			});
-		}
+			}
+		});
 	}
 	
 	/* Load Functions */
 	loadServices();
 	loadJump();
-	
-	//if ($(window).width()>974) {	
-		loadInview();
-	//} else {
-		$('.milestone-count.highlight').each(function() {
-			$(this).html($(this).parent().attr('data-perc'));
-		});
-	//}
+	loadInview();
 	loadTitleAnimated();
 	loadMenuSelector();
 	loadIsotope();
