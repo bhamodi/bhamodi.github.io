@@ -856,7 +856,7 @@ html, body {
 .project-content img {width: 1180px;}
 .wrapper-project {
 	overflow: hidden;
-	width: 100%;
+	width: 80%;
 	height: auto;
 }
 .wrapper-project ul {margin: 0; padding: 0;}
