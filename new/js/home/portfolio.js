@@ -23,7 +23,6 @@ function obre(quin, dummy){
 			$('.project-window').hide(0)	
 			tanca();
 			canvia();
-			worksCarousel();
 			
 			if(dummy!=1){
 				$("html, body").animate({ scrollTop: $('#anchor4').offset().top }, 300, function(){
@@ -80,49 +79,5 @@ function canvia(){
 	$('.btn-prev').click(function() {
 		enrera();
 		$("html, body").animate({ scrollTop: $('#project-show').offset().top }, 1000);
-	});
-}
-
-// Carousel Project Opened
-function worksCarousel(){
-	var totalWorks = $(".wrapper-project ul li").length;
-	var ampleWork = $(".project-content").width();
-	var ampleTotalWorks = totalWorks*ampleWork;
-	$('.wrapper-project ul').css('width',ampleTotalWorks)
-		
-	var fragment = document.createDocumentFragment(),
-	li = document.createElement('li');
-	while (totalWorks--) {
-		fragment.appendChild(li.cloneNode(true));
-	}
-
-	$('.controller-3 ul').append(fragment);
-
-	var index3 = 0;
-	var pos3 = 1;
-	$('.controller-3 ul li:first-child').addClass('selected');
-
-	$(".controller-3 ul li").click(function(){
-		index3 = $(this).index();
-		$(".wrapper-project").stop().animate({scrollLeft:ampleWork*index3},'slow');
-		$('.controller-3 ul li').removeClass('selected');
-		$(this).addClass('selected');
-		//alert(ampleitem);
-	});
-	$(".w-next").click(function(){
-		if( index3 != $(".controller-3 ul li").size()-1){
-			index3++;
-			$(".wrapper-project").stop().animate({scrollLeft:ampleWork*index3},'slow');
-			pos3++;
-			$('.controller-3 ul li.selected').removeClass('selected').next().addClass('selected');
-		}
-	});
-	$(".w-prev").click(function(){
-		if( index3!=0 ){
-			index3--;
-			$(".wrapper-project").stop().animate({scrollLeft:ampleWork*index3},'slow');
-			pos3--;
-			$('.controller-3 ul li.selected').removeClass('selected').prev().addClass('selected');
-		}
 	});
 }

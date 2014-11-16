@@ -364,33 +364,6 @@ html, body {
 	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 3px;
 }
-.controller-3 {
-	float: right;
-	right: 50%;
-	position: relative;
-	margin: 0 0 60px;
-}
-.controller-3 ul {
-	padding: 0;
-	float: right;
-	right: -50%;
-	position: relative;
-}
-.controller-3 ul li {
-	list-style: none;
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	border: 2px solid #fff;
-	background: #fff;
-	float: left;
-	margin: 0 7px;
-	cursor: pointer;
-	margin: 35px 0 0 15px;
-}
-.controller-3 ul li:hover {border: 2px solid #4ad8ed; background: #4ad8ed;}
-.controller-3 ul li:first-child {margin-left: 0px;}
-.controller-3 ul li:last-child {margin-right: 0px;}
 
 /* Services */
 .services {
@@ -524,25 +497,6 @@ html, body {
 	transition: all 0.3s ease-in-out;
 }
 .ch-grid:hover .p-category {opacity: 1;}
-.nav-wrapper {position: relative;}
-.nav-wrapper:hover .nav-work {opacity: 1}
-.nav-work {
-	opacity: 0;
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-}
-.nav-work div {
-	position: absolute;
-	top: 47%;
-	width: 30px;
-	height: 60px;
-	cursor:pointer;
-	background: url("../img/work-arrows.png") no-repeat;
-}
-.nav-work .w-prev {left: 15px; background-position: bottom left;}
-.nav-work .w-next {right: 15px; background-position: top left;}
 .w-arrows .close {
 	background-position: -264px bottom;
 	border: none;
@@ -854,17 +808,6 @@ html, body {
 	margin: auto;
 }
 .project-content img {width: 1180px;}
-.wrapper-project {
-	overflow: hidden;
-	width: 80%;
-	height: auto;
-}
-.wrapper-project ul {margin: 0; padding: 0;}
-.wrapper-project ul li {
-	list-style: none;
-	float: left;
-	margin: 20px 0 0;
-}
 .project-content .img-project:first-child {border-top: solid 1px #f7f7f7;}
 .description {
 	color: #646464;
@@ -1043,4 +986,4 @@ html, body {
 .green .menu a:hover,.green #nav .current a,.green .contour-btn:hover,.green .second-title span {color: #77be32 !important;}
 .green .spacer,.green .folio-btn:hover,.green .contour-btn,.green .folio-btn.selected,.green .logo span span {background: #77be32;}
 .green .logo span {background: #77be32; background: rgba(119,190,50,0.5);}
-.green .selected,.green .controller-3 ul li:hover {border: 2px solid #77be32 !important; background: #77be32 !important;}
+.green .selected {border: 2px solid #77be32 !important; background: #77be32 !important;}
