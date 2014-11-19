@@ -29,7 +29,7 @@
 
 /* Anything smaller than 976 pixels (devices and browsers) */
 @media only screen and (max-width: 976px) {
-	.hideme, .p-image-02, .newtr {opacity: 1;}
+	.hideme, .newtr {opacity: 1;}
 	.parallax .hideme-slide, .parallax .hideme-slide2 { bottom:0 !important; opacity: 1 !important;}
 	.menu {display: none;}
 	.jump-menu {display: block;}
@@ -90,11 +90,6 @@
 
 /* Mobile landscape size to tablet portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 795px) {
-	.p-image-02 div {left:50%;}
-	.p-image-first {margin-left:-225px;}
-	.p-image-first img {width:450px}
-	.p-image-second {margin-left:-300px;}	
-	.p-image-second img {width:600px}
 	.main-title ul {font-size:20px;}
 	.main-title .second-title { width:345px;}
 	.full {width: 466px;}
@@ -116,7 +111,6 @@
 	.main-title {font-size: 25px;}
 	.main-title span {top: 70px;}
 	.logo {font-size: 23px;}
-	.parallax.p-one { height:600px;}
 	.parallax.p-two {height: 400px;}
 }
 
@@ -126,12 +120,6 @@
 	.hideme-slide {opacity: 1; bottom: auto !important;}
 	.main-title { height: 300px;top: 50%; margin-top:-150px;}
 	.logo { margin-left:20px;}
-	.p-image-02 div { left:50%;}
-	.p-image-first img { width:222px;}
-	.p-image-first {margin-left:-111px;}
-	.p-image-second img { width:300px; }
-	.p-image-second {margin-left:-150px;}
-	.p-image-02 .p-image-second { left:50%;}
 	.main-title ul { font-size:20px;}
 	.main-title .second-title { font-size:13px; width:240px;}
 	.full {width: 300px;}
@@ -156,7 +144,6 @@
 	.main-title {font-size: 30px;}
 	.welcome { font-size:13px;}
 	.main-title span {top: 100px;}
-	.parallax.p-one { height:280px;}
 	.parallax.p-two {height: 255px;}
 	.parallax.p-two .spacer { display:none;}
 	.p-title-one { padding-top:40px;}

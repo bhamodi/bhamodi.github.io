@@ -322,11 +322,7 @@ html, body {
 	position: relative;
 	overflow: hidden;
 }
-.p-image-first {margin-left: -335px;}
-.p-image-second {margin-left: -448px;}
 .parallax.p-two {height: 625px;}
-.parallax.p-one {height: 680px;}
-.p-one {background: url("../img/parallax/parallax-01.jpg") repeat}
 .p-two {background: url("../img/parallax/parallax-02.png") repeat; background-color: #4cddf3;}
 .p-title-one {
 	font-weight: 400;
@@ -353,7 +349,6 @@ html, body {
 	margin: auto;
 }
 .p-image-01 {position: absolute; bottom: -3px; left: 50%; margin-left: -595px;}
-.p-image-02 div {position: absolute; bottom: 0; left: 50%;}
 
 /* Project Feature Scroller and Popup */
 .tag-project {

@@ -284,11 +284,6 @@ $(document).ready(function() {
 				$(this).removeClass('hideme');
 			}
 		});
-		$('.p-image-02').bind('inview', function (event, visible) {
-			if (visible === true) {
-				$('.dontHide').removeClass('hideme-slide');
-			}
-		});
 		$('.newtr').bind('inview', function (event, visible) {
 			if (visible === true) {
 				$('.dontHide').removeClass('hideme-slide2');
