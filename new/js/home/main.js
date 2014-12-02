@@ -318,5 +318,5 @@ $(document).ready(function() {
 	loadMenuSelector();
 	loadIsotope();
 	loadHoverDir();
-	loadLogos();
+	//loadLogos();
 });
