@@ -220,23 +220,6 @@ $(document).ready(function() {
 		});
 	}
 	
-	/* Logos/Company Carousel */
-	function loadLogos() {
-		$('#logos').carouFredSel({
-			responsive: true,
-			width: '100%',
-			scroll: 1,
-			items: {
-				width: 400,
-				//height: '30%', //optionally resize item-height
-				visible: {
-					min: 1,
-					max: 6
-				}
-			}
-		});	
-	}
-	
 	/* Scroll */
 	$(window).bind("scroll", function() {
 		/* Parallax */
@@ -332,5 +315,4 @@ $(document).ready(function() {
 	loadMenuSelector();
 	loadIsotope();
 	loadHoverDir();
-	//loadLogos();
 });

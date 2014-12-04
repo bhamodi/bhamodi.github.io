@@ -7,7 +7,6 @@
 	.f-element {width: 240px;}
 	.highlight {font-size: 75px;}
 	.milestone-details {font-size: 16px;}
-	.logos {width: 900px; margin: 70px auto 220px}
 	.img-spacer {width: 900px; margin-top: 190px;}
 	.img-spacer img {width: 900px;}
 	.img-item {top: -125px;}
@@ -69,7 +68,6 @@
 	.highlight {font-size: 40px;}
 	.project-content {width: 700px;}
 	.project-content img {width: 560px;}
-	.logos {width: 680px; margin: 70px auto 150px}
 	.img-spacer {width: 700px; margin-top: 150px;}
 	.img-spacer img {width: 700px;}
 	.img-item {top: -80px;}
@@ -101,7 +99,6 @@
 	#filters {padding: 0 40px;}
 	.project-content {width: 400px;}
 	.project-content img {width: 320px;}
-	.logos {width: 400px; margin: 70px auto 50px;}
 	.img-spacer {width: 400px; margin-top: 50px;}
 	.img-spacer img {width: 400px;}
 	.img-item {top: 10px;}
@@ -131,7 +128,6 @@
 	#filters {padding: 0 40px;}
 	.project-content {width: 300px;}
 	.project-content img {width: 240px;}
-	.logos {width: 300px; margin: 70px auto 50px;}
 	.img-spacer {width: 300px; margin-top: 0;}
 	.img-spacer img {width: 300px;}
 	.img-item {display: none;}
@@ -148,7 +144,6 @@
 	.parallax.p-two .spacer { display:none;}
 	.p-title-one { padding-top:40px;}
 	.scrollup {display: none !important;}
-	.list_carousel.responsive { margin-bottom:0; margin-top:50px;}
 }
 
 /* Mobile portrait size to mobile landscape size (devices and browsers) */
