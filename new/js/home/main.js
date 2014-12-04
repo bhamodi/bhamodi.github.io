@@ -309,9 +309,17 @@ $(document).ready(function() {
 			}
 		});
 
-		$('.work-exp-1').bind('inview', function (event, visible) {
+		$('.work-exp-left').bind('inview', function (event, visible) {
 			if (visible === true) {
-				$('.work-exp-1').addClass('animated fadeInRightBig');
+				$('.work-exp-left').addClass('animated fadeInRight');
+				$('.work-exp-left').removeClass('hideme');
+			}
+		});
+
+		$('.work-exp-right').bind('inview', function (event, visible) {
+			if (visible === true) {
+				$('.work-exp-right').addClass('animated fadeInLeft');
+				$('.work-exp-right').removeClass('hideme');
 			}
 		});
 	}
