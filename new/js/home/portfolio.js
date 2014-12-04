@@ -25,7 +25,7 @@ function obre(quin, dummy){
 			canvia();
 			
 			if(dummy!=1){
-				$("html, body").animate({ scrollTop: $('#anchor4').offset().top }, 300, function(){
+				$("html, body").animate({ scrollTop: $('#anchor5').offset().top }, 300, function(){
 					$('.project-window').show(0);
 					$('.project-window').animate({height:900}, 500,function(){
 					$('.project-window').css('height','auto');
@@ -40,7 +40,7 @@ function obre(quin, dummy){
 function tanca(){
 	$(".close").click(function() {
 		$(".project-window").slideUp("slow");
-		$("html, body").animate({ scrollTop: $('#anchor4').offset().top }, 1000);
+		$("html, body").animate({ scrollTop: $('#anchor5').offset().top }, 1000);
 		obert=false;
 	});
 }
