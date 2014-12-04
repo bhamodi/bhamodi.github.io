@@ -308,6 +308,12 @@ $(document).ready(function() {
 				});
 			}
 		});
+
+		$('.work-exp-1').bind('inview', function (event, visible) {
+			if (visible === true) {
+				$('.work-exp-1').addClass('animated fadeInRightBig');
+			}
+		});
 	}
 	
 	/* Load Functions */

@@ -328,7 +328,7 @@ html, body {
 	font-weight: 400;
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 15px;
+	font-size: 25px;
 	color: #fff;
 	text-transform: uppercase;
 	opacity: 0.5;
@@ -981,3 +981,80 @@ html, body {
 .green .spacer,.green .folio-btn:hover,.green .contour-btn,.green .folio-btn.selected,.green .logo span span {background: #77be32;}
 .green .logo span {background: #77be32; background: rgba(119,190,50,0.5);}
 .green .selected {border: 2px solid #77be32 !important; background: #77be32 !important;}
+
+.work-container {
+	width: 100%;
+	text-align: center;
+}
+.work-exp-1 {
+	display: inline-block;
+	width: 200px;
+	height: 100px;
+	background-color: blue;
+}
+
+@-webkit-keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+            transform: translate3d(-2000px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+            transform: translate3d(-2000px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeInLeftBig {
+  -webkit-animation-name: fadeInLeftBig;
+          animation-name: fadeInLeftBig;
+}
+
+@-webkit-keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+            transform: translate3d(2000px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+            transform: translate3d(2000px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeInRightBig {
+  -webkit-animation-name: fadeInRightBig;
+          animation-name: fadeInRightBig;
+}
