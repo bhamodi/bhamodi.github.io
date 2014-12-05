@@ -969,16 +969,17 @@ html, body {
 	width: 100%;
 	text-align: center;
 }
-.work-exp-left, .work-exp-right {
+.work-exp-left-1, .work-exp-right-1, .work-exp-left-2, .work-exp-right-2 {
 	display: block;
-	margin-left: calc(50% - 100px);
-	width: 200px;
-	height: 100px;
+	margin-left: calc(50% - 150px);
+	width: 300px;
+	height: 200px;
 	margin-bottom: 40px;
-	background-color: green;
+	background-color: #f7f7f7;
 }
-.work-logo {
-
+.work-logo img {
+	width: 100px;
+	height: 100px;
 }
 .work-company {
 
@@ -1003,21 +1004,18 @@ html, body {
     -webkit-transform: translate3d(-2000px, 0, 0);
             transform: translate3d(-2000px, 0, 0);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: none;
             transform: none;
   }
 }
-
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(-2000px, 0, 0);
             transform: translate3d(-2000px, 0, 0);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: none;
@@ -1036,21 +1034,18 @@ html, body {
     -webkit-transform: translate3d(2000px, 0, 0);
             transform: translate3d(2000px, 0, 0);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: none;
             transform: none;
   }
 }
-
 @keyframes fadeInRight {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(2000px, 0, 0);
             transform: translate3d(2000px, 0, 0);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: none;

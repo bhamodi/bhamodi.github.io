@@ -292,17 +292,32 @@ $(document).ready(function() {
 			}
 		});
 
-		$('.work-exp-left').bind('inview', function (event, visible) {
+		/* Work Experience */
+		$('.work-exp-left-1').bind('inview', function (event, visible) {
 			if (visible === true) {
-				$('.work-exp-left').addClass('animated fadeInRight');
-				$('.work-exp-left').removeClass('hideme');
+				$('.work-exp-left-1').addClass('animated fadeInRight');
+				$('.work-exp-left-1').removeClass('hideme');
 			}
 		});
 
-		$('.work-exp-right').bind('inview', function (event, visible) {
+		$('.work-exp-right-1').bind('inview', function (event, visible) {
 			if (visible === true) {
-				$('.work-exp-right').addClass('animated fadeInLeft');
-				$('.work-exp-right').removeClass('hideme');
+				$('.work-exp-right-1').addClass('animated fadeInLeft');
+				$('.work-exp-right-1').removeClass('hideme');
+			}
+		});
+
+		$('.work-exp-left-2').bind('inview', function (event, visible) {
+			if (visible === true) {
+				$('.work-exp-left-2').addClass('animated fadeInRight');
+				$('.work-exp-left-2').removeClass('hideme');
+			}
+		});
+
+		$('.work-exp-right-2').bind('inview', function (event, visible) {
+			if (visible === true) {
+				$('.work-exp-right-2').addClass('animated fadeInLeft');
+				$('.work-exp-right-2').removeClass('hideme');
 			}
 		});
 	}
