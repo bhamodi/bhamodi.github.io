@@ -977,6 +977,8 @@ html, body {
 	margin-bottom: 40px;
 	background-color: #f7f7f7;
 }
+.work-exp-right-1 { height: 370px;}
+.work-exp-left-2, .work-exp-right-2 { height: 230px;}
 .work-logo img {
 	width: 100px;
 	height: 100px;
@@ -985,6 +987,9 @@ html, body {
 
 }
 .work-position {
+
+}
+.work-location {
 
 }
 .work-description {
