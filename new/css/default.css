@@ -971,9 +971,9 @@ html, body {
 }
 .work-exp-left-1, .work-exp-right-1, .work-exp-left-2, .work-exp-right-2 {
 	display: block;
-	margin-left: calc(50% - 150px);
-	width: 300px;
-	height: 200px;
+	margin-left: calc(50% - 300px);
+	width: 600px;
+	height: 350px;
 	margin-bottom: 40px;
 	background-color: #f7f7f7;
 }
@@ -988,7 +988,7 @@ html, body {
 
 }
 .work-description {
-
+	text-align: left;
 }
 
 .animated {
