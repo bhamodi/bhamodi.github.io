@@ -4,7 +4,7 @@
 @media only screen and (min-width: 976px) and (max-width: 1258px) {
 	.main-title ul {font-size: 65px;}
 	.full {width: 960px;}
-	.f-element {width: 240px;}
+	.fact-element {width: 240px;}
 	.highlight {font-size: 75px;}
 	.milestone-details {font-size: 16px;}
 	.img-spacer {width: 900px; margin-top: 190px;}
@@ -16,14 +16,14 @@
 	.s-container {width: 960px;}
 	.skill-element {width: 240px;}
 	.menu ul li {padding: 0 15px; font-size: 13px;}
-	.p-image-01 {margin-left: -470px; width: 940px;}
-	.p-image-01 img {width: 940px;}
+	.mobile-parallax-image {margin-left: -470px; width: 940px;}
+	.mobile-parallax-image img {width: 940px;}
 	.parallax.p-two { height: 555px;}
 	.main-title {font-size: 60px;  height: 352px;top: 50%; margin-top:-176px;}
-	.ch-grid div span {margin: 50% 20px 0px 20px; font-size: 15px;}
+	.portfolio-element div span {margin: 50% 20px 0px 20px; font-size: 15px;}
 	.main-title .spacer {margin: 5px auto 25px;}
 	.main-title ul {margin: 0;}
-	.p-category {top: 25%;}
+	.project-title {top: 25%;}
 }
 
 /* Anything smaller than 976 pixels (devices and browsers) */
@@ -64,8 +64,8 @@
 	.full {width: 783px;}
 	.s-container {width: 705px;}
 	.skill-element {width: 235px;}
-	.f-element {width: 180px; padding-left: 10px;}
-	.f-ico {margin: 0 auto;}
+	.fact-element {width: 180px; padding-left: 10px;}
+	.fact-icon {margin: 0 auto;}
 	.highlight {font-size: 40px;}
 	.project-content {width: 700px;}
 	.project-content img {width: 560px;}
@@ -74,8 +74,8 @@
 	.img-item {top: -80px;}
 	.footer-container {width: 700px; padding: 90px 0;}
 	.milestone-details {font-size: 15px; padding: 0px 0 100px;}
-	.p-image-01 {margin-left: -380px; width: 760px;}
-	.p-image-01 img {width: 760px;}
+	.mobile-parallax-image {margin-left: -380px; width: 760px;}
+	.mobile-parallax-image img {width: 760px;}
 	.parallax.p-two {height: 520px;}
 	.main-title {font-size: 50px;}
 	.main-title span {top: 100px;}
@@ -96,7 +96,7 @@
 	.title.two {font-size: 17px; padding: 0px 40px; width: auto;}
 	.s-container {width: 440px}
 	.skill-element {width: 220px;}
-	.f-element {width: 100%;}
+	.fact-element {width: 100%;}
 	#filters {padding: 0 40px;}
 	.project-content {width: 400px;}
 	.project-content img {width: 320px;}
@@ -104,8 +104,8 @@
 	.img-spacer img {width: 400px;}
 	.img-item {top: 10px;}
 	.footer-container {width: 400px;}
-	.p-image-01 {margin-left: -230px; width: 460px;}
-	.p-image-01 img {width: 460px;}
+	.mobile-parallax-image {margin-left: -230px; width: 460px;}
+	.mobile-parallax-image img {width: 460px;}
 	.main-title {font-size: 25px;}
 	.main-title span {top: 70px;}
 	.logo {font-size: 23px;}
@@ -125,7 +125,7 @@
 	.title.one {font-size: 19px; padding: 40px 40px 50px; width: auto;}
 	.title.two {font-size: 17px; padding: 0px 40px; width: auto;}
 	.p-title-two { font-size:14px;}
-	.f-element {width: 100%;}
+	.fact-element {width: 100%;}
 	#filters {padding: 0 40px;}
 	.project-content {width: 300px;}
 	.project-content img {width: 240px;}
@@ -135,8 +135,8 @@
 	.footer-container {width: 90%;}
 	.s-container {width: 360px}
 	.skill-element {width: 180px;}
-	.p-image-01 {margin-left: -150px; width: 300px;}
-	.p-image-01 img {width: 300px;}
+	.mobile-parallax-image {margin-left: -150px; width: 300px;}
+	.mobile-parallax-image img {width: 300px;}
 	.content {width: 100%;overflow: hidden;}
 	.main-title {font-size: 30px;}
 	.welcome { font-size:13px;}

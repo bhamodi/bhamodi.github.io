@@ -151,7 +151,7 @@ $(document).ready(function() {
 	}
 
 	/* Isotope/ Portfolio Filter PlugIn */
-	var container = $('#i-portfolio');	
+	var container = $('#portfolio-grid');	
 	container.isotope({
 		animationEngine : 'best-available',
 		animationOptions: {
@@ -213,7 +213,7 @@ $(document).ready(function() {
 	
 	/* Call HoverDir Portfolio RollOver */
 	function loadHoverDir() {
-		$('#i-portfolio > .ch-grid').each(function() {
+		$('#portfolio-grid > .portfolio-element').each(function() {
 			$(this).hoverdir({
 				hoverDelay : 5
 			});

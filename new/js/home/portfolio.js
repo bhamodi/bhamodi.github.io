@@ -3,7 +3,7 @@
 
 var $actual= null;
 var obert=false;
-$(".ch-grid").click(function() {
+$(".portfolio-element").click(function() {
 	obre($(this).attr('id'));
 	$actual=$(this);
 });
@@ -72,11 +72,11 @@ function enrera(){
 }
 
 function canvia(){
-	$('.btn-next').click(function() {
+	$('.next-button').click(function() {
 		seguent();
 		$("html, body").animate({ scrollTop: $('#project-show').offset().top }, 1000);
 	});
-	$('.btn-prev').click(function() {
+	$('.prev-button').click(function() {
 		enrera();
 		$("html, body").animate({ scrollTop: $('#project-show').offset().top }, 1000);
 	});

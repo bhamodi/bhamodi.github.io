@@ -74,7 +74,7 @@ html, body {
 	width: 32px;
 	height: 32px;
 	z-index: 10;
-	background: url("../img/arrow-down.png") no-repeat;
+	background: url("../img/tooltip-bottom-triangle.png") no-repeat;
 	-webkit-animation: bounce 1s infinite;
 }
 @-webkit-keyframes bounce {
@@ -350,7 +350,7 @@ html, body {
 	background: #4cddf3;
 	margin: auto;
 }
-.p-image-01 {position: absolute; bottom: -3px; left: 50%; margin-left: -595px;}
+.mobile-parallax-image {position: absolute; bottom: -3px; left: 50%; margin-left: -595px;}
 
 /* Project Feature Scroller and Popup */
 .tag-project {
@@ -379,7 +379,7 @@ html, body {
 	padding: 5px 23px;
 	margin-bottom: 30px;
 }
-.arrow-down {
+.tooltip-bottom-triangle {
 	display: none;
 	position: absolute;
 	left: 50%;
@@ -434,10 +434,10 @@ html, body {
 	-o-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
 }
-.f-ico.s-one {background-position: 0 0;}
-.f-ico.s-two {background-position: -73px 0;}
-.f-ico.s-three {background-position: -146px 0;}
-.f-ico.s-four {background-position: -219px 0;}
+.fact-icon.first-stat {background-position: 0 0;}
+.fact-icon.second-stat {background-position: -73px 0;}
+.fact-icon.third-stat {background-position: -146px 0;}
+.fact-icon.fourth-stat {background-position: -219px 0;}
 .skill-element {
 	width: 295px;
 	height: auto;
@@ -473,7 +473,7 @@ html, body {
 }
 
 /* Portfolio */
-.p-category {
+.project-title {
 	text-decoration: none;
 	position: relative;
 	margin: 0 auto;
@@ -493,15 +493,15 @@ html, body {
 	-o-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
 }
-.ch-grid:hover .p-category {opacity: 1;}
-.w-arrows .close {
+.portfolio-element:hover .project-title {opacity: 1;}
+.nav-arrows .close {
 	background-position: -264px bottom;
 	border: none;
 	border-radius: none;
 }
-.w-arrows .btn-next {background-position: right bottom; }
-.w-arrows .btn-prev {background-position: -218px bottom;}
-.w-arrows div {
+.nav-arrows .next-button {background-position: right bottom; }
+.nav-arrows .prev-button {background-position: -218px bottom;}
+.nav-arrows div {
 	cursor: pointer;
 	display: block;
 	height: 44px;
@@ -515,38 +515,38 @@ html, body {
 	text-align: center;
 	background: url("../img/color-icons.png") no-repeat bottom right;
 }
-.w-arrows {
+.nav-arrows {
 	overflow: auto;
 	width: 205px;
 	margin: 40px auto 50px;
 }
-.ch-item {float: left; width: 100%; height: 100%; cursor: pointer;}
-.ch-grid img {
+.portfolio-image {float: left; width: 100%; height: 100%; cursor: pointer;}
+.portfolio-element img {
     opacity: 1;
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
 }
-.ch-grid:hover img {
+.portfolio-element:hover img {
     opacity: 0.1;
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
 }
-.ch-grid:hover div {
+.portfolio-element:hover div {
 	opacity: 1;
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
 }
-.ch-grid {
+.portfolio-element {
     overflow: hidden;
 	background-color: #4cddf3;
 }
-.ch-grid div {
+.portfolio-element div {
 	cursor: pointer;
     position: absolute;
     width: 100%;
@@ -558,7 +558,7 @@ html, body {
 	-o-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
 }
-.ch-grid div span {
+.portfolio-element div span {
 	display: block;
 	padding: 0 0;
 	margin: 20% 20px;
@@ -570,14 +570,14 @@ html, body {
 	color: #fff;
 	text-align: center;
 }
-.ch-grid div span span {
+.portfolio-element div span span {
 	margin: auto;
 	text-transform: lowercase;
 	font-size: 16px;
 	font-weight: 400;
 }
-.ch-grid div span span.p-category { margin-bottom:15px;}
-.ch-grid div span span.cat2 { color:#555; padding:0; font-size:13px; text-transform:uppercase;}
+.portfolio-element div span span.project-title { margin-bottom:15px;}
+.portfolio-element div span span.project-position { color:#555; padding:0; font-size:13px; text-transform:uppercase;}
 #options {
 	float: right;
 	right: 50%;
@@ -620,7 +620,7 @@ html, body {
 .folio-btn:first-child {margin-left: 0;}
 .folio-btn:last-child {margin-right: 0;}
 .folio-btn.active {background: #77be32 !important; color: #fff !important;}
-.ch-grid {position: relative; list-style: none;}
+.portfolio-element {position: relative; list-style: none;}
 
 /* Image Footer Spacer */
 .img-spacer {
@@ -726,13 +726,13 @@ html, body {
 }
 
 /* Facts */
-.f-element {
+.fact-element {
 	width: 295px;
 	height: auto;
 	float: left;
 	text-align: center;
 }
-.f-ico {
+.fact-icon {
 	background: url("../img/facts.png") #4cddf3;
 	width: 73px;
 	height: 71px;
@@ -787,7 +787,7 @@ html, body {
 	margin: auto;
 }
 .project-content img {width: 1180px;}
-.project-content .img-project:first-child {border-top: solid 1px #f7f7f7;}
+.project-content .project-container:first-child {border-top: solid 1px #f7f7f7;}
 .description {
 	color: #646464;
 	font-size: 14px;
@@ -962,7 +962,7 @@ html, body {
 #mobile-background {height:100%; display:none; background-image: url("../img/bg.jpg"); background-size: cover;}
 
 /* Green Shaders */
-.green .s-ico,.green .skill-icon,.green .ch-grid,.green .f-ico,.green .p-two {background-color: #77be32;}
+.green .s-ico,.green .skill-icon,.green .portfolio-element,.green .fact-icon,.green .p-two {background-color: #77be32;}
 .green .menu a:hover,.green #nav .current a,.green .contour-btn:hover,.green .second-title span {color: #77be32 !important;}
 .green .spacer,.green .folio-btn:hover,.green .contour-btn,.green .folio-btn.selected,.green .logo span span {background: #77be32;}
 .green .logo span {background: #77be32; background: rgba(119,190,50,0.5);}
