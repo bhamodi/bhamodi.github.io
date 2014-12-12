@@ -208,8 +208,7 @@ html, body {
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
-.continue-button
-:hover {border: 2px solid #fff !important; background-color: #77be32;}
+.continue-button:hover {border: 2px solid #fff !important; background-color: #77be32;}
 .main-title {
 	color: #fff;
 	height: 385px;
@@ -410,7 +409,7 @@ html, body {
 	margin: 0px 7px -3px 0px;
 	width: 15px;
 	height: 15px;
-	background: url("../img/check.png") no-repeat #4cddf3;
+	background: url("../img/check.png") no-repeat #77be32;
 }
 .visible {display: block;}
 .s-container {position: relative; width: 1180px; margin: auto;}
