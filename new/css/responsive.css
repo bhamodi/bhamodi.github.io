@@ -34,10 +34,11 @@
 	.jump-menu {display: block;}
 	.main-title { height: 350px;top: 50%; margin-top:-175px;}
 	.sl-element {margin-bottom: 50px;}
-	.buy-logo { margin-top: 15px;}
+	.continue-button
+ { margin-top: 15px;}
 	html {font-size: 75%;}
-	#nav2 {display: block; position: relative; top: auto; left: auto; font-size: 75%;}
-	#nav2 > a {
+	#navbar {display: block; position: relative; top: auto; left: auto; font-size: 75%;}
+	#navbar > a {
 		width: 50px;
 		height: 75px;
 		text-align: left;
@@ -47,14 +48,14 @@
 		float: right;
 		cursor: pointer;
 	}
-	#nav2:not(:target) > a:first-of-type,#nav2:target > a:last-of-type {display: block;}
-	#nav2.active > ul { display:block;}
-	#nav2 > ul {height: auto; display: none; position: absolute; left: 0; right: 0; margin-top: 75px;}
-	#nav2:target > ul {display: block;}
-	#nav2 > ul > li {width: 100%; float: none;}
-	#nav2 > ul > li > a {height: auto; text-align: left; padding: 0 0.833em;}
-	#nav2 > ul > li:not( :last-child ) > a {border-right: none; border-bottom: 1px dotted #999;}
-	#nav2 li ul {position: static; padding: 1.25em; padding-top: 0;}
+	#navbar:not(:target) > a:first-of-type,#navbar:target > a:last-of-type {display: block;}
+	#navbar.active > ul { display:block;}
+	#navbar > ul {height: auto; display: none; position: absolute; left: 0; right: 0; margin-top: 75px;}
+	#navbar:target > ul {display: block;}
+	#navbar > ul > li {width: 100%; float: none;}
+	#navbar > ul > li > a {height: auto; text-align: left; padding: 0 0.833em;}
+	#navbar > ul > li:not( :last-child ) > a {border-right: none; border-bottom: 1px dotted #999;}
+	#navbar li ul {position: static; padding: 1.25em; padding-top: 0;}
 }
 
 /* Tablet portrait sizes (devices and browsers) */

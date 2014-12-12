@@ -8,7 +8,7 @@ $(document).ready(function() {
 	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
 		// Hide player and display a background picture instead of a video.
 		$('#home').css('display','none');
-		$('#homedevice').css('display','block');
+		$('#mobile-background').css('display','block');
 	} else {
 		$(".player").mb_YTPlayer();
 	}
@@ -56,15 +56,15 @@ $(document).ready(function() {
 	/* Jump Menu */
 	function loadJump() {
 		$('.jump-menu').click(function() {
-			if ($('#nav2').hasClass('active')) {
-				$('#nav2').removeClass('active');
+			if ($('#navbar').hasClass('active')) {
+				$('#navbar').removeClass('active');
 			}
 			else {
-				$('#nav2').addClass('active');
+				$('#navbar').addClass('active');
 			}
 		});
-		$('#nav2 ul li a').click(function() {
-			$('#nav2').removeClass('active');
+		$('#navbar ul li a').click(function() {
+			$('#navbar').removeClass('active');
 		});
 	}
 	
@@ -126,12 +126,12 @@ $(document).ready(function() {
 			var cur = $('.main-title ul li').length;
 			//alert(contador);
 			if (cur == contador) {
-					$('.main-title ul li.t-current').removeClass('t-current');
-					$('.main-title ul li').first().addClass('t-current');
+					$('.main-title ul li.current-title').removeClass('current-title');
+					$('.main-title ul li').first().addClass('current-title');
 					contador = 1;
 				} else {
 					contador++;
-					$('.main-title ul li.t-current').removeClass('t-current').next().addClass('t-current');
+					$('.main-title ul li.current-title').removeClass('current-title').next().addClass('current-title');
 				}
 		};
 		myInterval = setInterval(myFunc, 5000); // Set Animation Interval in Miliseconds
