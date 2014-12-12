@@ -405,7 +405,7 @@ html, body {
 	list-style: none;
 	padding: 0;
 }
-.list-dot {
+.skill-experience {
 	display: inline-block;
 	margin: 0px 7px -3px 0px;
 	width: 15px;
@@ -438,7 +438,7 @@ html, body {
 .f-ico.s-two {background-position: -73px 0;}
 .f-ico.s-three {background-position: -146px 0;}
 .f-ico.s-four {background-position: -219px 0;}
-.sl-element {
+.skill-element {
 	width: 295px;
 	height: auto;
 	float: left;
@@ -446,7 +446,7 @@ html, body {
 	position: relative;
 	overflow: visible;
 }
-.sl-title {
+.skill-title {
 	font-family: 'Open Sans', sans-serif;
 	color: #FFFFFF;
 	font-size: 24px;
@@ -454,7 +454,7 @@ html, body {
 	text-transform: uppercase;
 	padding-top: 63px;
 }
-.sl-ico {
+.skill-icon {
 	cursor: crosshair !important;
 	width: 160px;
 	height: 160px;
@@ -468,7 +468,7 @@ html, body {
 	-moz-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
-}.sl-ico:hover {
+}.skill-icon:hover {
 	background-color: #e6e6e6 !important;
 }
 
@@ -962,7 +962,7 @@ html, body {
 #mobile-background {height:100%; display:none; background-image: url("../img/bg.jpg"); background-size: cover;}
 
 /* Green Shaders */
-.green .s-ico,.green .sl-ico,.green .ch-grid,.green .f-ico,.green .list-dot,.green .p-two {background-color: #77be32;}
+.green .s-ico,.green .skill-icon,.green .ch-grid,.green .f-ico,.green .p-two {background-color: #77be32;}
 .green .menu a:hover,.green #nav .current a,.green .contour-btn:hover,.green .second-title span {color: #77be32 !important;}
 .green .spacer,.green .folio-btn:hover,.green .contour-btn,.green .folio-btn.selected,.green .logo span span {background: #77be32;}
 .green .logo span {background: #77be32; background: rgba(119,190,50,0.5);}

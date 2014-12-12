@@ -14,7 +14,7 @@
 	.project-content {width: 900px;}
 	.project-content img {width: 720px;}
 	.s-container {width: 960px;}
-	.sl-element {width: 240px;}
+	.skill-element {width: 240px;}
 	.menu ul li {padding: 0 15px; font-size: 13px;}
 	.p-image-01 {margin-left: -470px; width: 940px;}
 	.p-image-01 img {width: 940px;}
@@ -33,7 +33,7 @@
 	.menu {display: none;}
 	.jump-menu {display: block;}
 	.main-title { height: 350px;top: 50%; margin-top:-175px;}
-	.sl-element {margin-bottom: 50px;}
+	.skill-element {margin-bottom: 50px;}
 	.continue-button
  { margin-top: 15px;}
 	html {font-size: 75%;}
@@ -63,7 +63,7 @@
 	.main-title ul { font-size:40px;}
 	.full {width: 783px;}
 	.s-container {width: 705px;}
-	.sl-element {width: 235px;}
+	.skill-element {width: 235px;}
 	.f-element {width: 180px; padding-left: 10px;}
 	.f-ico {margin: 0 auto;}
 	.highlight {font-size: 40px;}
@@ -95,7 +95,7 @@
 	.title.one {font-size: 40px; padding: 60px 40px 11px;}
 	.title.two {font-size: 17px; padding: 0px 40px; width: auto;}
 	.s-container {width: 440px}
-	.sl-element {width: 220px;}
+	.skill-element {width: 220px;}
 	.f-element {width: 100%;}
 	#filters {padding: 0 40px;}
 	.project-content {width: 400px;}
@@ -134,7 +134,7 @@
 	.img-item {display: none;}
 	.footer-container {width: 90%;}
 	.s-container {width: 360px}
-	.sl-element {width: 180px;}
+	.skill-element {width: 180px;}
 	.p-image-01 {margin-left: -150px; width: 300px;}
 	.p-image-01 img {width: 300px;}
 	.content {width: 100%;overflow: hidden;}

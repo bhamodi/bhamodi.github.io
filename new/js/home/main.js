@@ -39,11 +39,11 @@ $(document).ready(function() {
 	
 	/* Services RollOver Info */
 	function loadServices() {
-		$(".sl-ico").mouseenter(function() {
-			$(this).parent().find(".s-roll").addClass('visible');
+		$(".skill-icon").mouseenter(function() {
+			$(this).parent().find(".skill-hover").addClass('visible');
 		});
-		$(".sl-ico").mouseleave(function() {
-			$(this).parent().find(".s-roll").removeClass('visible');
+		$(".skill-icon").mouseleave(function() {
+			$(this).parent().find(".skill-hover").removeClass('visible');
 		});
 	}
 	
