@@ -967,6 +967,7 @@ html, body {
 .green .logo span {background: #77be32; background: rgba(119,190,50,0.5);}
 .green .selected {border: 2px solid #77be32 !important; background: #77be32 !important;}
 
+/* Work Experience */
 .work-container {
 	width: 100%;
 	text-align: center;
@@ -986,23 +987,26 @@ html, body {
 	height: 100px;
 }
 .work-company {
-
+	text-transform: uppercase;
 }
-.work-position {
-
-}
-.work-location {
-
-}
+.work-position {}
+.work-location {}
 .work-description {
 	text-align: left;
 }
-
 .animated {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+}
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+}
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+          animation-name: fadeInRight;
 }
 
 @-webkit-keyframes fadeInLeft {
@@ -1030,11 +1034,6 @@ html, body {
   }
 }
 
-.fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
-          animation-name: fadeInLeft;
-}
-
 @-webkit-keyframes fadeInRight {
   0% {
     opacity: 0;
@@ -1058,9 +1057,4 @@ html, body {
     -webkit-transform: none;
             transform: none;
   }
-}
-
-.fadeInRight {
-  -webkit-animation-name: fadeInRight;
-          animation-name: fadeInRight;
 }
