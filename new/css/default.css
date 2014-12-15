@@ -65,15 +65,13 @@ html, body {
 	background: url("../img/audio.png") no-repeat;
 	opacity: 0.5;
 }
-/*
-.bounce {
+.bouncing-arrow {
 	bottom: 40px;
 	margin-left: -16px;
 	left: 50%;
-	position: absolute;
+	position: fixed;
 	width: 32px;
 	height: 32px;
-	z-index: 10;
 	background: url("../img/arrow-down.png") no-repeat;
 	-webkit-animation: bounce 1s infinite;
 }
@@ -83,7 +81,7 @@ html, body {
 	50% {bottom: 60px;}
 	100% {bottom: 40px;}
 }
-*/
+.no-overflow{overflow: hidden;}
 .welcome {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style: italic;

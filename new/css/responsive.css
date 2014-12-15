@@ -145,6 +145,7 @@
 	.parallax.p-two .spacer { display:none;}
 	.p-title-one { padding-top:40px;}
 	.scrollup {display: none !important;}
+	.bouncing-arrow{display: none;}
 }
 
 /* Mobile portrait size to mobile landscape size (devices and browsers) */
@@ -155,5 +156,5 @@
 /* Mobile portrait size to mobile landscape size (devices and browsers) */
 @media only screen and (max-height: 500px) {
 	#video-volume{bottom: 10px;}
-	.bounce{display: none;}
+	.bouncing-arrow{display: none;}
 }
