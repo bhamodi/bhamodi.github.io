@@ -74,7 +74,7 @@ html, body {
 	width: 32px;
 	height: 32px;
 	z-index: 10;
-	background: url("../img/tooltip-bottom-triangle.png") no-repeat;
+	background: url("../img/arrow-down.png") no-repeat;
 	-webkit-animation: bounce 1s infinite;
 }
 @-webkit-keyframes bounce {
