@@ -51,6 +51,20 @@ html, body {
 }
 
 /* Home Slider */
+#home div {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.video-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -10;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+}
 #video-volume {
 	bottom: 80px;
 	color: #FFFFFF;
@@ -70,8 +84,8 @@ html, body {
 	margin-left: -16px;
 	left: 50%;
 	position: fixed;
-	width: 32px;
-	height: 32px;
+	width: 32px !important;
+	height: 32px !important;
 	background: url("../img/arrow-down.png") no-repeat;
 	-webkit-animation: bounce 1s infinite;
 }
@@ -81,27 +95,12 @@ html, body {
 	50% {bottom: 60px;}
 	100% {bottom: 40px;}
 }
-.no-overflow{overflow: hidden;}
 .welcome {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
 	font-size: 26px;
 	letter-spacing: 3px;
 	text-transform: none;
-}
-#home div {
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-.video-mask {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -10;
-	width: 100%;
-	height: 100%;
-	background-color: #000;
 }
 
 /* Pre-load */
