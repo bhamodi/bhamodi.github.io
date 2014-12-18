@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Baraa Hamodi - Home</title>
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+		<link href = "css/bootstrap.min.css" rel = "stylesheet">
+		<link href = "css/styles.css" rel = "stylesheet">
+	</head>
+	<body>
+	
+		<div class = "navbar navbar-inverse navbar-fixed-top">
+            <div class = "container">
+				<a href = "http://baraa.ca" class = "navbar-brand">Baraa Hamodi</a>
+				<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                </button>
+                <div class = "collapse navbar-collapse navHeaderCollapse">
+                    <ul class = "nav navbar-nav navbar-right">
+                        <li class = "active"><a href = "home">Home</a></li>
+                        <li><a href = "resume">Resume</a></li>
+                        <li><a href = "projects">Projects</a></li>
+                        <li><a href = "#contact" data-toggle="modal">Contact Me</a></li>
+                    </ul>
+				</div>
+			</div>
+        </div>
+		
+		<div id = "myCarousel" class = "carousel slide" data-ride = "carousel">
+			<ol class = "carousel-indicators">
+				<li data-target = "#myCarousel" data-slide-to = "0" class = "active"></li>
+				<li data-target = "#myCarousel" data-slide-to = "1"></li>
+				<li data-target = "#myCarousel" data-slide-to = "2"></li>
+			</ol>
+			<div class = "carousel-inner">
+				<div class = "item active">
+					<img src = "img/landscape1.jpg" alt = "Lake" class = "img-responsive">
+					<div class = "carousel-caption">
+						<h3>Beauty in Perfection</h3>
+						<p>Brooklyn Bridge, NY</p>
+					</div>
+				</div>
+				<div class = "item">
+					<img src = "img/landscape2.jpg" alt = "Sunset" class = "img-responsive">
+					<div class = "carousel-caption">
+						<h3>Beauty in Reflection</h3>
+						<p>...</p>
+					</div>
+				</div>
+				<div class = "item">
+					<img src = "img/landscape3.jpg" alt = "House" class = "img-responsive">
+					<div class = "carousel-caption">
+						<h3>Beauty in Leadership</h3>
+						<p>The road less travelled by...</p>
+					</div>
+				</div>
+			</div>
+			<a class = "carousel-control left" href = "#myCarousel" data-slide = "prev">
+				<span class = "icon-prev"></span>
+			</a>
+			<a class = "carousel-control right" href = "#myCarousel" data-slide = "next">
+				<span class = "icon-next"></span>
+			</a>
+		</div>
+		
+		<div class = "container">
+			<div class = "jumbotron text-center">
+                <h1>Hello, World!</h1>
+                <p>Welcome to my personal site where you can find out a lot of neat things about me. You will be provided with an inside look at my resume and cool projects. Furthermore, you will be able to contact me via email to discuss intern/co-op opportunities, project collaboration ideas or just to simply ask me for more information about a certain project.</p>
+			</div>
+			
+			<div class = "jumbotron text-center">
+				<h1>Where else can you see my work?</h1>
+					<p>The links below will take you to some <b>cool</b> things.</p>
+			</div>
+		
+            <div class = "row">
+                <div class = "col-md-4">
+                    <h3><a href = "https://github.com/bhamodi" target = "_blank">GitHub</a></h3>
+                    <p>Here you can find source code for <b>most</b> of my projects, but not all of them. :)<br><br><br></p>
+                    <a href = "https://github.com/bhamodi" target = "_blank" class = "btn btn-default">Read More</a>
+                </div>
+               
+                <div class = "col-md-4">
+                    <h3><a href = "http://www.codecademy.com/bhamodi" target = "_blank">Code Academy</a></h3>
+                    <p>Code Academy has proven to be a great resource for learning and practising my coding skills. I am currently improving my <b>JavaScript</b> and <b>Python</b> skills and I plan to use their courses to also learn <b>PHP, JQuery and Ruby.</b></p>
+                    <a href = "http://www.codecademy.com/bhamodi" target = "_blank" class = "btn btn-default">Read More</a>
+                </div>
+               
+                <div class = "col-md-4">
+                    <h3><a href = "https://www.khanacademy.org/profile/BaraaHamodi/" target = "_blank">Khan Academy</a></h3>
+                    <p>Khan Academy has been an excellent resource for reviewing material learning in class. It is also great to get ahead and to fully understand certain topics.<br><br></p>
+                    <a href = "https://www.khanacademy.org/profile/BaraaHamodi/" target = "_blank" class = "btn btn-default">Read More</a>
+                </div>    
+            </div>
+		</div>
+		
+		<div class = "navbar navbar-inverse navbar-fixed-bottom">
+			<div class = "container">
+                <p class = "navbar-text pull-left">&copy; Baraa Hamodi, 2014</p>
+                <a href = "https://www.linkedin.com/in/baraahamodi" class = "navbar-btn btn-primary btn pull-right description" target = "_blank">Find me on <blackText><strong>Linked</blackText>In</strong></a>
+			</div>
+        </div>
+		
+		<div class = "modal fade" id = "contact" role = "dialog">
+             <div class = "modal-dialog">
+                    <div class = "modal-content">
+						<form name="sentMessage" class="well" id="contactForm"  novalidate>
+							<legend>Contact me!</legend>
+								<div class="control-group">
+									<div class="controls">
+										<input type="text" class="form-control" placeholder="Full Name" id="name" required data-validation-required-message="Please enter your name" />
+											<p class="help-block"></p>
+									</div>
+								</div> 	
+								<div class="control-group">
+									<div class="controls">
+										<input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Please enter your email" />
+									</div>
+								</div> 	
+								<div class="control-group">
+									<div class="controls">
+										<textarea rows="8" cols="100" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter your message" minlength="10" 
+														data-validation-minlength-message="Min 10 characters" maxlength="999" style="resize:none"></textarea>
+									</div>
+								</div> 		 
+								<div id="success"> </div> <!-- For success/fail messages -->
+							<button type="submit" class="btn btn-primary pull-right">Send</button><br />
+						</form>
+					</div>
+				</div>
+			</div>
+			
+			<div class = "modal fade" id = "supportMe" role = "dialog">
+             <div class = "modal-dialog">
+                    <div class = "modal-content">
+						<form name="sentMessage" class="well" id="contactForm"  novalidate>
+							<legend>Support me!</legend>
+							<div class = "alert alert-danger">This feature will be available in the future. For now you can email me.</div>
+								<div class="control-group">
+									<div class="controls">
+										<input type="text" class="form-control" placeholder="Full Name" id="name" required data-validation-required-message="Please enter your name" />
+											<p class="help-block"></p>
+									</div>
+								</div> 	
+								<div class="control-group">
+									<div class="controls">
+										<input type="email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Please enter your email" />
+									</div>
+								</div> 	
+								<div class="control-group">
+									<div class="controls">
+										<textarea rows="8" cols="100" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter your message" minlength="10" 
+														data-validation-minlength-message="Min 10 characters" maxlength="999" style="resize:none"></textarea>
+									</div>
+								</div> 		 
+								<div id="success"> </div> <!-- For success/fail messages -->
+							<button type="submit" class="btn btn-primary pull-right">Send</button><br />
+						</form>
+					</div>
+				</div>
+			</div>
+		
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src = "js/bootstrap.js"></script>
+		<script src = "js/jqBootstrapValidation.js"></script>
+		<script src = "js/contact_me.js"></script>
+	</body>
+</html>
