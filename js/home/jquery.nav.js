@@ -56,7 +56,7 @@
 			if(self.config.filter !== '') {
 				self.$nav = self.$nav.filter(self.config.filter);
 			}
-			
+
 			//Handle clicks on the nav
 			//self.$nav.on('click.onePageNav', $.proxy(self.handleClick, self));
 
@@ -69,22 +69,22 @@
 
 			return this;
 		},
-		
+
 		adjustNav: function(self, $parent) {
 			self.$elem.find('.' + self.config.currentClass).removeClass(self.config.currentClass);
 			$parent.addClass(self.config.currentClass);
 		},
-		
+
 		bindInterval: function() {
 			var self = this;
 			var docHeight;
-			
+
 			self.$win.on('scroll.onePageNav', function() {
 				self.didScroll = true;
 			});
 			self.t = setInterval(function() {
 				docHeight = self.$doc.height();
-				
+
 				//If it was scrolled
 				if(self.didScroll) {
 					self.didScroll = false;
@@ -97,17 +97,17 @@
 				}
 			}, 250);
 		},
-		
+
 		getHash: function($link) {
 			return $link.attr('href').split('#')[1];
 		},
-		
+
 		getPositions: function() {
 			var self = this;
 			var linkHref;
 			var topPos;
 			var $target;
-			
+
 			self.$nav.each(function() {
 				linkHref = self.getHash($(this));
 				$target = $('#' + linkHref);
@@ -117,7 +117,7 @@
 				}
 			});
 		},
-		
+
 		getSection: function(windowPos) {
 			var returnValue = null;
 			var windowHeight = Math.round(this.$win.height() * this.config.scrollThreshold);
@@ -129,13 +129,13 @@
 			}
 			return returnValue;
 		},
-		
+
 		handleClick: function(e) {
 			var self = this;
 			var $link = $(e.currentTarget);
 			var $parent = $link.parent();
 			var newLoc = '#' + self.getHash($link);
-			
+
 			if(!$parent.hasClass(self.config.currentClass)) {
 				//Start callback
 				if(self.config.begin) {
@@ -168,12 +168,12 @@
 			}
 			e.preventDefault();
 		},
-		
+
 		scrollChange: function() {
 			var windowTop = this.$win.scrollTop();
 			var position = this.getSection(windowTop);
 			var $parent;
-			
+
 			//If the position is set
 			if(position !== null) {
 				$parent = this.$elem.find('a[href$="#' + position + '"]').parent();
@@ -188,7 +188,7 @@
 				}
 			}
 		},
-		
+
 		unbindInterval: function() {
 			clearInterval(this.t);
 			this.$win.unbind('scroll.onePageNav');
@@ -202,5 +202,5 @@
 			new OnePageNav(this, options).init();
 		});
 	};
-	
+
 })(jQuery, window , document);

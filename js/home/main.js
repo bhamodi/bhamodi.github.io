@@ -29,14 +29,14 @@ $(document).ready(function() {
 		}
 	});
 
-	/*Validation*/	
+	/*Validation*/
 	$("#contact").validate({
 		submitHandler: function(form) {
 			$(form).ajaxSubmit();
 			$('.formSent').show();
 		}
-	});		
-	
+	});
+
 	/* Services RollOver Info */
 	function loadServices() {
 		$(".skill-icon").mouseenter(function() {
@@ -46,13 +46,13 @@ $(document).ready(function() {
 			$(this).parent().find(".skill-hover").removeClass('visible');
 		});
 	}
-	
+
 	/* Banner */
 	function loadTall() {
 		var altura = $(window).height();
 		$('#home').css('height',altura);
 	}
-	
+
 	/* Jump Menu */
 	function loadJump() {
 		$('.jump-menu').click(function() {
@@ -67,13 +67,13 @@ $(document).ready(function() {
 			$('#navbar').removeClass('active');
 		});
 	}
-	
+
 	/* Scroll Up */
 	$('.scrollup').click(function() {
 		$("html,body").animate({ scrollTop: 0 }, 3000);
 		return false;
 	});
-	
+
 	/* Parallax */
 	function Move(seccio){
 		$(seccio).each(function() {
@@ -84,7 +84,7 @@ $(document).ready(function() {
 			}
 		});
 	}
-	
+
 	/* Counter */
     $.fn.countTo = function(options) {
         // merge the default plugin settings with the custom options
@@ -92,7 +92,7 @@ $(document).ready(function() {
         // how many times to update the value, and how much to increment the value on each update
         var loops = Math.ceil(options.speed / options.refreshInterval),
             increment = (options.to - options.from) / loops;
-			
+
         return $(this).each(function() {
             var _this = this,
                 loopCount = 0,
@@ -151,7 +151,7 @@ $(document).ready(function() {
 	}
 
 	/* Isotope/ Portfolio Filter PlugIn */
-	var container = $('#portfolio-grid');	
+	var container = $('#portfolio-grid');
 	container.isotope({
 		animationEngine : 'best-available',
 		animationOptions: {
@@ -159,17 +159,17 @@ $(document).ready(function() {
 			queue: false
 		},
 		layoutMode: 'fitRows'
-	});	
+	});
 	// filter items when filter link is clicked
 	$('#filters a').click(function() {
 		$('#filters a').removeClass('active');
 		$(this).addClass('active');
 		var selector = $(this).attr('data-option-value');
 		container.isotope({ filter: selector });
-		setProjects();		
+		setProjects();
 		return false;
 	});
-	
+
 	function splitColumns() {
 		var winWidth = $(window).width(),
 			columnNumb = 1;
@@ -184,7 +184,7 @@ $(document).ready(function() {
 		}
 		return columnNumb;
 	}
-	
+
 	function setColumns() {
 		var winWidth = $(window).width(),
 			columnNumb = splitColumns(),
@@ -205,12 +205,12 @@ $(document).ready(function() {
 		setColumns();
 		container.isotope('reLayout');
 	}
-	
+
 	function loadIsotope() {
 		container.imagesLoaded(function(){ setProjects(); });
 		setProjects();
 	}
-	
+
 	/* Call HoverDir Portfolio RollOver */
 	function loadHoverDir() {
 		$('#portfolio-grid > .portfolio-element').each(function() {
@@ -219,12 +219,12 @@ $(document).ready(function() {
 			});
 		});
 	}
-	
+
 	/* Scroll */
 	$(window).bind("scroll", function() {
 		/* Parallax */
 		Move('.paraOn'); //move the background images in relation to the movement of the scrollbar
-		
+
 		/* Scroll Top Btn */
 		if ($(this).scrollTop() > $(window).height()-1) {
 			$('.scrollup').fadeIn();
@@ -232,20 +232,20 @@ $(document).ready(function() {
 			$('.scrollup').fadeOut();
 		}
 	});
-	
+
 	/* Resize */
 	function resizedw() {
 		// Haven't resized in 500ms!
 		setProjects();
 		loadTall();
 	}
-	
+
 	var doit;
 	$(window).bind('resize', function () {
 		clearTimeout(doit);
 		doit = setTimeout(resizedw, 1000);
-	});		
-	
+	});
+
 	/* Inview */
 	function loadInview() {
 		/* Parallax */
@@ -259,7 +259,7 @@ $(document).ready(function() {
 			$(this).removeClass('paraOn');
 			}
 		});
-		
+
 		/* Fade In Elements */
 		$('.hideme').bind('inview', function (event, visible) {
 			if (visible === true) {
@@ -272,7 +272,7 @@ $(document).ready(function() {
 				$('.dontHide').removeClass('hideme-slide2');
 			}
 		});
-		
+
 		/* Facts Counter */
 		var count = 0;
 		var dataperc;
@@ -321,7 +321,7 @@ $(document).ready(function() {
 			}
 		});
 	}
-	
+
 	/* Load Functions */
 	loadServices();
 	loadJump();

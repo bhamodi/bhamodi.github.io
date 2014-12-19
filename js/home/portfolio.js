@@ -17,20 +17,20 @@ obre('portfolio-01.html',1);
 function obre(quin, dummy){
 	$.ajax({
 		url: quin,
-		success: function(data) {					
+		success: function(data) {
 			$('.project-content').html(data);
 			$(".project-content").hide(0)
-			$('.project-window').hide(0)	
+			$('.project-window').hide(0)
 			tanca();
 			canvia();
-			
+
 			if(dummy!=1){
 				$("html, body").animate({ scrollTop: $('#anchor5').offset().top }, 300, function(){
 					$('.project-window').show(0);
 					$('.project-window').animate({height:900}, 500,function(){
 					$('.project-window').css('height','auto');
 					$(".project-content").fadeIn("slow");
-					});				
+					});
 				});
 			}
 		}
