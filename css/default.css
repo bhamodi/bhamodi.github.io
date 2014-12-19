@@ -652,7 +652,7 @@ html, body {
 
 /* Form */
 .error { font-size:13px;}
-.formSent {
+.formSent, .formError {
 	display: none;
 }
 .alert {
@@ -667,6 +667,11 @@ html, body {
 	color: #468847;
 	background-color: #dff0d8;
 	border-color: #d6e9c6;
+}
+.alert-error {
+	color: #b94a48;
+	background-color: #f2dede;
+	border-color: #eed3d7;
 }
 .bay {
 	overflow: hidden;
