@@ -137,13 +137,11 @@ html, body {
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }.menu a:hover {
-	color: #4cddf3;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
-#nav .current a {color: #4cddf3 !important;}
 .logo {
 	float: left;
 	color: #000;
@@ -160,15 +158,12 @@ html, body {
 	float: left;
 	width: 20px;
 	height: 20px;
-	background: #4cddf3;
-	background: rgba(76,221,243,0.5);
 	margin: 26px 7px 0 0;
 }
 .logo span span {
 	position: absolute;
 	width: 10px;
 	height: 10px;
-	background: #4cddf3;
 	bottom: 0;
 	left: 0;
 }
@@ -180,9 +175,8 @@ html, body {
 	margin: auto;
 	font-weight: 400;
 }
-.second-title span {color: #4cddf3; font-weight: 600;}
-.continue-button
- {
+.second-title span {font-weight: 600;}
+.continue-button {
 	width: 135px;
 	margin: 40px auto 0;
 	height: auto;
@@ -321,7 +315,7 @@ html, body {
 	overflow: hidden;
 }
 .parallax.p-two {height: 625px;}
-.p-two {background: url("../img/parallax/parallax-02.png") repeat; background-color: #4cddf3;}
+.p-two {background: url("../img/parallax/parallax-02.png") repeat;}
 .p-title-one {
 	font-weight: 400;
 	text-align: center;
@@ -343,7 +337,6 @@ html, body {
 .spacer {
 	width: 100px;
 	height: 2px;
-	background: #4cddf3;
 	margin: auto;
 }
 .mobile-parallax-image {position: absolute; bottom: -3px; left: 50%; margin-left: -595px;}
@@ -413,7 +406,6 @@ html, body {
 .s-ico {
 	width: 170px;
 	height: 170px;
-	background-color: #4cddf3;
 	cursor: pointer;
 	border-radius: 50%;
 	margin: 10px auto 40px;
@@ -454,7 +446,6 @@ html, body {
 	cursor: crosshair !important;
 	width: 160px;
 	height: 160px;
-	background-color: #4cddf3;
 	cursor: pointer;
 	border-radius: 50%;
 	margin: 40px auto 30px;
@@ -540,7 +531,6 @@ html, body {
 }
 .portfolio-element {
     overflow: hidden;
-	background-color: #4cddf3;
 }
 .portfolio-element div {
 	cursor: pointer;
@@ -606,7 +596,6 @@ html, body {
 	transition: all 0.4s ease-in-out;
 }
 .folio-btn:hover {
-	background: #4cddf3;
 	color: #fff;
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
@@ -705,7 +694,6 @@ html, body {
 	font-family: 'Montserrat', sans-serif;
 	padding: 3px 30px;
 	border-radius: 3px;
-	background: #4cddf3;
 	border: none;
 	-webkit-transition: all 0.4s ease-out;
 	-moz-transition: all 0.4s ease-out;
@@ -713,7 +701,6 @@ html, body {
 	transition: all 0.4s ease-out;
 }
 .contour-btn:hover {
-	color: #4cddf3;
 	background: #f7f7f7 !important;
 	-webkit-transition: all 0.4s ease-out;
 	-moz-transition: all 0.4s ease-out;
@@ -729,7 +716,7 @@ html, body {
 	text-align: center;
 }
 .fact-icon {
-	background: url("../img/facts.png") #4cddf3;
+	background: url("../img/facts.png");
 	width: 73px;
 	height: 71px;
 	margin: 0 auto 20px;
