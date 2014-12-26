@@ -171,7 +171,6 @@
   Plugin.prototype.propertyCache = {};
 
   Plugin.prototype.initialise = function() {
-
     // Configure Styles
     if (this.$context.css('position') === 'static') {
       this.$context.css({
@@ -190,7 +189,6 @@
   };
 
   Plugin.prototype.updateLayers = function() {
-
     // Cache Layer Elements
     this.$layers = this.$context.find('.layer');
     this.depths = [];
@@ -399,7 +397,6 @@
   };
 
   Plugin.prototype.onDeviceOrientation = function(event) {
-
     // Validate environment and event properties.
     if (!this.desktop && event.beta !== null && event.gamma !== null) {
 
@@ -431,7 +428,6 @@
   };
 
   Plugin.prototype.onMouseMove = function(event) {
-
     // Cache mouse coordinates.
     var clientX = event.clientX;
     var clientY = event.clientY;
