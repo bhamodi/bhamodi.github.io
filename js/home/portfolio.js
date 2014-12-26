@@ -4,7 +4,7 @@
 var $actual= null;
 var obert=false;
 $(".portfolio-element").click(function() {
-	obre($(this).attr('id'));
+	openProject($(this).attr('id'));
 	$actual=$(this);
 });
 $(".folio-btn").click(function() {
@@ -12,17 +12,17 @@ $(".folio-btn").click(function() {
 	obert=false;
 });
 
-obre('portfolio-01.html',1);
+openProject('portfolio-01.html',1);
 
-function obre(quin, dummy){
+function openProject(quin, dummy){
 	$.ajax({
 		url: quin,
 		success: function(data) {
 			$('.project-content').html(data);
 			$(".project-content").hide(0)
 			$('.project-window').hide(0)
-			tanca();
-			canvia();
+			closeProject();
+			changeProject();
 
 			if(dummy!=1){
 				$("html, body").animate({ scrollTop: $('#anchor5').offset().top }, 300, function(){
@@ -37,7 +37,7 @@ function obre(quin, dummy){
 	});
 }
 
-function tanca(){
+function closeProject(){
 	$(".close").click(function() {
 		$(".project-window").slideUp("slow");
 		$("html, body").animate({ scrollTop: $('#anchor5').offset().top }, 1000);
@@ -45,39 +45,39 @@ function tanca(){
 	});
 }
 
-function seguent(){
+function nextProject(){
 	if($actual.next().hasClass('final')){
 		$actual=$($('.inici').next());
 	}else{
 		$actual=$($actual.next());
 	}
 	if($actual.hasClass('isotope-hidden')){
-		seguent();
+		nextProject();
 	}else{
-		obre($actual.attr('id'));
+		openProject($actual.attr('id'));
 	}
 }
 
-function enrera(){
+function prevProject(){
 	if($actual.prev().hasClass('inici')){
 		$actual=$($('.final').prev());
 	}else{
 		$actual=$($actual.prev());
 	}
 	if($actual.hasClass('isotope-hidden')){
-		enrera();
+		prevProject();
 	}else{
-		obre($actual.attr('id'));
+		openProject($actual.attr('id'));
 	}
 }
 
-function canvia(){
+function changeProject(){
 	$('.next-button').click(function() {
-		seguent();
+		nextProject();
 		$("html, body").animate({ scrollTop: $('#project-show').offset().top }, 1000);
 	});
 	$('.prev-button').click(function() {
-		enrera();
+		prevProject();
 		$("html, body").animate({ scrollTop: $('#project-show').offset().top }, 1000);
 	});
 }
