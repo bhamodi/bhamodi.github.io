@@ -36,19 +36,6 @@ html, body {
 	top: 0;
 	right: 0;
 }
-.jump-selector {
-	border-radius: 0;
-	background: url("../img/menu-icon-blk.png") no-repeat;
-	position: absolute;
-	width: 50px;
-	height: 75px;
-	top: 0;
-	right: 0;
-	border: none;
-	-webkit-appearance: none;
-	padding-right: 50px;
-	cursor: pointer;
-}
 
 /* Home Slider */
 #home div {
@@ -403,25 +390,6 @@ html, body {
 }
 .visible {display: block;}
 .s-container {position: relative; width: 1180px; margin: auto;}
-.s-ico {
-	width: 170px;
-	height: 170px;
-	cursor: pointer;
-	border-radius: 50%;
-	margin: 10px auto 40px;
-	background-position: center center;
-	background-repeat: no-repeat;
-	-webkit-transition: all 0.4s ease-in-out;
-	-moz-transition: all 0.4s ease-in-out;
-	-o-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
-}.s-ico:hover {
-	background-color: #e6e6e6;
-	-webkit-transition: all 0.4s ease-in-out;
-	-moz-transition: all 0.4s ease-in-out;
-	-o-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
-}
 .fact-icon.first-stat {background-position: 0 0;}
 .fact-icon.second-stat {background-position: -73px 0;}
 .fact-icon.third-stat {background-position: -146px 0;}
@@ -945,7 +913,7 @@ html, body {
 #mobile-background {height:100%; display:none; background-image: url("../img/bg.jpg"); background-size: cover;}
 
 /* Green Shaders */
-.green .s-ico,.green .skill-icon,.green .portfolio-element,.green .fact-icon,.green .p-two {background-color: #77be32;}
+.green .skill-icon,.green .portfolio-element,.green .fact-icon,.green .p-two {background-color: #77be32;}
 .green .menu a:hover,.green #nav .current a,.green .contour-btn:hover,.green .second-title span {color: #77be32 !important;}
 .green .spacer,.green .folio-btn:hover,.green .contour-btn,.green .folio-btn.selected,.green .logo span span {background: #77be32;}
 .green .logo span {background: #77be32; background: rgba(119,190,50,0.5);}

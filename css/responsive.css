@@ -34,8 +34,7 @@
 	.jump-menu {display: block;}
 	.main-title { height: 350px;top: 50%; margin-top:-175px;}
 	.skill-element {margin-bottom: 50px;}
-	.continue-button
- { margin-top: 15px;}
+	.continue-button {margin-top: 15px;}
 	html {font-size: 75%;}
 	#navbar {display: block; position: relative; top: auto; left: auto; font-size: 75%;}
 	#navbar > a {
