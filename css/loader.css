@@ -1,69 +1,66 @@
 .preloader {
-	display: block;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background: white;
-    text-align: center;
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: white;
+  text-align: center;
 }
 .loading {
-	overflow: hidden;
-	position: absolute;
-	top: 50%;
-	margin-top: -12px;
-	left: 50%;
-	margin-left: -50px;
-	width: 100px;
-	height: 24px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+  left: 50%;
+  margin-left: -50px;
+  width: 100px;
+  height: 24px;
 }
 .progress {
-	display: block;
-	position: absolute;
-	bottom: 0;
-	overflow: hidden;
-	width: 100px;
-	height: 1px;
-	left: -102px;
-	background-color: #00d9ec;
-	-webkit-animation: loader-anim 1s 0s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    -moz-animation: loader-anim 1s 0s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    animation: loader-anim 1s 0s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86)
+  display: block;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  width: 100px;
+  height: 1px;
+  left: -102px;
+  background-color: #00d9ec;
+  -webkit-animation: loader-anim 1s 0s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -moz-animation: loader-anim 1s 0s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation: loader-anim 1s 0s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86)
 }
 h3 {
-    margin: 0;
-    font-family: "Montserrat", arial, sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 1em;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #161a1b;
+  margin: 0;
+  font-family: "Montserrat", arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #161a1b;
 }
 @-webkit-keyframes loader-anim {
-    0% {
-        left: -102px
-    }
-
-    100% {
-        left: 102px
-    }
+  0% {
+    left: -102px
+  }
+  100% {
+    left: 102px
+  }
 }
 @-moz-keyframes loader-anim {
-    0% {
-        left: -102px
-    }
-
-    100% {
-        left: 102px
-    }
+  0% {
+    left: -102px
+  }
+  100% {
+    left: 102px
+  }
 }
 @keyframes loader-anim {
-    0% {
-        left: -102px
-    }
-
-    100% {
-        left: 102px
-    }
+  0% {
+    left: -102px
+  }
+  100% {
+    left: 102px
+  }
 }

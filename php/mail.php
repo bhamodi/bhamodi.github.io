@@ -1,8 +1,8 @@
 <?php
 // Check if the input fields are empty.
 if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message']) || !FILTER_VAR($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-	echo "No arguments Provided!";
-	return false;
+    echo "No arguments Provided!";
+    return false;
 }
 
 $name = $_POST['name'];
@@ -16,7 +16,7 @@ $email_body =
     "You have received a new message.\n".
     "Here are the details:\n\n".
     "Name: $name\n".
-	"Email: $email_address\n".
+    "Email: $email_address\n".
     "Message: $message";
 $headers = "Reply-To: $email_address";
 
