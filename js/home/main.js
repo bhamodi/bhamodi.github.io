@@ -29,12 +29,28 @@ $(document).ready(function () {
     }
   });
 
-  /*Validation*/
+  /* Validation */
   $("#contact").validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 5
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      message: {
+        required: true,
+        minlength: 20
+      }
+    },
+    invalidHandler: function (event, validator) {
+      $('.alert-success').hide();
+    },
     submitHandler: function (form) {
       $(form).ajaxSubmit();
-      //TODO: Show form failed to send if server doesn't respond with OK status.
-      $('.formSent').show();
+      $('.alert-success').show();
     }
   });
 

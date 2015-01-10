@@ -412,21 +412,21 @@
                 <div class="spacer"></div>
                 <div class="title two">I like to create things with fun, like-minded people.<br>Feel free to say hello!</div>
                 <div class="hideme dontHide">
-                    <form method="post" id="contact" class="peThemeContactForm" action="php/mail.php" enctype="text/plain">
+                    <form method="post" id="contact" class="contactForm" action="php/mail.php" enctype="text/plain">
                         <div id="personal" class="bay form-horizontal">
                             <div class="control-group">
                                 <div class="controls">
-                                    <input class="required span9" type="text" name="name" data-fieldid="0" value="Full Name" onclick="if(this.value=='Full Name') this.value=''" onblur="if(this.value=='') this.value='Full Name'">
+                                    <input class="span9" type="text" name="name" placeholder="FULL NAME">
                                 </div>
                             </div>
                             <div class="control-group">
                                 <div class="controls">
-                                    <input class="required span9" type="email" name="email" data-fieldid="1" value="Your Email" onclick="if(this.value=='Your Email') this.value=''" onblur="if(this.value=='') this.value='Your Email'">
+                                    <input class="span9" type="text" name="email" placeholder="Your Email">
                                 </div>
                             </div>
                             <div class="control-group">
                                 <div class="controls">
-                                    <textarea name="message" rows="12" class="required span9" data-fieldid="2" onclick="if(this.value=='Type Message') this.value=''" onblur="if(this.value=='') this.value='Type Message'">Type Message</textarea>
+                                    <textarea class="span9" type="text" name="message" rows="12" placeholder="TYPE MESSAGE"></textarea>
                                 </div>
                             </div>
                             <div class="control-group">
@@ -435,10 +435,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="notifications">
-                            <div id="contactFormSent" class="formSent alert alert-success"><strong>Thank you for contacting me.</strong></div>
-                            <div id="contactFormError" class="formError alert alert-error"><strong>Oops, An error has ocurred!</strong> See the marked fields above to fix the errors.</div>
-                        </div>
+                        <div class="alert-success"><strong>Thank you for contacting me.</strong></div>
                     </form>
                 </div>
                 <div class="contact">
