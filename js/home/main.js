@@ -10,11 +10,11 @@ $(document).ready(function () {
     $('#home').css('display', 'none');
     $('#mobile-background').css('display', 'block');
   } else {
-    $(".player").mb_YTPlayer();
+    $('.player').mb_YTPlayer();
   }
 
   $('body').addClass('green');
-  $(".header").sticky({ topSpacing: 0 });
+  $('.header').sticky({ topSpacing: 0 });
 
   /* Menu Anchors */
   $('a[href*=#]').click(function () {
@@ -30,7 +30,7 @@ $(document).ready(function () {
   });
 
   /* Validation */
-  $("#contact").validate({
+  $('#contact').validate({
     rules: {
       name: {
         required: true,
@@ -51,16 +51,17 @@ $(document).ready(function () {
     submitHandler: function (form) {
       $(form).ajaxSubmit();
       $('.alert-success').show();
+      $('#contact')[0].reset();
     }
   });
 
   /* Services RollOver Info */
   function loadServices() {
-    $(".skill-icon").mouseenter(function () {
-      $(this).parent().find(".skill-hover").addClass('visible');
+    $('.skill-icon').mouseenter(function () {
+      $(this).parent().find('.skill-hover').addClass('visible');
     });
-    $(".skill-icon").mouseleave(function () {
-      $(this).parent().find(".skill-hover").removeClass('visible');
+    $('.skill-icon').mouseleave(function () {
+      $(this).parent().find('.skill-hover').removeClass('visible');
     });
   }
 
@@ -85,7 +86,7 @@ $(document).ready(function () {
 
   /* Scroll Up */
   $('.scrollup').click(function () {
-    $("html,body").animate({ scrollTop: 0 }, 3000);
+    $('html,body').animate({ scrollTop: 0 }, 3000);
     return false;
   });
 
@@ -237,7 +238,7 @@ $(document).ready(function () {
   }
 
   /* Scroll */
-  $(window).bind("scroll", function () {
+  $(window).bind('scroll', function () {
     /* Parallax */
     move('.paraOn'); //move the background images in relation to the movement of the scrollbar
 
