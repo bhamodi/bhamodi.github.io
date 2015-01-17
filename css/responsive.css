@@ -2,7 +2,7 @@
 
 /* Large tablets and small computer monitors (devices and browsers) */
 @media only screen and (min-width: 976px) and (max-width: 1280px) {
-  .main-title ul {font-size: 65px;}
+  .main-title ul {font-size: 70px;}
   .full {width: 960px;}
   .fact-element {width: 240px;}
   .highlight {font-size: 65px;}
@@ -22,7 +22,6 @@
   .main-title {font-size: 60px;  height: 352px;top: 50%; margin-top:-176px;}
   .portfolio-element div span {margin: 50% 20px 0px 20px; font-size: 15px;}
   .main-title .spacer {margin: 5px auto 25px;}
-  .main-title ul {margin: 0;}
   .project-title {top: 25%;}
 }
 
@@ -58,7 +57,7 @@
 
 /* Tablet portrait sizes (devices and browsers) */
 @media only screen and (min-width: 796px) and (max-width: 974px) {
-  .main-title ul {font-size:40px;}
+  .main-title ul {font-size:60px;}
   .full {width: 783px;}
   .s-container {width: 705px;}
   .skill-element {width: 235px;}
@@ -81,14 +80,13 @@
 
 /* All mobile sizes (devices and browser) */
 @media only screen and (max-width: 795px) {
-  .main-title ul {margin-top:0; height:80px;}
+  .main-title ul {margin-top:0; height:80px; font-size: 35px;}
   .main-title .spacer {margin:20px auto;}
   .work-exp-left-1, .work-exp-right-1, .work-exp-left-2, .work-exp-right-2 {width: 100%; margin-left: 0;}
 }
 
 /* Mobile landscape size to tablet portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 795px) {
-  .main-title ul {font-size:20px;}
   .main-title .second-title {width:345px;}
   .full {width: 466px;}
   .title.one {font-size: 40px; padding: 60px 40px 11px;}
@@ -122,7 +120,6 @@
   .title-container {width: 90%;}
   .main-title {height: 300px;top: 50%; margin-top:-150px;}
   .logo {margin-left:20px;}
-  .main-title ul {font-size:35px;}
   .main-title ul li {line-height: 50px;}
   .main-title .second-title {font-size:14px; width:90%;}
   .full {width: 300px;}
