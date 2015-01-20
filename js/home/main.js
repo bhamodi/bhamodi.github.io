@@ -10,7 +10,7 @@ $(document).ready(function () {
     $('#home').css('display', 'none');
     $('#mobile-background').css('display', 'block');
   } else {
-    $('.player').mb_YTPlayer();
+    $('.player').YTPlayer();
   }
 
   $('body').addClass('green');
