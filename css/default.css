@@ -789,12 +789,12 @@ html, body {
   background: url(../img/stackoverflow.png) no-repeat center;
   background-size: 65px 65px;
 }
-.contact .icons .codecademy {
-  background: url(../img/codecademy.png) no-repeat center;
+.contact .icons .hackerrank {
+  background: url(../img/hackerrank.png) no-repeat center;
   background-size: 65px 65px;
 }
-.contact .icons .khanacademy {
-  background: url(../img/khanacademy.png) no-repeat center;
+.contact .icons .codecademy {
+  background: url(../img/codecademy.png) no-repeat center;
   background-size: 65px 65px;
 }
 .contact .icons .linkedin {
