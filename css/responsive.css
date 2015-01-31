@@ -154,6 +154,13 @@
   .work-exp-right-2 {height: 205px;}
   .tooltip {width: 100%; left: 0%; margin-left: 0px; padding: 0px;}
   .details {line-height: 25px; padding: 5px;}
+  .contact .icons li {margin-right: 5px;}
+  .contact .icons li a {width: 55px; height: 55px;}
+  .contact .icons .github {background-size: 55px 55px;}
+  .contact .icons .stackoverflow {background-size: 55px 55px;}
+  .contact .icons .hackerrank {background-size: 55px 55px;}
+  .contact .icons .codecademy {background-size: 55px 55px;}
+  .contact .icons .linkedin {background-size: 55px 55px;}
 }
 
 /* Small Mobile Screens */
@@ -162,6 +169,13 @@
   .skill-element {width: 50%;}
   .skill-icon {width: 130px; height: 130px;}
   .skill-title {padding-top: 50px; font-size: 20px;}
+  .contact .icons li {margin-right: 5px;}
+  .contact .icons li a {width: 50px; height: 50px;}
+  .contact .icons .github {background-size: 50px 50px;}
+  .contact .icons .stackoverflow {background-size: 50px 50px;}
+  .contact .icons .hackerrank {background-size: 50px 50px;}
+  .contact .icons .codecademy {background-size: 50px 50px;}
+  .contact .icons .linkedin {background-size: 50px 50px;}
 }
 
 /* Mobile portrait size to mobile landscape size (devices and browsers) */
