@@ -921,7 +921,10 @@ html, body {
 }
 .work-exp-left-1, .work-exp-right-1, .work-exp-left-2, .work-exp-right-2 {
   display: block;
-  margin-left: calc(50% - 325px);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 650px;
   margin-bottom: 40px;
   background-color: #f7f7f7;

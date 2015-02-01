@@ -775,7 +775,10 @@ h3 {
 /* Button -------------------------------------------------------------- */
 .button {
   width: 280px;
-  left: calc(50% - 140px);
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
   bottom: 23%;
   text-decoration: none;
