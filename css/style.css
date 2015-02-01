@@ -57,7 +57,7 @@ h3 {
 .sub-title {
   font-size: 20px;
   margin-top: 5px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 /* Content Styles -------------------------------------------------------------- */
@@ -155,7 +155,7 @@ h3 {
   display: inline-block;
   margin-right: 10px;
 }
-.contact .icons li:last-of-type { margin-right: 0px; }
+.contact .icons li:last-of-type { margin-right: 0; }
 .contact .icons li a {
   display: block;
   width: 45px;
@@ -291,7 +291,7 @@ h3 {
   h1 { font-size: 69px; line-height: 69px; }
   .sub-title { font-size: ; line-height: ; margin-top: 10px; }
   .title { top: 15%;}
-  .contact .icons { margin-bottom: 0px; }
+  .contact .icons { margin-bottom: 0; }
   /* POSITIONING */
   .depth-5 {
     position: absolute;
@@ -834,7 +834,7 @@ h3 {
     bottom: 6%;
   }
   .contact .icons {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 

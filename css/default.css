@@ -261,7 +261,7 @@ html, body {
   width: 0;
   height: 0;
   border: 30px solid #f7f7f7;
-  border-bottom: 0px solid transparent !important;
+  border-bottom: 0 solid transparent !important;
   border-right: 30px solid transparent !important;
   border-left: 30px solid transparent !important;
   left: 50%;
@@ -383,7 +383,7 @@ html, body {
 }
 .skill-experience {
   display: inline-block;
-  margin: 0px 7px -3px 0px;
+  margin: 0 7px -3px 0;
   width: 15px;
   height: 15px;
   background: url("../img/check.png") no-repeat #77be32;
@@ -551,7 +551,7 @@ html, body {
   float: left;
   cursor: pointer;
   border-radius: 3px;
-  padding: 0px 22px;
+  padding: 0 22px;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   color: #c1c1c1;
@@ -770,7 +770,7 @@ html, body {
   display: inline-block;
   margin-right: 10px;
 }
-.contact .icons li:last-of-type {margin-right: 0px;}
+.contact .icons li:last-of-type {margin-right: 0;}
 .contact .icons li a {
   display: block;
   width: 65px;

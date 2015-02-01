@@ -20,7 +20,7 @@
   .mobile-parallax-image img {width: 940px;}
   .parallax.p-two {height: 555px;}
   .main-title {font-size: 60px;  height: 352px;top: 50%; margin-top:-176px;}
-  .portfolio-element div span {margin: 50% 20px 0px 20px; font-size: 15px;}
+  .portfolio-element div span {margin: 50% 20px 0 20px; font-size: 15px;}
   .main-title .spacer {margin: 5px auto 25px;}
   .project-title {top: 25%;}
 }
@@ -70,7 +70,7 @@
   .img-spacer img {width: 700px;}
   .img-item {top: -80px;}
   .footer-container {width: 700px; padding: 90px 0;}
-  .milestone-details {font-size: 15px; padding: 0px 0 100px;}
+  .milestone-details {font-size: 15px; padding: 0 0 100px;}
   .mobile-parallax-image {margin-left: -380px; width: 760px;}
   .mobile-parallax-image img {width: 760px;}
   .parallax.p-two {height: 520px;}
@@ -90,7 +90,7 @@
   .main-title .second-title {width:345px;}
   .full {width: 466px;}
   .title.one {font-size: 40px; padding: 60px 40px 11px;}
-  .title.two {font-size: 17px; padding: 0px 40px; width: auto;}
+  .title.two {font-size: 17px; padding: 0 40px; width: auto;}
   .s-container {width: 440px}
   .skill-element {width: 220px;}
   .fact-element {width: 100%;}
@@ -125,7 +125,7 @@
   .full {width: 300px;}
   .menu {display: none;}
   .title.one {font-size: 19px; padding: 40px 40px 50px; width: auto;}
-  .title.two {font-size: 17px; padding: 0px 40px; width: auto;}
+  .title.two {font-size: 17px; padding: 0 40px; width: auto;}
   .p-title-two {font-size:14px;}
   .fact-element {width: 100%;}
   #filters {padding: 0 40px;}
@@ -152,7 +152,7 @@
   .work-exp-right-1 {height: 345px;}
   .work-exp-left-2 {height: 205px;}
   .work-exp-right-2 {height: 205px;}
-  .tooltip {width: 100%; left: 0%; margin-left: 0px; padding: 0px;}
+  .tooltip {width: 100%; left: 0%; margin-left: 0; padding: 0;}
   .details {line-height: 25px; padding: 5px;}
   .contact .icons li {margin-right: 5px;}
   .contact .icons li a {width: 55px; height: 55px;}
