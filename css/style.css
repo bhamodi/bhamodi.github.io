@@ -32,7 +32,7 @@ h1 {
   font-family: "Montserrat", arial, sans-serif;
   font-size: 80px;
   font-weight: 700;
-  line-height: 80px;
+  line-height: 60px;
   letter-spacing: -0.08em;
   color: #161a1b;
 }
@@ -56,8 +56,7 @@ h3 {
 }
 .sub-title {
   font-size: 20px;
-  margin-top: 5px;
-  margin-bottom: 0;
+  margin: 0 auto 0 auto;
 }
 
 /* Content Styles -------------------------------------------------------------- */
@@ -288,8 +287,7 @@ h3 {
 /* Landscape Phone */
 @media all and (min-width: 400px) {
   /* TITLE & CONTACT */
-  h1 { font-size: 69px; line-height: 69px; }
-  .sub-title { font-size: ; line-height: ; margin-top: 10px; }
+  h1 { font-size: 90px; line-height: 65px; }
   .title { top: 15%;}
   .contact .icons { margin-bottom: 0; }
   /* POSITIONING */
@@ -365,7 +363,7 @@ h3 {
 @media all and (min-width: 700px) {
   /* TITLE & CONTACT */
   h1 { font-size: 110px; line-height: 130px; }
-  .sub-title { font-size: 20px; line-height: 20px; margin-top: 10px; }
+  .sub-title { font-size: 20px; line-height: 20px;}
   .title { top: 18%;}
   .line { margin-top: 20px; }
   .contact { bottom: 10%; }
@@ -825,10 +823,6 @@ h3 {
   .button {
     padding: 15px 25px;
     bottom: 27%;
-  }
-  h1 {
-    line-height: 60px;
-    font-size: 100px;
   }
   .contact {
     bottom: 6%;
