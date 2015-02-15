@@ -561,7 +561,7 @@ html, body {
   zoom: 1;
   filter: alpha(opacity=0);
   opacity: 0;
-  background: url("../img/color-icons.png") 0 -88px no-repeat;
+  background: url("../img/color-icons.png") no-repeat;
   cursor: pointer;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
