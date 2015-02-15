@@ -665,12 +665,14 @@ html, body {
   position: relative;
 }
 .folio-btn {
+  width: 69px;
+  text-align: center;
   list-style: none;
   background: #fff;
   float: left;
   cursor: pointer;
   border-radius: 3px;
-  padding: 0 22px;
+  padding: 0 15px;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   color: #c1c1c1;
@@ -690,8 +692,6 @@ html, body {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-.folio-btn:first-child {margin-left: 0;}
-.folio-btn:last-child {margin-right: 0;}
 .folio-btn.active {background: #77be32 !important; color: #fff !important;}
 .portfolio-element {position: relative; list-style: none;}
 
