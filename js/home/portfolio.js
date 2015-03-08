@@ -12,9 +12,7 @@ $('.folio-btn').click(function() {
   opened = false;
 });
 
-openProject('portfolio-01.html', 1);
-
-function openProject(projectName, dummy) {
+function openProject(projectName) {
   $.ajax({
     url: projectName,
     success: function(data) {
@@ -24,15 +22,13 @@ function openProject(projectName, dummy) {
       closeProject();
       changeProject();
 
-      if (dummy != 1) {
-        $('html, body').animate({ scrollTop: $('#anchor5').offset().top }, 300, function() {
-          $('.project-window').show(0);
-          $('.project-window').animate({ height:900 }, 500, function() {
-            $('.project-window').css('height', 'auto');
-            $('.project-content').fadeIn('slow');
-          });
+      $('html, body').animate({ scrollTop: $('#anchor5').offset().top }, 300, function() {
+        $('.project-window').show(0);
+        $('.project-window').animate({ height:900 }, 500, function() {
+          $('.project-window').css('height', 'auto');
+          $('.project-content').fadeIn('slow');
         });
-      }
+      });
     }
   });
 }
