@@ -16,7 +16,7 @@ $(document).ready(function () {
   $('body').addClass('green');
   $('.header').sticky({ topSpacing: 0 });
 
-  /* Menu Anchors */
+  /* Menu Headers */
   $('a[href*=#]').click(function () {
     if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
       var $target = $(this.hash);

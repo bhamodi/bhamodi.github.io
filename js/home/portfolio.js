@@ -22,7 +22,7 @@ function openProject(projectName) {
       closeProject();
       changeProject();
 
-      $('html, body').animate({ scrollTop: $('#anchor5').offset().top }, 300, function() {
+      $('html, body').animate({ scrollTop: $('#projects').offset().top }, 300, function() {
         $('.project-window').show(0);
         $('.project-window').animate({ height:900 }, 500, function() {
           $('.project-window').css('height', 'auto');
@@ -36,7 +36,7 @@ function openProject(projectName) {
 function closeProject() {
   $('.close').click(function() {
     $('.project-window').slideUp('slow');
-    $('html, body').animate({ scrollTop: $('#anchor5').offset().top }, 1000);
+    $('html, body').animate({ scrollTop: $('#projects').offset().top }, 1000);
     opened = false;
   });
 }
