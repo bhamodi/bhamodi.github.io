@@ -154,7 +154,9 @@ $(document).ready(function () {
 
   /* Main Menu Section Selector */
   function loadMenuSelector() {
-    $('#nav').onePageNav();
+    $('#nav').onePageNav({
+      scrollOffset: 75 // Header height.
+    });
   }
 
   /* Isotope/ Portfolio Filter PlugIn */
