@@ -736,13 +736,19 @@ html, body {
   display: none;
   padding: 8px 35px 8px 14px;
   margin-bottom: 20px;
-  color: #c09853;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
-  background-color: #fcf8e3;
-  border: 1px solid #fbeed5;
   color: #468847;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  border: 1px solid #d6e9c6;
   background-color: #dff0d8;
-  border-color: #d6e9c6;
+}
+.alert-error {
+  display: none;
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 20px;
+  color: #b94a48;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+  border: 1px solid #eed3d7;
+  background-color: #f2dede;
 }
 .bay {
   overflow: hidden;

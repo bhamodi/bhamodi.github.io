@@ -45,13 +45,16 @@ $(document).ready(function () {
         minlength: 20
       }
     },
-    invalidHandler: function (event, validator) {
-      $('.alert-success').hide();
-    },
     submitHandler: function (form) {
-      $(form).ajaxSubmit();
-      $('.alert-success').show();
-      $('.contactForm')[0].reset();
+      $(form).ajaxSubmit({
+        success: function() {
+          $('.alert-success').show();
+          $('.contactForm')[0].reset();
+        },
+        error: function() {
+          $('.alert-error').show();
+        }
+      });
     }
   });
 
