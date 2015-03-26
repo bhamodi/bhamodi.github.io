@@ -30,7 +30,7 @@ $(document).ready(function () {
   });
 
   /* Validation */
-  $('#contact').validate({
+  $('.contactForm').validate({
     rules: {
       name: {
         required: true,
@@ -51,7 +51,7 @@ $(document).ready(function () {
     submitHandler: function (form) {
       $(form).ajaxSubmit();
       $('.alert-success').show();
-      $('#contact')[0].reset();
+      $('.contactForm')[0].reset();
     }
   });
 
