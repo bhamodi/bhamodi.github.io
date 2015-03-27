@@ -13,17 +13,15 @@ $(document).ready(function () {
     $('.player').YTPlayer();
   }
 
-  $('body').addClass('green');
-  $('.header').sticky({ topSpacing: 0 });
-
   /* Menu Headers */
+  $('.header').sticky({topSpacing: 0});
   $('a[href*=#]').click(function () {
     if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
       var $target = $(this.hash);
       $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
       if ($target.length) {
         var targetOffset = $target.offset().top;
-        $('html,body').animate({ scrollTop: targetOffset - 75 }, 2000);
+        $('html,body').animate({scrollTop: targetOffset - 75}, 2000);
         return false;
       }
     }
@@ -89,7 +87,7 @@ $(document).ready(function () {
 
   /* Scroll Up */
   $('.scrollup').click(function () {
-    $('html,body').animate({ scrollTop: 0 }, 3000);
+    $('html,body').animate({scrollTop: 0}, 3000);
     return false;
   });
 
