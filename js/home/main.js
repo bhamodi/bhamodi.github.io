@@ -1,7 +1,7 @@
 "use strict";
 
 $(window).load(function () {
-  $('.preloader').fadeOut('slow');
+  $('.preloader').fadeOut(3000);
 });
 
 $(document).ready(function () {

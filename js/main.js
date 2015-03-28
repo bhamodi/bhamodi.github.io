@@ -16,7 +16,7 @@ function initializeSite() {
 };
 
 $(window).load(function () {
-  $('.preloader').fadeOut('slow');
+  $('.preloader').fadeOut(3000);
   initializeSite();
   (function () {
     setTimeout(function () {
