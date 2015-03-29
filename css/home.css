@@ -297,7 +297,7 @@ html, body {
   padding: 11px 25px 11px;
   cursor: pointer;
   border: 2px solid #77be32;
-  border-radius: 2px;
+  border-radius: 10px;
   letter-spacing: 2px;
   pointer-events: auto;
   -webkit-transition: all 0.5s ease-in-out;
@@ -671,7 +671,7 @@ html, body {
   background: #fff;
   float: left;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 0 15px;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
@@ -781,7 +781,7 @@ html, body {
   text-transform:uppercase;
   font-family: 'Montserrat', sans-serif;
   padding: 3px 30px;
-  border-radius: 3px;
+  border-radius: 10px;
   border: none;
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
