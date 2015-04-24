@@ -1049,14 +1049,10 @@ html, body {
   margin-left: auto;
   margin-right: auto;
   width: 650px;
+  height: 100%;
   margin-bottom: 40px;
   background-color: #f7f7f7;
 }
-.work-exp-right-0 {height: 235px;}
-.work-exp-left-1 {height: 390px;}
-.work-exp-right-1 {height: 370px;}
-.work-exp-left-2 {height: 235px;}
-.work-exp-right-2 {height: 215px;}
 .work-logo img {
   width: 100px;
   height: 100px;
@@ -1296,11 +1292,6 @@ html, body {
   .main-title span {top: 70px;}
   .logo {font-size: 23px;}
   .parallax.p-two {height: 400px;}
-  .work-exp-right-0 {height: 200px;}
-  .work-exp-left-1 {height: 310px;}
-  .work-exp-right-1 {height: 295px;}
-  .work-exp-left-2 {height: 200px;}
-  .work-exp-right-2 {height: 185px;}
 }
 
 /* Mobile portrait size to mobile landscape size (devices and browsers) */
@@ -1338,11 +1329,6 @@ html, body {
   .p-title-one {padding-top:40px;}
   .scrollup {display: none !important;}
   .bouncing-arrow {display: none;}
-  .work-exp-right-0 {height: 205px;}
-  .work-exp-left-1 {height: 340px;}
-  .work-exp-right-1 {height: 345px;}
-  .work-exp-left-2 {height: 205px;}
-  .work-exp-right-2 {height: 205px;}
   .tooltip {width: 100%; left: 0%; margin-left: 0; padding: 0;}
   .details {line-height: 25px; padding: 5px;}
   .contact .icons li {margin-right: 5px;}
