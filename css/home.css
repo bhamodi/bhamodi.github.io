@@ -231,7 +231,6 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  text-transform: uppercase;
   letter-spacing: 2px;
 }
 .menu a {
@@ -254,7 +253,6 @@ html, body {
   font-family: 'Montserrat', sans-serif;
   font-size: 23px;
   font-weight: 400;
-  text-transform: uppercase;
   cursor: pointer;
   line-height: 75px;
   margin-left: 68px;
@@ -290,7 +288,6 @@ html, body {
   position: relative;
   color: #fff;
   font-size: 14px;
-  text-transform: uppercase;
   font-weight: 700;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
@@ -335,7 +332,6 @@ html, body {
   text-align: center;
   font-family: "Brandon Grot W01 Bold",'Montserrat',sans-serif,"Helvetica Neue",Helvetica,Arial;
   letter-spacing: 5px;
-  text-transform: uppercase;
   z-index: 100;
 }
 .main-title ul li {
@@ -371,7 +367,7 @@ html, body {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
-.title.one {color: #404141; font-size: 37px; letter-spacing: 5px; padding: 80px 0 30px; text-transform: uppercase;}
+.title.one {color: #404141; font-size: 37px; letter-spacing: 5px; padding: 80px 0 30px;}
 .title.two {color: #757575; font-size: 17px; font-family: 'Open Sans', sans-serif; width: 680px; margin: 50px auto;}
 .light {background: #fff; padding-bottom: 20px;}
 .dark:after {
@@ -393,13 +389,12 @@ html, body {
   position: relative;
   margin: auto;
 }
-.title-one, .title-full-one {
+.title-full-one {
   font-weight: 400;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   color: #d7d9da;
-  text-transform: uppercase;
 }
 .title-two, .title-full-two {
   font-weight: 300;
@@ -409,7 +404,6 @@ html, body {
   color: #434343;
   padding-bottom: 50px;
   margin-top: 10px;
-  text-transform: uppercase;
 }
 .title-full-one {padding-top: 80px;}
 
@@ -429,7 +423,6 @@ html, body {
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
   color: #fff;
-  text-transform: uppercase;
   opacity: 0.5;
   padding-top: 140px;
 }
@@ -451,7 +444,6 @@ html, body {
 /* Project Feature Scroller and Popup */
 .tag-project {
   text-align: center;
-  text-transform: uppercase;
   font-size: 12px;
   color: #929292;
   font-family: 'Montserrat', sans-serif;
@@ -527,7 +519,6 @@ html, body {
   color: #FFFFFF;
   font-size: 24px;
   font-weight: 400;
-  text-transform: uppercase;
   padding-top: 63px;
 }
 .skill-icon {
@@ -585,7 +576,6 @@ html, body {
   line-height: 32px;
   border: 2px solid #ddd;
   border-radius: 50%;
-  text-transform: uppercase;
   float: left;
   margin: 0 10px;
   text-align: center;
@@ -635,24 +625,19 @@ html, body {
 }
 .portfolio-element div span {
   display: block;
-  padding: 0 0;
+  padding: 0;
   margin: 20% 20px;
-  text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   letter-spacing:1px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   color: #fff;
   text-align: center;
 }
 .portfolio-element div span span {
   margin: auto;
-  text-transform: lowercase;
-  font-size: 16px;
-  font-weight: 400;
 }
-.portfolio-element div span span.project-title { margin-bottom:15px;}
-.portfolio-element div span span.project-position { color:#555; padding:0; font-size:13px; text-transform:uppercase;}
+.portfolio-element div span span.project-position {color:#555; font-size:14px;}
 #options {
   float: right;
   right: 50%;
@@ -719,14 +704,6 @@ html, body {
   font-size: 17px;
   font-weight: 400;
 }
-.title-one, .title-full-one {
-  font-weight: 400;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
-  color: #d7d9da;
-  text-transform: uppercase;
-}
 
 /* Form */
 .error {
@@ -764,7 +741,6 @@ html, body {
   font-weight: 300;
   font-size: 13px;
   color: #a8a8a8;
-  text-transform:uppercase;
   font-family: 'Montserrat', sans-serif;
   background: #fbfbfb;
 }
@@ -779,7 +755,6 @@ html, body {
   font-weight: 300;
   display: inline-block;
   color: #fff;
-  text-transform:uppercase;
   font-family: 'Montserrat', sans-serif;
   padding: 3px 30px;
   border-radius: 10px;
@@ -822,7 +797,6 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   color: #7f7f7f;
-  text-transform: uppercase;
   padding: 20px 0 100px;
   letter-spacing: 1px;
 }
@@ -844,9 +818,7 @@ html, body {
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   font-size: 25px;
-  text-transform: uppercase;
   text-align: center;
-  font-weight: 300;
 }
 
 /* Project Window Ajax */
@@ -871,7 +843,6 @@ html, body {
   font-size: 30px;
   font-family: 'Open Sans', sans-serif;
   margin: 5px 0 20px;
-  text-transform: uppercase;
   text-align: center;
   font-weight: 300;
 }
@@ -962,7 +933,6 @@ html, body {
   color: #999;
   display: block;
   text-decoration: none;
-  text-transform: uppercase;
 }
 #navbar span:after {
   width: 0;
@@ -1059,11 +1029,6 @@ html, body {
   height: 100px;
   margin-top: 5px;
 }
-.work-company {
-  text-transform: uppercase;
-}
-.work-position {}
-.work-location {}
 .work-description {
   text-align: left;
 }
