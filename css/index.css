@@ -42,7 +42,6 @@ h2 {
   font-weight: 700;
   line-height: 1em;
   letter-spacing: 0.2em;
-  text-transform: uppercase;
   color: #161a1b;
 }
 h3 {
@@ -51,7 +50,6 @@ h3 {
   font-weight: 700;
   line-height: 1em;
   letter-spacing: 0.2em;
-  text-transform: uppercase;
   color: #161a1b;
 }
 .sub-title {
@@ -785,7 +783,6 @@ h3 {
   font-weight: 700;
   line-height: 1em;
   letter-spacing: 0.2em;
-  text-transform: uppercase;
   color: #161a1b;
   background: transparent;
   border: 1px solid rgb(23,26,28);
