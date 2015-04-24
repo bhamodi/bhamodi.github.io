@@ -1042,7 +1042,7 @@ html, body {
   width: 100%;
   text-align: center;
 }
-.work-exp-left-1, .work-exp-right-1, .work-exp-left-2, .work-exp-right-2 {
+.work-exp-right-0, .work-exp-left-1, .work-exp-right-1, .work-exp-left-2, .work-exp-right-2 {
   display: block;
   left: 0;
   right: 0;
@@ -1052,6 +1052,7 @@ html, body {
   margin-bottom: 40px;
   background-color: #f7f7f7;
 }
+.work-exp-right-0 {height: 235px;}
 .work-exp-left-1 {height: 390px;}
 .work-exp-right-1 {height: 370px;}
 .work-exp-left-2 {height: 235px;}
@@ -1270,7 +1271,7 @@ html, body {
 @media only screen and (max-width: 795px) {
   .main-title ul {margin-top:0; height:80px; font-size: 35px;}
   .main-title .spacer {margin:20px auto;}
-  .work-exp-left-1, .work-exp-right-1, .work-exp-left-2, .work-exp-right-2 {width: 100%; margin-left: 0;}
+  .work-exp-right-0, .work-exp-left-1, .work-exp-right-1, .work-exp-left-2, .work-exp-right-2 {width: 100%; margin-left: 0;}
 }
 
 /* Mobile landscape size to tablet portrait (devices and browsers) */
@@ -1295,6 +1296,7 @@ html, body {
   .main-title span {top: 70px;}
   .logo {font-size: 23px;}
   .parallax.p-two {height: 400px;}
+  .work-exp-right-0 {height: 200px;}
   .work-exp-left-1 {height: 310px;}
   .work-exp-right-1 {height: 295px;}
   .work-exp-left-2 {height: 200px;}
@@ -1336,6 +1338,7 @@ html, body {
   .p-title-one {padding-top:40px;}
   .scrollup {display: none !important;}
   .bouncing-arrow {display: none;}
+  .work-exp-right-0 {height: 205px;}
   .work-exp-left-1 {height: 340px;}
   .work-exp-right-1 {height: 345px;}
   .work-exp-left-2 {height: 205px;}
