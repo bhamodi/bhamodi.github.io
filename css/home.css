@@ -409,6 +409,7 @@ html, body {
   color: #434343;
   padding-bottom: 50px;
   margin-top: 10px;
+  text-transform: uppercase;
 }
 .title-full-one {padding-top: 80px;}
 
