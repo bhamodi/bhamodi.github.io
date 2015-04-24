@@ -284,20 +284,20 @@ $(document).ready(function () {
       }
     });
 
-    /* Facts Counter */
+    /* Stats Counter */
     var count = 0;
     var dataPercentage;
-    $('.milestone-counter').bind('inview', function (event, visible) {
+    $('.stat-counter').bind('inview', function (event, visible) {
       if (visible === true && count === 0) {
         // Element is now visible in the viewport
         count++;
-        $('.milestone-counter').each(function () {
+        $('.stat-counter').each(function () {
           if ($(this).hasClass('dynamic')) {
             dataPercentage = calculateDaysToGraduation();
           } else {
             dataPercentage = $(this).attr('data-perc');
           }
-          $(this).find('.milestone-count').delay(6000).countTo({
+          $(this).find('.stat-count').delay(6000).countTo({
             from: 0,
             to: dataPercentage,
             speed: 3500,
