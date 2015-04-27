@@ -629,7 +629,7 @@ html, body {
   margin: 20% 20px;
   font-family: 'Open Sans', sans-serif;
   letter-spacing:1px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   color: #fff;
   text-align: center;
@@ -637,7 +637,7 @@ html, body {
 .portfolio-element div span span {
   margin: auto;
 }
-.portfolio-element div span span.project-position {color:#555; font-size:14px;}
+.portfolio-element div span span.project-position {color:#555; font-size:16px;}
 #options {
   float: right;
   right: 50%;
@@ -1172,7 +1172,7 @@ html, body {
   .mobile-parallax-image img {width: 940px;}
   .parallax.p-two {height: 555px;}
   .main-title {font-size: 60px;  height: 352px;top: 50%; margin-top:-176px;}
-  .portfolio-element div span {margin: 50% 20px 0 20px; font-size: 15px;}
+  .portfolio-element div span {font-size:18px;}
   .main-title .spacer {margin: 5px auto 25px;}
   .project-title {top: 25%;}
 }
@@ -1204,6 +1204,8 @@ html, body {
   #navbar > ul > li {width: 100%; float: none;}
   #navbar > ul > li > a {height: auto; padding: 0 0.833em; border-right: none; border-bottom: 1px dotted #77be32;}
   #navbar li ul {position: static; padding: 1.25em; padding-top: 0;}
+  .portfolio-element div span {font-size:16px;}
+  .portfolio-element div span span.project-position {font-size:14px;}
 }
 
 /* Tablet portrait sizes (devices and browsers) */
