@@ -103,8 +103,8 @@
     this.onAnimationFrame = this.onAnimationFrame.bind(this);
     this.onWindowResize = this.onWindowResize.bind(this);
 
-    // Initialise
-    this.initialise();
+    // Initialize
+    this.initialize();
   }
 
   Plugin.prototype.transformSupport = function(value) {
@@ -170,7 +170,7 @@
   Plugin.prototype.transform3DSupport = Plugin.prototype.transformSupport('3D');
   Plugin.prototype.propertyCache = {};
 
-  Plugin.prototype.initialise = function() {
+  Plugin.prototype.initialize = function() {
     // Configure Styles
     if (this.$context.css('position') === 'static') {
       this.$context.css({
