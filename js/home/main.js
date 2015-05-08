@@ -278,7 +278,7 @@ $(document).ready(function () {
         $(this).removeClass('hideme');
       }
     });
-    $('.newtr').bind('inview', function (event, visible) {
+    $('.horizontal-line').bind('inview', function (event, visible) {
       if (visible === true) {
         $('.dontHide').removeClass('hideme-slide2');
       }

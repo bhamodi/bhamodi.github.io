@@ -1179,7 +1179,7 @@ html, body {
 
 /* Anything smaller than 975 pixels (devices and browsers) */
 @media only screen and (max-width: 975px) {
-  .hideme, .newtr {opacity: 1;}
+  .hideme, .horizontal-line {opacity: 1;}
   .parallax .hideme-slide, .parallax .hideme-slide2 {bottom:0 !important; opacity: 1 !important;}
   .menu {display: none;}
   .jump-menu {display: block;}
