@@ -173,7 +173,7 @@ html, body {
 }
 #video-volume {
   bottom: 80px;
-  color: #FFFFFF;
+  color: #fff;
   cursor: pointer;
   font-size: 24px;
   margin-left: -12px;
@@ -516,7 +516,7 @@ html, body {
 }
 .skill-title {
   font-family: 'Open Sans', sans-serif;
-  color: #FFFFFF;
+  color: #fff;
   font-size: 24px;
   font-weight: 400;
   padding-top: 63px;
@@ -789,7 +789,7 @@ html, body {
   font-weight: 300;
   font-family: 'Open Sans', sans-serif;
   font-size: 80px;
-  color: #000000;
+  color: #000;
   line-height: 75px;
 }
 .stat-details {

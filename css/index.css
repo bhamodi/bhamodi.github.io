@@ -192,16 +192,16 @@ h3 {
   text-decoration: none;
   color: #000;
   padding-bottom: 8px;
-  font-size: 20px;
+  font-size: 22px;
 }
 .contact a.mail::after {
   position: absolute;
   top: 100%;
   left: 50%;
-  width: 125px;
-  margin-left: -60px;
-  margin-top: 10px;
-  height: 1px;
+  width: 180px;
+  margin-left: -90px;
+  margin-top: 5px;
+  height: 3px;
   background: #666;
   content: '';
   opacity: 0;
