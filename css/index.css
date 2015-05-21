@@ -19,7 +19,7 @@ img {
 
 body {
   background: #fff;
-  color: #ffffff;
+  color: #fff;
   font: normal 16px "Cardo", georgia, serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
@@ -190,7 +190,7 @@ h3 {
 }
 .contact a.mail {
   text-decoration: none;
-  color: #000000;
+  color: #000;
   padding-bottom: 8px;
   font-size: 20px;
 }
@@ -202,7 +202,7 @@ h3 {
   margin-left: -60px;
   margin-top: 10px;
   height: 1px;
-  background: #666666;
+  background: #666;
   content: '';
   opacity: 0;
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
@@ -779,7 +779,7 @@ h3 {
   bottom: 23%;
   text-decoration: none;
   font-family: "Montserrat", arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 1em;
   letter-spacing: 0.2em;
@@ -806,7 +806,7 @@ h3 {
 @media all and (min-width: 700px) {
   .button {
     border-radius: 10px;
-    padding: 25px 45px;
+    padding: 25px 35px;
   }
 }
 
