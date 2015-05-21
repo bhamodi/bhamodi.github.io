@@ -810,12 +810,6 @@ h3 {
   }
 }
 
-@media all and (max-height: 850px) {
-  .sub-title {
-    color: #000000;
-  }
-}
-
 @media all and (max-height: 650px) {
   .button {
     padding: 15px 25px;
