@@ -770,7 +770,7 @@ h3 {
 
 /* Button */
 .button {
-  width: 280px;
+  width: 260px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -782,7 +782,7 @@ h3 {
   font-size: 18px;
   font-weight: 700;
   line-height: 1em;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   color: #161a1b;
   background: transparent;
   border: 1px solid rgb(23,26,28);
