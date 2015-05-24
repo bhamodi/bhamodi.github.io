@@ -27,35 +27,6 @@ $(document).ready(function () {
     }
   });
 
-  /* Validation */
-  $('.contactForm').validate({
-    rules: {
-      name: {
-        required: true,
-        minlength: 5
-      },
-      email: {
-        required: true,
-        email: true
-      },
-      message: {
-        required: true,
-        minlength: 20
-      }
-    },
-    submitHandler: function (form) {
-      $(form).ajaxSubmit({
-        success: function() {
-          $('.alert-success').show();
-          $('.contactForm')[0].reset();
-        },
-        error: function() {
-          $('.alert-error').show();
-        }
-      });
-    }
-  });
-
   /* Services RollOver Info */
   function loadServices() {
     $('.skill-icon').mouseenter(function () {
