@@ -56,6 +56,29 @@ $(document).ready(function () {
     }
   });
 
+  $.ajax({
+    type: 'POST',
+    url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+    data: {
+      'key': 'HZv376m_ZCnJjmdH25-fYA',
+      'message': {
+        'from_name': $_POST['name'],
+        'from_email': $_POST['email'],
+        'text': $_POST['message'],
+        'subject': 'TEST',
+        'to': [
+          {
+            'email': 'bhamodi@uwaterloo.ca',
+            'name': 'Baraa Hamodi',
+            'type': 'to'
+          }
+        ]
+      }
+    }
+  }).done(function(response) {
+    console.log(response);
+  });
+
   /* Services RollOver Info */
   function loadServices() {
     $('.skill-icon').mouseenter(function () {
