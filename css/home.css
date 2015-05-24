@@ -368,7 +368,7 @@ html, body {
   font-family: 'Open Sans', sans-serif;
 }
 .title.one {color: #404141; font-size: 37px; letter-spacing: 5px; padding: 80px 0 30px;}
-.title.two {color: #757575; font-size: 17px; font-family: 'Open Sans', sans-serif; width: 680px; margin: 50px auto;}
+.title.two {color: #757575; font-size: 18px; font-family: 'Open Sans', sans-serif; width: 680px; margin: 50px auto;}
 .light {background: #fff; padding-bottom: 20px;}
 .dark:after {
   content: '';
@@ -701,12 +701,12 @@ html, body {
   overflow: auto;
   color: #757575;
   font-family: 'Open Sans', sans-serif;
-  font-size: 17px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
 }
 
 .email {
-  text-align: center;
   font-size: 20px;
 }
 
@@ -795,7 +795,6 @@ html, body {
 .contact .icons {
   margin: 60px auto 10px;
   padding: 0;
-  text-align: center;
   list-style: none;
   list-style-type: none;
 }
@@ -841,10 +840,6 @@ html, body {
   transition: opacity 0.3s;
 }
 .contact .copy-right {
-  text-align:center;
-  font-family: 'Open Sans', sans-serif;
-  color: #757575;
-  font-size: 16px;
   margin-top: 30px;
 }
 
