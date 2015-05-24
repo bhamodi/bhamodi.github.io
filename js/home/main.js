@@ -62,9 +62,9 @@ $(document).ready(function () {
     data: {
       'key': 'HZv376m_ZCnJjmdH25-fYA',
       'message': {
-        'from_name': $_POST['name'],
-        'from_email': $_POST['email'],
-        'text': $_POST['message'],
+        'from_name': $('input#name').val(),
+        'from_email': $('input#email').val(),
+        'text': $('textarea#message').val(),
         'subject': 'TEST',
         'to': [
           {
