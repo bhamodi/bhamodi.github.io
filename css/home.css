@@ -1,8 +1,4 @@
 @charset "UTF-8";
-/* Fonts */
-@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700");
-
 /********* Base Styles *********/
 html, button, input, select, textarea {
   color: #222;
