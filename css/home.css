@@ -173,7 +173,6 @@ html, body {
 }
 #video-volume {
   bottom: 80px;
-  color: #fff;
   cursor: pointer;
   font-size: 24px;
   margin-left: -12px;
@@ -183,13 +182,11 @@ html, body {
   height: 25px;
   z-index: 10;
   background: url("../img/audio.png") no-repeat;
-  opacity: 0.5;
 }
 .bouncing-arrow {
   bottom: 40px;
   margin-left: -16px;
   left: 50%;
-  position: fixed;
   width: 32px !important;
   height: 32px !important;
   background: url("../img/arrow-down.png") no-repeat;
@@ -273,11 +270,11 @@ html, body {
 }
 .main-title .second-title {
   font-size: 16px;
+  font-weight: 400;
   font-family: 'Open Sans', sans-serif !important;
   width: 680px;
   text-transform: none;
   margin: auto;
-  font-weight: 400;
 }
 .second-title span {font-weight: 600;}
 .continue-button {
@@ -289,7 +286,6 @@ html, body {
   color: #fff;
   font-size: 14px;
   font-weight: 700;
-  text-align: center;
   font-family: 'Open Sans', sans-serif;
   padding: 11px 25px 11px;
   cursor: pointer;
@@ -309,7 +305,7 @@ html, body {
   overflow: hidden;
   position: absolute;
   top: 50%;
-  margin-top:-176px;
+  margin-top: -176px;
   width: 100%;
   pointer-events: none;
   text-align: center;
@@ -525,7 +521,6 @@ html, body {
   cursor: crosshair !important;
   width: 160px;
   height: 160px;
-  cursor: pointer;
   border-radius: 50%;
   margin: 30px auto 30px;
   background-position: center center;
@@ -807,7 +802,7 @@ html, body {
   display: block;
   width: 65px;
   height: 65px;
-  opacity: .6;
+  opacity: 0.6;
   -webkit-transition: opacity 0.4s;
   -moz-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
@@ -948,11 +943,9 @@ html, body {
   display: block;
   left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 40px;
   width: 650px;
   height: 100%;
-  margin-bottom: 40px;
   background-color: #f7f7f7;
 }
 .work-logo img {
