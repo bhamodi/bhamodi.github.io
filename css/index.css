@@ -26,7 +26,7 @@ body {
 }
 
 /* Typography */
-h1, h2, h3 { margin: 0; }
+h1, h2, h3 {margin: 0;}
 
 h1 {
   font-family: "Montserrat", arial, sans-serif;
@@ -80,7 +80,7 @@ h3 {
   position: relative;
   overflow: hidden;
 }
-.layer { position: absolute; }
+.layer {position: absolute;}
 .layer div {
   -webkit-transform: translate3d(0,0,0);
   -moz-transform: translate3d(0,0,0);
@@ -152,7 +152,7 @@ h3 {
   display: inline-block;
   margin-right: 10px;
 }
-.contact .icons li:last-of-type { margin-right: 0; }
+.contact .icons li:last-of-type {margin-right: 0;}
 .contact .icons li a {
   display: block;
   width: 45px;
@@ -285,9 +285,9 @@ h3 {
 /* Landscape Phone */
 @media all and (min-width: 400px) {
   /* TITLE & CONTACT */
-  h1 { font-size: 90px; line-height: 65px; }
-  .title { top: 15%;}
-  .contact .icons { margin-bottom: 0; }
+  h1 {font-size: 90px; line-height: 65px;}
+  .title {top: 15%;}
+  .contact .icons {margin-bottom: 0;}
   /* POSITIONING */
   .depth-5 {
     position: absolute;
@@ -297,7 +297,7 @@ h3 {
   .depth-4 {
     left: -4%;
     top: 20%;
-   }
+  }
   .depth-3.flake1 {
     display: none;
   }
@@ -335,7 +335,7 @@ h3 {
     position: absolute;
     right: 0;
     top: 0;
-    }
+  }
   .contact .icons li a {
     width: 55px;
     height: 55px;
@@ -360,12 +360,12 @@ h3 {
 /* Tablet Portrait */
 @media all and (min-width: 700px) {
   /* TITLE & CONTACT */
-  h1 { font-size: 110px; line-height: 130px; }
-  .sub-title { font-size: 20px; line-height: 20px;}
-  .title { top: 18%;}
-  .line { margin-top: 20px; }
-  .contact { bottom: 10%; }
-  .contact .icons { margin-bottom: 12px; }
+  h1 {font-size: 110px; line-height: 130px;}
+  .sub-title {font-size: 20px; line-height: 20px;}
+  .title {top: 18%;}
+  .line {margin-top: 20px;}
+  .contact {bottom: 10%;}
+  .contact .icons {margin-bottom: 12px;}
   /* SIZES */
   .depth-5 img, .depth-4 img, .depth-3 img, .depth-2 img, .depth-1 img {
     -webkit-transform: scale(0.8);
@@ -381,7 +381,7 @@ h3 {
   .depth-4 {
     left: -3%;
     top: 15%;
-   }
+  }
   .depth-3.flake1 {
     display: none;
   }
@@ -423,11 +423,11 @@ h3 {
 
 @media all and (min-width: 900px) {
   /* TITLE & CONTACT */
-  h1 { font-size: 120px; line-height: 120px; }
-  .sub-title { font-size: 20px; line-height: 20px; margin-top: 20px; }
-  .title { top: 15%;}
-  .contact { bottom: 8%; }
-  .contact .icons { margin-bottom: 12px; }
+  h1 {font-size: 120px; line-height: 120px;}
+  .sub-title {font-size: 20px; line-height: 20px; margin-top: 20px;}
+  .title {top: 15%;}
+  .contact {bottom: 8%;}
+  .contact .icons {margin-bottom: 12px;}
   /* SIZES */
   .depth-5 img, .depth-4 img, .depth-3 img, .depth-2 img, .depth-1 img {
     -webkit-transform: scale(0.8);
@@ -443,7 +443,7 @@ h3 {
   .depth-4 {
     left: -3%;
     top: 15%;
-   }
+  }
   .depth-3.flake1 {
     display: none;
   }
@@ -485,8 +485,8 @@ h3 {
 
 @media all and (min-width: 1200px) {
   /* TITLE */
-  h1 { font-size: 140px; line-height: 150px; }
-  .sub-title { font-size: 25px; line-height: 25px; margin-top: 20px; }
+  h1 {font-size: 140px; line-height: 150px;}
+  .sub-title {font-size: 25px; line-height: 25px; margin-top: 20px;}
   /* SIZES */
   .depth-5 img, .depth-4 img, .depth-3 img, .depth-2 img, .depth-1 img {
     -webkit-transform: scale(1);
@@ -508,7 +508,7 @@ h3 {
     -webkit-animation: wave 7s 0.1s infinite linear;
     -moz-animation: wave 7s 0.1s infinite linear;
     animation: wave 7s 0.1s infinite linear;
-   }
+  }
   .depth-3 {
     -webkit-animation: wave 6s 0.1s infinite linear;
     -moz-animation: wave 6s 0.1s infinite linear;
@@ -575,8 +575,8 @@ h3 {
 
 @media all and (min-width: 1400px) {
   /* TITLE */
-  h1 { font-size: 150px; line-height: 160px; }
-  .sub-title { font-size: 25px; line-height: 25px; margin-top: 20px; }
+  h1 {font-size: 150px; line-height: 160px;}
+  .sub-title {font-size: 25px; line-height: 25px; margin-top: 20px;}
   /* POSITIONING */
   .depth-5 {
     right: -10%;
@@ -585,7 +585,7 @@ h3 {
   .depth-4 {
     left: -3%;
     top: 15%;
-   }
+  }
   .depth-3.flake1 {
     display: block;
     position: absolute;
@@ -641,14 +641,14 @@ h3 {
 
 @media all and (min-width: 1600px) {
   /* TITLE */
-  h1 { font-size: 160px; line-height: 180px; }
-  .sub-title { font-size: 25px; line-height: 25px; margin-top: 25px; }
+  h1 {font-size: 160px; line-height: 180px;}
+  .sub-title {font-size: 25px; line-height: 25px; margin-top: 25px;}
 }
 
 @media all and (min-width: 1920px) {
   /* TITLE */
-  h1 { font-size: 170px; line-height: 200px; }
-  .sub-title { font-size: 30px; line-height: 30px; margin-top: 30px; }
+  h1 {font-size: 170px; line-height: 200px;}
+  .sub-title {font-size: 30px; line-height: 30px; margin-top: 30px;}
   /* POSITIONING */
   .depth-5 {
     right: -10%;
@@ -657,7 +657,7 @@ h3 {
   .depth-4 {
     left: 3%;
     top: 15%;
-   }
+  }
   .depth-3.flake1 {
     display: block;
     position: absolute;
@@ -727,20 +727,6 @@ h3 {
 }
 
 @-moz-keyframes wave {
-  0% {
-    -webkit-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
-    -moz-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
-    transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
-    -moz-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
-    transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
-  }
-}
-
-@-ms-keyframes wave {
   0% {
     -webkit-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
     -moz-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
