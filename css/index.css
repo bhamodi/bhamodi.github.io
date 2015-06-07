@@ -95,7 +95,7 @@ h3 {
 
 /* Background */
 .background {
-  background: url(../img/bg.jpg) no-repeat 50% 100%;
+  background: url(/img/bg.jpg) no-repeat 50% 100%;
   bottom: -20px;
   background-size: cover;
   position: absolute;
@@ -104,7 +104,7 @@ h3 {
   top: -5%;
 }
 .triangles {
-  background: url(../img/triangles.png) no-repeat 50% 100%;
+  background: url(/img/triangles.png) no-repeat 50% 100%;
   bottom: -20px;
   background-size: cover;
   position: absolute;
@@ -163,23 +163,23 @@ h3 {
   transition: opacity 0.3s;
 }
 .contact .icons .github {
-  background: url(../img/github.png) no-repeat center;
+  background: url(/img/github.png) no-repeat center;
   background-size: 45px 45px;
 }
 .contact .icons .stackoverflow {
-  background: url(../img/stackoverflow.png) no-repeat center;
+  background: url(/img/stackoverflow.png) no-repeat center;
   background-size: 45px 45px;
 }
 .contact .icons .hackerrank {
-  background: url(../img/hackerrank.png) no-repeat center;
+  background: url(/img/hackerrank.png) no-repeat center;
   background-size: 45px 45px;
 }
 .contact .icons .codecademy {
-  background: url(../img/codecademy.png) no-repeat center;
+  background: url(/img/codecademy.png) no-repeat center;
   background-size: 45px 45px;
 }
 .contact .icons .linkedin {
-  background: url(../img/linkedin.png) no-repeat center;
+  background: url(/img/linkedin.png) no-repeat center;
   background-size: 45px 45px;
 }
 .contact .icons li a:hover {
@@ -485,7 +485,7 @@ h3 {
 
 @media all and (min-width: 1200px) {
   /* TITLE */
-  h1 {font-size: 140px; line-height: 150px;}
+  h1 {font-size: 130px; line-height: 150px;}
   .sub-title {font-size: 25px; line-height: 25px; margin-top: 20px;}
   /* SIZES */
   .depth-5 img, .depth-4 img, .depth-3 img, .depth-2 img, .depth-1 img {
@@ -575,7 +575,7 @@ h3 {
 
 @media all and (min-width: 1400px) {
   /* TITLE */
-  h1 {font-size: 150px; line-height: 160px;}
+  h1 {font-size: 140px; line-height: 160px;}
   .sub-title {font-size: 25px; line-height: 25px; margin-top: 20px;}
   /* POSITIONING */
   .depth-5 {
@@ -641,13 +641,13 @@ h3 {
 
 @media all and (min-width: 1600px) {
   /* TITLE */
-  h1 {font-size: 160px; line-height: 180px;}
+  h1 {font-size: 150px; line-height: 180px;}
   .sub-title {font-size: 25px; line-height: 25px; margin-top: 25px;}
 }
 
 @media all and (min-width: 1920px) {
   /* TITLE */
-  h1 {font-size: 170px; line-height: 200px;}
+  h1 {font-size: 160px; line-height: 200px;}
   .sub-title {font-size: 30px; line-height: 30px; margin-top: 30px;}
   /* POSITIONING */
   .depth-5 {

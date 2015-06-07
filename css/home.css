@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /********* Base Styles *********/
 html, button, input, select, textarea {
   color: #222;
@@ -179,7 +178,7 @@ html, body {
   width: 25px;
   height: 25px;
   z-index: 10;
-  background: url("../img/audio.png") no-repeat;
+  background: url(/img/audio.png) no-repeat;
 }
 .bouncing-arrow {
   bottom: 40px;
@@ -187,7 +186,7 @@ html, body {
   left: 50%;
   width: 32px !important;
   height: 32px !important;
-  background: url("../img/arrow-down.png") no-repeat;
+  background: url(/img/arrow-down.png) no-repeat;
   -webkit-animation: bounce 1s infinite;
 }
 @-webkit-keyframes bounce {
@@ -410,7 +409,7 @@ html, body {
   overflow: hidden;
 }
 .parallax.p-two {height: 625px;}
-.p-two {background: url("../img/parallax/parallax-02.png") repeat;}
+.p-two {background: url(/img/parallax/parallax-02.png) repeat;}
 .p-title-one {
   font-weight: 400;
   text-align: center;
@@ -492,7 +491,7 @@ html, body {
   margin: 0 7px -3px 0;
   width: 15px;
   height: 15px;
-  background: url("../img/check.png") no-repeat #77be32;
+  background: url(/img/check.png) no-repeat #77be32;
 }
 .visible {display: block;}
 .s-container {position: relative; width: 1180px; margin: auto;}
@@ -546,7 +545,7 @@ html, body {
   zoom: 1;
   filter: alpha(opacity=0);
   opacity: 0;
-  background: url("../img/color-icons.png") no-repeat;
+  background: url(/img/color-icons.png) no-repeat;
   cursor: pointer;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -572,7 +571,7 @@ html, body {
   float: left;
   margin: 0 10px;
   text-align: center;
-  background: url("../img/color-icons.png") no-repeat bottom right;
+  background: url(/img/color-icons.png) no-repeat bottom right;
 }
 .nav-arrows {
   overflow: auto;
@@ -711,7 +710,7 @@ html, body {
   text-align: center;
 }
 .stat-icon {
-  background: url("../img/stat-icons.png");
+  background: url(/img/stat-icons.png);
   width: 73px;
   height: 71px;
   margin: 0 auto 20px;
@@ -807,23 +806,23 @@ html, body {
   transition: opacity 0.4s;
 }
 .contact .icons .github {
-  background: url(../img/github.png) no-repeat center;
+  background: url(/img/github.png) no-repeat center;
   background-size: 65px 65px;
 }
 .contact .icons .stackoverflow {
-  background: url(../img/stackoverflow.png) no-repeat center;
+  background: url(/img/stackoverflow.png) no-repeat center;
   background-size: 65px 65px;
 }
 .contact .icons .hackerrank {
-  background: url(../img/hackerrank.png) no-repeat center;
+  background: url(/img/hackerrank.png) no-repeat center;
   background-size: 65px 65px;
 }
 .contact .icons .codecademy {
-  background: url(../img/codecademy.png) no-repeat center;
+  background: url(/img/codecademy.png) no-repeat center;
   background-size: 65px 65px;
 }
 .contact .icons .linkedin {
-  background: url(../img/linkedin.png) no-repeat center;
+  background: url(/img/linkedin.png) no-repeat center;
   background-size: 65px 65px;
 }
 .contact .icons li a:hover {
@@ -923,7 +922,7 @@ html, body {
     margin: 0;
   }
 }
-#mobile-background {height: 100%; display: none; background-image: url("../img/bg.jpg"); background-size: cover;}
+#mobile-background {height: 100%; display: none; background-image: url(/img/bg.jpg); background-size: cover;}
 
 /* Green Shaders */
 .green .skill-icon,.green .portfolio-element,.green .stat-icon,.green .p-two {background-color: #77be32;}
@@ -1115,7 +1114,7 @@ html, body {
     text-align: left;
     text-indent: -9999px;
     position: relative;
-    background: url("../img/menu-icon-blk.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url(/img/menu-icon-blk.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     float: right;
     cursor: pointer;
   }
