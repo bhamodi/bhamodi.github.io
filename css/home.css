@@ -952,6 +952,7 @@ html, body {
 }
 .work-description {
   text-align: left;
+  padding-right: 10px;
 }
 .animated {
   -webkit-animation-duration: 2s;
