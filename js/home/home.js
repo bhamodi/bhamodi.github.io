@@ -317,7 +317,7 @@ $(document).ready(function () {
 
   /* Dynamic Days Left Calculator */
   function calculateDaysToGraduation() {
-    var gradDay = new Date('2018-04-30');
+    var gradDay = new Date('2018-04-23');
     var today = new Date();
     var millisecondsPerDay = 24 * 60 * 60 * 1000;
     var utcToday = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
