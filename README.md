@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-The code behind my fully responsive portfolio: www.baraa.ca
+The code behind my fully responsive portfolio: http://baraa.ca
 
 ### Website Description
 
