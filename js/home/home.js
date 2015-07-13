@@ -1,10 +1,10 @@
 "use strict";
 
-$(window).load(function () {
+$(window).load(function() {
   $('.preloader').fadeOut(3000);
 });
 
-$(document).ready(function () {
+$(document).ready(function() {
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
     // Hide player and display a background picture instead of a video if on mobile.
     $('#home').css('display', 'none');
@@ -15,7 +15,7 @@ $(document).ready(function () {
 
   /* Menu Headers */
   $('.header').sticky({topSpacing: 0});
-  $('a[href*=#]').click(function () {
+  $('a[href*=#]').click(function() {
     if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
       var $target = $(this.hash);
       $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
@@ -29,10 +29,10 @@ $(document).ready(function () {
 
   /* Services RollOver Info */
   function loadServices() {
-    $('.skill-icon').mouseenter(function () {
+    $('.skill-icon').mouseenter(function() {
       $(this).parent().find('.skill-hover').addClass('visible');
     });
-    $('.skill-icon').mouseleave(function () {
+    $('.skill-icon').mouseleave(function() {
       $(this).parent().find('.skill-hover').removeClass('visible');
     });
   }
@@ -44,27 +44,27 @@ $(document).ready(function () {
 
   /* Jump Menu */
   function loadJump() {
-    $('.jump-menu').click(function () {
+    $('.jump-menu').click(function() {
       if ($('#navbar').hasClass('active')) {
         $('#navbar').removeClass('active');
       } else {
         $('#navbar').addClass('active');
       }
     });
-    $('#navbar ul li a').click(function () {
+    $('#navbar ul li a').click(function() {
       $('#navbar').removeClass('active');
     });
   }
 
   /* Scroll Up */
-  $('.scrollup').click(function () {
+  $('.scrollup').click(function() {
     $('html,body').animate({scrollTop: 0}, 3000);
     return false;
   });
 
   /* Parallax */
   function move(section){
-    $(section).each(function () {
+    $(section).each(function() {
       if ($(this).attr('class') === 'parallax') {
         $(this).css('background-position', '0 ' + $(window).scrollTop()/3 + 'px');
       } else {
@@ -74,14 +74,14 @@ $(document).ready(function () {
   }
 
   /* Counter */
-  $.fn.countTo = function (options) {
+  $.fn.countTo = function(options) {
     // merge the default plugin settings with the custom options
     options = $.extend({}, $.fn.countTo.defaults, options || {});
     // how many times to update the value, and how much to increment the value on each update
     var loops = Math.ceil(options.speed / options.refreshInterval),
       increment = (options.to - options.from) / loops;
 
-    return $(this).each(function () {
+    return $(this).each(function() {
       var _this = this,
         loopCount = 0,
         value = options.from,
@@ -92,13 +92,13 @@ $(document).ready(function () {
         loopCount++;
         $(_this).html(value.toFixed(options.decimals));
 
-        if (typeof(options.onUpdate) == 'function') {
+        if (typeof(options.onUpdate) === 'function') {
           options.onUpdate.call(_this, value);
         }
         if (loopCount >= loops) {
           clearInterval(interval);
           value = options.to;
-          if (typeof(options.onComplete) == 'function') {
+          if (typeof(options.onComplete) === 'function') {
             options.onComplete.call(_this, value);
           }
         }
@@ -110,9 +110,9 @@ $(document).ready(function () {
   function loadTitleAnimated() {
     var myInterval;
     var counter = 1;
-    var myFunc = function () {
+    var myFunc = function() {
       var current = $('.main-title ul li').length;
-      if (current == counter) {
+      if (current === counter) {
         $('.main-title ul li.current-title').removeClass('current-title');
         $('.main-title ul li').first().addClass('current-title');
         counter = 1;
@@ -142,7 +142,7 @@ $(document).ready(function () {
     layoutMode: 'fitRows'
   });
   // filter items when filter link is clicked
-  $('#filters a').click(function () {
+  $('#filters a').click(function() {
     $('#filters a').removeClass('active');
     $(this).addClass('active');
     container.isotope({ filter: $(this).attr('data-option-value') });
@@ -170,14 +170,14 @@ $(document).ready(function () {
       columnNumb = splitColumns(),
       postWidth = Math.floor(winWidth / columnNumb),
       postHeight = Math.floor(postWidth * 0.75);
-    container.find('.element').each(function () {
+    container.find('.element').each(function() {
       $(this).css({
-        width : postWidth + 'px',
-        height : postHeight + 'px'
+        width: postWidth + 'px',
+        height: postHeight + 'px'
       });
-      var _height = ($(this).find('div').height()/2) - 49;
+      var _height = ($(this).find('div').height() / 2) - 49;
       $(this).find('div > span').css({
-        margin : _height + 'px 20px'
+        margin: _height + 'px 20px'
       });
     });
   }
@@ -188,7 +188,7 @@ $(document).ready(function () {
   }
 
   function loadIsotope() {
-    container.imagesLoaded(function () {
+    container.imagesLoaded(function() {
       setProjects();
     });
     setProjects();
@@ -196,15 +196,15 @@ $(document).ready(function () {
 
   /* Call HoverDir Portfolio RollOver */
   function loadHoverDir() {
-    $('#portfolio-grid > .portfolio-element').each(function () {
+    $('#portfolio-grid > .portfolio-element').each(function() {
       $(this).hoverdir({
-        hoverDelay : 5
+        hoverDelay: 5
       });
     });
   }
 
   /* Scroll */
-  $(window).bind('scroll', function () {
+  $(window).bind('scroll', function() {
     /* Parallax */
     move('.paraOn'); //move the background images in relation to the movement of the scrollbar
 
@@ -223,7 +223,7 @@ $(document).ready(function () {
   }
 
   var doit;
-  $(window).bind('resize', function () {
+  $(window).bind('resize', function() {
     clearTimeout(doit);
     doit = setTimeout(resizedw, 1000);
   });
@@ -231,7 +231,7 @@ $(document).ready(function () {
   /* Inview */
   function loadInview() {
     /* Parallax */
-    $('.parallax').bind('inview', function (event, visible) {
+    $('.parallax').bind('inview', function(event, visible) {
       if (visible === true) {
         // element is now visible in the viewport
         var offset = $(this).offset();
@@ -243,13 +243,13 @@ $(document).ready(function () {
     });
 
     /* Fade In Elements */
-    $('.hideme').bind('inview', function (event, visible) {
+    $('.hideme').bind('inview', function(event, visible) {
       if (visible === true) {
         var offset = $(this).offset();
         $(this).removeClass('hideme');
       }
     });
-    $('.horizontal-line').bind('inview', function (event, visible) {
+    $('.horizontal-line').bind('inview', function(event, visible) {
       if (visible === true) {
         $('.mobile-parallax-image').removeClass('hideme-slide');
       }
@@ -258,11 +258,11 @@ $(document).ready(function () {
     /* Stats Counter */
     var count = 0;
     var dataPercentage;
-    $('.stat-counter').bind('inview', function (event, visible) {
+    $('.stat-counter').bind('inview', function(event, visible) {
       if (visible === true && count === 0) {
         // Element is now visible in the viewport
         count++;
-        $('.stat-counter').each(function () {
+        $('.stat-counter').each(function() {
           if ($(this).hasClass('dynamic')) {
             dataPercentage = calculateDaysToGraduation();
           } else {
@@ -279,35 +279,35 @@ $(document).ready(function () {
     });
 
     /* Work Experience */
-    $('.work-exp-right-0').bind('inview', function (event, visible) {
+    $('.work-exp-right-0').bind('inview', function(event, visible) {
       if (visible === true) {
         $('.work-exp-right-0').addClass('animated fadeInLeft');
         $('.work-exp-right-0').removeClass('hideme');
       }
     });
 
-    $('.work-exp-left-1').bind('inview', function (event, visible) {
+    $('.work-exp-left-1').bind('inview', function(event, visible) {
       if (visible === true) {
         $('.work-exp-left-1').addClass('animated fadeInRight');
         $('.work-exp-left-1').removeClass('hideme');
       }
     });
 
-    $('.work-exp-right-1').bind('inview', function (event, visible) {
+    $('.work-exp-right-1').bind('inview', function(event, visible) {
       if (visible === true) {
         $('.work-exp-right-1').addClass('animated fadeInLeft');
         $('.work-exp-right-1').removeClass('hideme');
       }
     });
 
-    $('.work-exp-left-2').bind('inview', function (event, visible) {
+    $('.work-exp-left-2').bind('inview', function(event, visible) {
       if (visible === true) {
         $('.work-exp-left-2').addClass('animated fadeInRight');
         $('.work-exp-left-2').removeClass('hideme');
       }
     });
 
-    $('.work-exp-right-2').bind('inview', function (event, visible) {
+    $('.work-exp-right-2').bind('inview', function(event, visible) {
       if (visible === true) {
         $('.work-exp-right-2').addClass('animated fadeInLeft');
         $('.work-exp-right-2').removeClass('hideme');
