@@ -272,7 +272,7 @@ $(document).ready(function () {
             from: 0,
             to: dataPercentage,
             speed: 3500,
-            refreshInterval: 30
+            refreshInterval: 50
           });
         });
       }
