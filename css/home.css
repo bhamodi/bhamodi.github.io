@@ -132,13 +132,13 @@ html, body {
 }
 .hideme {opacity: 0;}
 .hideme-slide {opacity: 0; bottom: -100% !important;}
-.dontHide {
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+.fade {
+  -webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
-.dontHide.delay {
+.fade.delay {
   -webkit-transition: all 1.5s ease-in-out;
   -moz-transition: all 1.5s ease-in-out;
   -o-transition: all 1.5s ease-in-out;
@@ -1101,8 +1101,7 @@ html, body {
 
 /* Anything smaller than 975 pixels (devices and browsers) */
 @media only screen and (max-width: 975px) {
-  .hideme, .horizontal-line {opacity: 1;}
-  .parallax .hideme-slide {bottom: 0 !important; opacity: 1 !important;}
+  .horizontal-line {opacity: 1;}
   .menu {display: none;}
   .jump-menu {display: block;}
   .main-title {height: 350px;top: 50%; margin-top:-175px;}
@@ -1186,7 +1185,6 @@ html, body {
 
 /* Mobile portrait size to mobile landscape size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-  .hideme {opacity: 1;}
   .title-container {width: 90%;}
   .main-title {height: 300px; top: 50%; margin-top: -150px;}
   .logo {margin-left: 20px;}
