@@ -251,7 +251,7 @@ $(document).ready(function () {
     });
     $('.horizontal-line').bind('inview', function (event, visible) {
       if (visible === true) {
-        $('.dontHide').removeClass('hideme-slide2');
+        $('.mobile-parallax-image').removeClass('hideme-slide2');
       }
     });
 
