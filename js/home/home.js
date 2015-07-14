@@ -180,7 +180,7 @@ $(document).ready(function() {
   function loadHoverDir() {
     $('#portfolio-grid > .portfolio-element').each(function() {
       $(this).hoverdir({
-        hoverDelay: 5
+        hoverDelay: 50
       });
     });
   }
@@ -217,10 +217,32 @@ $(document).ready(function() {
       if (visible === true) {
         // element is now visible in the viewport
         var offset = $(this).offset();
-        $(this).addClass('paraOn').attr('yPos',offset.top);
+        $(this).addClass('paraOn').attr('yPos', offset.top);
       } else {
         // element has gone out of viewport
         $(this).removeClass('paraOn');
+      }
+    });
+
+    /* Stats Counter */
+    var count = 0;
+    var dataValue;
+    $('.stat-counter').bind('inview', function(event, visible) {
+      if (visible === true && count === 0) {
+        count++;
+        $('.stat-counter').each(function() {
+          if ($(this).hasClass('dynamic')) {
+            dataValue = calculateDaysToGraduation();
+          } else {
+            dataValue = $(this).attr('data-value');
+          }
+          $(this).find('.stat-count').delay(6000).countTo({
+            from: 0,
+            to: dataValue,
+            speed: 3000,
+            refreshInterval: 50
+          });
+        });
       }
     });
 
@@ -231,32 +253,11 @@ $(document).ready(function() {
         $(this).removeClass('hideme');
       }
     });
+
+    /* Sliding Fade In Elements */
     $('.horizontal-line').bind('inview', function(event, visible) {
       if (visible === true) {
         $('.mobile-parallax-image').removeClass('hideme-slide');
-      }
-    });
-
-    /* Stats Counter */
-    var count = 0;
-    var dataPercentage;
-    $('.stat-counter').bind('inview', function(event, visible) {
-      if (visible === true && count === 0) {
-        // Element is now visible in the viewport
-        count++;
-        $('.stat-counter').each(function() {
-          if ($(this).hasClass('dynamic')) {
-            dataPercentage = calculateDaysToGraduation();
-          } else {
-            dataPercentage = $(this).attr('data-perc');
-          }
-          $(this).find('.stat-count').delay(6000).countTo({
-            from: 0,
-            to: dataPercentage,
-            speed: 3500,
-            refreshInterval: 50
-          });
-        });
       }
     });
 
