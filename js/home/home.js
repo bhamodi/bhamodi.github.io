@@ -66,9 +66,9 @@ $(document).ready(function() {
   function move(section){
     $(section).each(function() {
       if ($(this).attr('class') === 'parallax') {
-        $(this).css('background-position', '0 ' + $(window).scrollTop()/3 + 'px');
+        $(this).css('background-position', '0 ' + $(window).scrollTop() / 3 + 'px');
       } else {
-        $(this).css('background-position', '0 ' + (($(window).scrollTop() + $(window).height() - $(this).attr('yPos'))/3 + $(this).height()) + 'px');
+        $(this).css('background-position', '0 ' + (($(window).scrollTop() + $(window).height() - $(this).attr('yPos')) / 3 + $(this).height()) + 'px');
       }
     });
   }
@@ -106,24 +106,6 @@ $(document).ready(function() {
     });
   };
 
-  /* Slider AutoChanging Title */
-  function loadTitleAnimated() {
-    var myInterval;
-    var counter = 1;
-    var myFunc = function() {
-      var current = $('.main-title ul li').length;
-      if (current === counter) {
-        $('.main-title ul li.current-title').removeClass('current-title');
-        $('.main-title ul li').first().addClass('current-title');
-        counter = 1;
-      } else {
-        $('.main-title ul li.current-title').removeClass('current-title').next().addClass('current-title');
-        counter++;
-      }
-    };
-    myInterval = setInterval(myFunc, 5000);
-  }
-
   /* Main Menu Section Selector */
   function loadMenuSelector() {
     $('#nav').onePageNav({
@@ -131,7 +113,7 @@ $(document).ready(function() {
     });
   }
 
-  /* Isotope/ Portfolio Filter PlugIn */
+  /* Isotope/Portfolio Filter PlugIn */
   var container = $('#portfolio-grid');
   container.isotope({
     animationEngine: 'best-available',
@@ -329,7 +311,6 @@ $(document).ready(function() {
   loadServices();
   loadJump();
   loadInview();
-  loadTitleAnimated();
   loadMenuSelector();
   loadIsotope();
   loadHoverDir();
