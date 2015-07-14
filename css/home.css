@@ -8,6 +8,12 @@ body {
   line-height: 1.4;
 }
 
+/* Preload assets here. */
+body:after {
+  display: none;
+  content: url(/img/check.png);
+}
+
 /* Remove the gap between images and the bottom of their containers: h5bp.com/i/440 */
 img {
   vertical-align: middle;
