@@ -161,7 +161,7 @@
   Plugin.prototype.wrx = null;
   Plugin.prototype.wry = null;
   Plugin.prototype.portrait = null;
-  Plugin.prototype.desktop = !navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|BB10|mobi|tablet|opera mini|nexus 7)/i);
+  Plugin.prototype.desktop = !navigator.userAgent.match(/(Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini)/i);
   Plugin.prototype.vendors = [null,['-webkit-','webkit'],['-moz-','Moz'],['-o-','O'],['-ms-','ms']];
   Plugin.prototype.motionSupport = !!window.DeviceMotionEvent;
   Plugin.prototype.orientationSupport = !!window.DeviceOrientationEvent;
