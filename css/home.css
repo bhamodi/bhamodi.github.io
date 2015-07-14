@@ -922,7 +922,7 @@ html, body {
     margin: 0;
   }
 }
-#mobile-background {height: 100%; display: none; background-image: url(/img/bg.jpg); background-size: cover;}
+#mobile-background {height: 100%; display: none; background-size: cover;}
 
 /* Green Shaders */
 .green .skill-icon,.green .portfolio-element,.green .stat-icon,.green .p-two {background-color: #77be32;}
