@@ -1,15 +1,16 @@
 /* Dynamic Window Ajax Portfolio Content */
 'use strict';
 
+// Open project and set actual to active project.
 var $actual = null;
-var opened = false;
 $('.portfolio-element').click(function() {
   openProject($(this).attr('id'));
   $actual = $(this);
 });
+
+// Slide up project when a filter is applied.
 $('.folio-btn').click(function() {
   $('.project-window').slideUp('slow');
-  opened = false;
 });
 
 function openProject(projectName) {
@@ -17,18 +18,10 @@ function openProject(projectName) {
     url: projectName,
     success: function(data) {
       $('.project-content').html(data);
-      $('.project-content').hide(0);
-      $('.project-window').hide(0);
+      $('.project-window').fadeIn('slow');
       closeProject();
       changeProject();
-
-      $('html, body').animate({ scrollTop: $('#projects').offset().top }, 300, function() {
-        $('.project-window').show(0);
-        $('.project-window').animate({ height:900 }, 500, function() {
-          $('.project-window').css('height', 'auto');
-          $('.project-content').fadeIn('slow');
-        });
-      });
+      $('html, body').animate({ scrollTop: $('#portfolio').offset().top }, 500);
     }
   });
 }
@@ -36,8 +29,7 @@ function openProject(projectName) {
 function closeProject() {
   $('.close').click(function() {
     $('.project-window').slideUp('slow');
-    $('html, body').animate({ scrollTop: $('#projects').offset().top }, 1000);
-    opened = false;
+    $('html, body').animate({ scrollTop: $('#projects').offset().top }, 500);
   });
 }
 
@@ -70,10 +62,10 @@ function prevProject() {
 function changeProject() {
   $('.next-button').click(function() {
     nextProject();
-    $('html, body').animate({ scrollTop: $('#project-show').offset().top }, 1000);
+    $('html, body').animate({ scrollTop: $('#project-show').offset().top }, 500);
   });
   $('.prev-button').click(function() {
     prevProject();
-    $('html, body').animate({ scrollTop: $('#project-show').offset().top }, 1000);
+    $('html, body').animate({ scrollTop: $('#project-show').offset().top }, 500);
   });
 }
