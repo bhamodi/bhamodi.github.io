@@ -2,6 +2,14 @@
 
 $(window).load(function() {
   $('.preloader').fadeOut(3000);
+  // Open project content if a user attempts to go directly to a project.
+  var $target = window.location.hash;
+  if ($target.length) {
+    if ($target.indexOf('project-') >= 0) {
+      document.getElementById($target.slice(1)).click();
+      return false;
+    }
+  }
 });
 
 $(document).ready(function() {
@@ -15,85 +23,27 @@ $(document).ready(function() {
 
   /* Menu Headers */
   $('.header').sticky({topSpacing: 0});
+  // Navigation handler.
   $('a[href*=#]').click(function() {
     var $target = $(this.hash);
-    $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
     if ($target.length) {
       var targetOffset = $target.offset().top;
-      $('html,body').animate({scrollTop: targetOffset - 75}, 2000);
+      $('html,body').animate({scrollTop: targetOffset - 75}, 1000);
+      location.hash = $target.selector;
       return false;
     }
   });
 
-  /* Dynamic Window Ajax Portfolio Content */
-  // Open project and set actual to active project.
-  var $actual = null;
-  $('.portfolio-element').click(function() {
-    openProject($(this).attr('id'));
-    $actual = $(this);
-  });
-
-  // Slide up project when a filter is applied.
-  $('.folio-btn').click(function() {
-    $('.project-window').slideUp('slow');
-  });
-
-  function openProject(projectName) {
-    $.ajax({
-      url: projectName,
-      success: function(data) {
-        $('.project-content').html(data);
-        $('.project-window').fadeIn('slow');
-        closeProject();
-        changeProject();
-        $('html, body').animate({ scrollTop: $('#portfolio').offset().top }, 500);
+  // Hash handling when the hash is changed.
+  $(window).on('hashchange', function() {
+    var $target = window.location.hash;
+    if ($target.length) {
+      if ($target.indexOf('project-') >= 0) {
+        document.getElementById($target.slice(1)).click();
+        return false;
       }
-    });
-  }
-
-  function closeProject() {
-    $('.close').click(function() {
-      $('.project-window').slideUp('slow');
-      $('html, body').animate({ scrollTop: $('#projects').offset().top }, 500);
-    });
-  }
-
-  function nextProject() {
-    if ($actual.next().hasClass('final')) {
-      $actual = $($('.portfolioBase').next());
-    } else {
-      $actual = $($actual.next());
     }
-    if ($actual.hasClass('isotope-hidden')) {
-      nextProject();
-    } else {
-      openProject($actual.attr('id'));
-    }
-  }
-
-  function prevProject() {
-    if ($actual.prev().hasClass('portfolioBase')) {
-      $actual = $($('.final').prev());
-    } else {
-      $actual = $($actual.prev());
-    }
-    if ($actual.hasClass('isotope-hidden')) {
-      prevProject();
-    } else {
-      openProject($actual.attr('id'));
-    }
-  }
-
-  function changeProject() {
-    $('.next-button').click(function() {
-      nextProject();
-      $('html, body').animate({ scrollTop: $('#project-show').offset().top }, 500);
-    });
-    $('.prev-button').click(function() {
-      prevProject();
-      $('html, body').animate({ scrollTop: $('#project-show').offset().top }, 500);
-    });
-  }
+  });
 
   /* Services RollOver Info */
   function loadServices() {
@@ -143,7 +93,7 @@ $(document).ready(function() {
 
   /* Counter */
   $.fn.countTo = function(options) {
-    // merge the default plugin settings with the custom options
+    // merge the default plug-in settings with the custom options
     options = $.extend({}, $.fn.countTo.defaults, options || {});
     // how many times to update the value, and how much to increment the value on each update
     var loops = Math.ceil(options.speed / options.refreshInterval),
@@ -175,11 +125,7 @@ $(document).ready(function() {
   };
 
   /* Main Menu Section Selector */
-  function loadMenuSelector() {
-    $('#nav').onePageNav({
-      scrollOffset: 75 // Header height.
-    });
-  }
+  $('#nav').onePageNav();
 
   /* Isotope/Portfolio Filter PlugIn */
   var container = $('#portfolio-grid');
@@ -250,6 +196,80 @@ $(document).ready(function() {
       $(this).hoverdir({
         hoverDelay: 50
       });
+    });
+  }
+
+  /* Dynamic Window Ajax Portfolio Content */
+  // Open project and set actual to active project.
+  var $actual = null;
+  $('.portfolio-element').click(function() {
+    openProject($(this).attr('id'));
+    location.hash = $(this).attr('id');
+    $actual = $(this);
+  });
+
+  // Slide up project when a filter is applied.
+  $('.folio-btn').click(function() {
+    $('.project-window').slideUp('slow');
+  });
+
+  function openProject(projectName) {
+    $.ajax({
+      url: projectName,
+      success: function(data) {
+        $('.project-content').html(data);
+        $('.project-window').fadeIn('slow');
+        closeProject();
+        changeProject();
+        $('html, body').animate({ scrollTop: $('#portfolio').offset().top }, 500);
+      }
+    });
+  }
+
+  function closeProject() {
+    $('.close').click(function() {
+      $('.project-window').slideUp('slow');
+      $('html, body').animate({ scrollTop: $('#projects').offset().top }, 500);
+      location.hash = '#projects';
+    });
+  }
+
+  function nextProject() {
+    if ($actual.next().hasClass('final')) {
+      $actual = $($('.portfolioBase').next());
+    } else {
+      $actual = $($actual.next());
+    }
+    if ($actual.hasClass('isotope-hidden')) {
+      nextProject();
+    } else {
+      openProject($actual.attr('id'));
+    }
+    location.hash = $actual.attr('id');
+  }
+
+  function prevProject() {
+    if ($actual.prev().hasClass('portfolioBase')) {
+      $actual = $($('.final').prev());
+    } else {
+      $actual = $($actual.prev());
+    }
+    if ($actual.hasClass('isotope-hidden')) {
+      prevProject();
+    } else {
+      openProject($actual.attr('id'));
+    }
+    location.hash = $actual.attr('id');
+  }
+
+  function changeProject() {
+    $('.next-button').click(function() {
+      nextProject();
+      $('html, body').animate({ scrollTop: $('#project-show').offset().top }, 500);
+    });
+    $('.prev-button').click(function() {
+      prevProject();
+      $('html, body').animate({ scrollTop: $('#project-show').offset().top }, 500);
     });
   }
 
@@ -380,7 +400,6 @@ $(document).ready(function() {
   loadServices();
   loadJump();
   loadInview();
-  loadMenuSelector();
   loadIsotope();
   loadHoverDir();
 });
