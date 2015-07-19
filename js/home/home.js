@@ -28,8 +28,9 @@ $(document).ready(function() {
     var $target = $(this.hash);
     if ($target.length) {
       var targetOffset = $target.offset().top;
-      $('html,body').animate({scrollTop: targetOffset - 75}, 1000);
-      location.hash = $target.selector;
+      $('html,body').animate({scrollTop: targetOffset - 75}, 1000).promise().done(function() {
+        location.hash = $target.selector;
+      })
       return false;
     }
   });
@@ -222,6 +223,7 @@ $(document).ready(function() {
         closeProject();
         changeProject();
         $('html, body').animate({ scrollTop: $('#portfolio').offset().top }, 500);
+        return false;
       }
     });
   }
@@ -229,8 +231,9 @@ $(document).ready(function() {
   function closeProject() {
     $('.close').click(function() {
       $('.project-window').slideUp('slow');
-      $('html, body').animate({ scrollTop: $('#projects').offset().top }, 500);
       location.hash = '#projects';
+      $('html, body').animate({ scrollTop: $('#projects').offset().top }, 500);
+      return false;
     });
   }
 
@@ -266,10 +269,12 @@ $(document).ready(function() {
     $('.next-button').click(function() {
       nextProject();
       $('html, body').animate({ scrollTop: $('#project-show').offset().top }, 500);
+      return false
     });
     $('.prev-button').click(function() {
       prevProject();
       $('html, body').animate({ scrollTop: $('#project-show').offset().top }, 500);
+      return false;
     });
   }
 
