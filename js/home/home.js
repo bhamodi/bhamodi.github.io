@@ -7,7 +7,6 @@ $(window).load(function() {
   if ($target.length) {
     if ($target.indexOf('project-') >= 0) {
       document.getElementById($target.slice(1)).click();
-      return false;
     }
   }
 });
@@ -27,10 +26,14 @@ $(document).ready(function() {
   $('a[href*=#]').click(function() {
     var $target = $(this.hash);
     if ($target.length) {
-      var targetOffset = $target.offset().top;
-      $('html,body').animate({scrollTop: targetOffset - 75}, 1000).promise().done(function() {
-        location.hash = $target.selector;
-      })
+      var targetOffset = $target.offset().top - 50;
+      $('html, body').animate({scrollTop: targetOffset}, 1000).promise().done(function() {
+        if (history.pushState) {
+          history.pushState(null, null, $target.selector);
+        } else {
+          location.hash = $target.selector;
+        }
+      });
       return false;
     }
   });
@@ -41,7 +44,6 @@ $(document).ready(function() {
     if ($target.length) {
       if ($target.indexOf('project-') >= 0) {
         document.getElementById($target.slice(1)).click();
-        return false;
       }
     }
   });
@@ -74,12 +76,6 @@ $(document).ready(function() {
       $('#navbar').removeClass('active');
     });
   }
-
-  /* Scroll Up */
-  $('.scrollup').click(function() {
-    $('html,body').animate({scrollTop: 0}, 3000);
-    return false;
-  });
 
   /* Parallax */
   function move(section){
@@ -144,7 +140,6 @@ $(document).ready(function() {
     $(this).addClass('active');
     container.isotope({ filter: $(this).attr('data-option-value') });
     setProjects();
-    return false;
   });
 
   function splitColumns() {
@@ -205,7 +200,6 @@ $(document).ready(function() {
   var $actual = null;
   $('.portfolio-element').click(function() {
     openProject($(this).attr('id'));
-    location.hash = $(this).attr('id');
     $actual = $(this);
   });
 
@@ -222,8 +216,13 @@ $(document).ready(function() {
         $('.project-window').fadeIn('slow');
         closeProject();
         changeProject();
-        $('html, body').animate({ scrollTop: $('#portfolio').offset().top }, 500);
-        return false;
+        $('html, body').animate({scrollTop: $('#portfolio').offset().top}, 500).promise().done(function() {
+          if (history.pushState) {
+            history.pushState(null, null, '#' + projectName);
+          } else {
+            location.hash = '#' + projectName;
+          }
+        });
       }
     });
   }
@@ -231,9 +230,13 @@ $(document).ready(function() {
   function closeProject() {
     $('.close').click(function() {
       $('.project-window').slideUp('slow');
-      location.hash = '#projects';
-      $('html, body').animate({ scrollTop: $('#projects').offset().top }, 500);
-      return false;
+      $('html, body').animate({scrollTop: $('#projects').offset().top}, 500).promise().done(function() {
+        if (history.pushState) {
+          history.pushState(null, null, '#projects');
+        } else {
+          location.hash = '#projects';
+        }
+      });
     });
   }
 
@@ -248,7 +251,6 @@ $(document).ready(function() {
     } else {
       openProject($actual.attr('id'));
     }
-    location.hash = $actual.attr('id');
   }
 
   function prevProject() {
@@ -262,28 +264,24 @@ $(document).ready(function() {
     } else {
       openProject($actual.attr('id'));
     }
-    location.hash = $actual.attr('id');
   }
 
   function changeProject() {
     $('.next-button').click(function() {
       nextProject();
-      $('html, body').animate({ scrollTop: $('#project-show').offset().top }, 500);
-      return false
+      $('html, body').animate({scrollTop: $('#project-show').offset().top}, 500);
     });
+
     $('.prev-button').click(function() {
       prevProject();
-      $('html, body').animate({ scrollTop: $('#project-show').offset().top }, 500);
-      return false;
+      $('html, body').animate({scrollTop: $('#project-show').offset().top}, 500);
     });
   }
 
-  /* Scroll */
+  /* Scroll Parallax */
   $(window).bind('scroll', function() {
-    /* Parallax */
-    move('.paraOn'); //move the background images in relation to the movement of the scrollbar
-
-    /* Scroll Top Btn */
+    move('.paraOn'); // move the background images in relation to the movement of the scrollbar
+    /* Scroll to top button */
     if ($(this).scrollTop() > $(window).height() - 1) {
       $('.scrollup').fadeIn();
     } else {
@@ -342,7 +340,6 @@ $(document).ready(function() {
     /* Fade In Elements */
     $('.hideme').bind('inview', function(event, visible) {
       if (visible === true) {
-        var offset = $(this).offset();
         $(this).removeClass('hideme');
       }
     });
