@@ -6,7 +6,7 @@
   "homepage": "http://baraa.ca",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bhamodi/bhamodi.github.io"
+    "url": "https://github.com/bhamodi/bhamodi.github.io.git"
   },
   "license": "BSD-3-Clause",
   "devDependencies": {
