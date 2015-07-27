@@ -415,7 +415,7 @@ html, body {
   overflow: hidden;
 }
 .parallax.p-two {height: 625px;}
-.p-two {background: url(/img/parallax/parallax-02.png) repeat;}
+.p-two {background: url(/img/parallax/parallax.png) repeat;}
 .p-title-one {
   font-weight: 400;
   text-align: center;
