@@ -96,12 +96,12 @@
     this.vy = 0;
 
     // Callbacks
-    this.onMouseMove = this.onMouseMove.on(this);
-    this.onDeviceOrientation = this.onDeviceOrientation.on(this);
-    this.onOrientationTimer = this.onOrientationTimer.on(this);
-    this.onCalibrationTimer = this.onCalibrationTimer.on(this);
-    this.onAnimationFrame = this.onAnimationFrame.on(this);
-    this.onWindowResize = this.onWindowResize.on(this);
+    this.onMouseMove = this.onMouseMove.bind(this);
+    this.onDeviceOrientation = this.onDeviceOrientation.bind(this);
+    this.onOrientationTimer = this.onOrientationTimer.bind(this);
+    this.onCalibrationTimer = this.onCalibrationTimer.bind(this);
+    this.onAnimationFrame = this.onAnimationFrame.bind(this);
+    this.onWindowResize = this.onWindowResize.bind(this);
 
     // Initialize
     this.initialize();
