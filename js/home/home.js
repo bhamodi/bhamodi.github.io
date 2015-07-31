@@ -279,7 +279,7 @@ $(document).ready(function() {
   }
 
   /* Scroll Parallax */
-  $(window).bind('scroll', function() {
+  $(window).on('scroll', function() {
     move('.paraOn'); // move the background images in relation to the movement of the scrollbar
     /* Scroll to top button */
     if ($(this).scrollTop() > $(window).height() - 1) {
@@ -296,7 +296,7 @@ $(document).ready(function() {
   }
 
   var doit;
-  $(window).bind('resize', function() {
+  $(window).on('resize', function() {
     clearTimeout(doit);
     doit = setTimeout(resizedw, 1000);
   });
@@ -304,7 +304,7 @@ $(document).ready(function() {
   /* Inview */
   function loadInview() {
     /* Parallax */
-    $('.parallax').bind('inview', function(event, visible) {
+    $('.parallax').on('inview', function(event, visible) {
       if (visible === true) {
         // element is now visible in the viewport
         var offset = $(this).offset();
@@ -318,7 +318,7 @@ $(document).ready(function() {
     /* Stats Counter */
     var count = 0;
     var dataValue;
-    $('.stat-counter').bind('inview', function(event, visible) {
+    $('.stat-counter').on('inview', function(event, visible) {
       if (visible === true && count === 0) {
         count++;
         $('.stat-counter').each(function() {
@@ -338,49 +338,49 @@ $(document).ready(function() {
     });
 
     /* Fade In Elements */
-    $('.hideme').bind('inview', function(event, visible) {
+    $('.hideme').on('inview', function(event, visible) {
       if (visible === true) {
         $(this).removeClass('hideme');
       }
     });
 
     /* Sliding Fade In Elements */
-    $('.horizontal-line').bind('inview', function(event, visible) {
+    $('.horizontal-line').on('inview', function(event, visible) {
       if (visible === true) {
         $('.mobile-parallax-image').removeClass('hideme-slide');
       }
     });
 
     /* Work Experience */
-    $('.work-exp-right-0').bind('inview', function(event, visible) {
+    $('.work-exp-right-0').on('inview', function(event, visible) {
       if (visible === true) {
         $('.work-exp-right-0').addClass('animated fadeInLeft');
         $('.work-exp-right-0').removeClass('hideme');
       }
     });
 
-    $('.work-exp-left-1').bind('inview', function(event, visible) {
+    $('.work-exp-left-1').on('inview', function(event, visible) {
       if (visible === true) {
         $('.work-exp-left-1').addClass('animated fadeInRight');
         $('.work-exp-left-1').removeClass('hideme');
       }
     });
 
-    $('.work-exp-right-1').bind('inview', function(event, visible) {
+    $('.work-exp-right-1').on('inview', function(event, visible) {
       if (visible === true) {
         $('.work-exp-right-1').addClass('animated fadeInLeft');
         $('.work-exp-right-1').removeClass('hideme');
       }
     });
 
-    $('.work-exp-left-2').bind('inview', function(event, visible) {
+    $('.work-exp-left-2').on('inview', function(event, visible) {
       if (visible === true) {
         $('.work-exp-left-2').addClass('animated fadeInRight');
         $('.work-exp-left-2').removeClass('hideme');
       }
     });
 
-    $('.work-exp-right-2').bind('inview', function(event, visible) {
+    $('.work-exp-right-2').on('inview', function(event, visible) {
       if (visible === true) {
         $('.work-exp-right-2').addClass('animated fadeInLeft');
         $('.work-exp-right-2').removeClass('hideme');
