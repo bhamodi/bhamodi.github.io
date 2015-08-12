@@ -15,11 +15,19 @@ module.exports = function(grunt) {
           'js/dist/home.min.js': 'js/home/*.js'
         }
       }
+    },
+    watch: {
+      scripts: {
+        files: ['js/*.js', 'js/home/*.js', 'css/*.css'],
+        tasks: ['build']
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['uglify', 'cssmin']);
+  grunt.registerTask('build', ['uglify', 'cssmin']);
+  grunt.registerTask('default', ['watch']);
 }
