@@ -143,16 +143,16 @@ $(document).ready(function() {
   });
 
   function splitColumns() {
-    var winWidth = $(window).width(),
-      columnNumb = 1;
-    if (winWidth > 1200) {
+    var winWidth = $(window).width();
+    var columnNumb = 1;
+    if (winWidth > 1250) {
+      columnNumb = 5;
+    } else if (winWidth > 1000) {
       columnNumb = 4;
-    } else if (winWidth > 900) {
+    } else if (winWidth > 750) {
       columnNumb = 3;
-    } else if (winWidth > 600) {
+    } else if (winWidth > 400) {
       columnNumb = 2;
-    } else if (winWidth > 300) {
-      columnNumb = 1;
     }
     return columnNumb;
   }

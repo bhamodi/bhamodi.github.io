@@ -1,0 +1,40 @@
+<div class="project-container">
+  <div class="clear"></div>
+  <div class="project-info">
+    <div class="tag-project">TOOL DEVELOPER</div>
+    <div class="title-project">FACEBOOK ONLINE FRIEND TRACKER</div>
+    <div class="spacer"></div>
+    <div class="description">
+      <h3>General Overview</h3>
+      <p>
+        This was my first ever data science project so it was really interesting learning all about what data scientists do. This project was completed during my internship at Optimizely. Optimizing a user’s online social media engagement is a difficult challenge. Optimizely strives to equip customers with all the tools necessary to optimize experiences across all platforms from desktop web to mobile. However, Optimizely hasn't adventured into the realm of social media optimization. That is where this project comes in. This project analyzed different approaches to optimize a user’s social media engagement on Facebook. Specifically, it attempted to answer the question, “What is the best time to post on Facebook for optimal engagement?"
+      </p>
+      <p>
+        The solution comes in the form of a software tool that allows a user to keep track of the number of online friends that are on Facebook at any given time. For example, the tool could be configured to collect the number of online friends a user has every 15 minutes for two weeks in a row such that the user can get a statistically significant indication of which hour of which day had the largest available audience and hence the greatest probability for engagement.
+      </p>
+      <p>
+        There were many engineering design decisions that had to be made regarding the implementation of this tool. Decisions had to be made regarding topics like data extraction methods from Facebook, which programming languages and frameworks to use, data storage options, software distribution processes, security techniques and algorithmic design options.
+      </p>
+      <p>
+        You can try out the tool yourself by downloading it from the <a href="https://pypi.python.org/pypi/facebook-online-friend-tracker" target="_blank">Python Package Index.</a>
+      </p>
+      <h3>Software</h3>
+      <p>
+        In the end, a fully functional software tool was built and released. The tool was written in the Python language, used the Selenium framework for scraping, and stored data locally in a CSV file. The tool would log into a user’s Facebook account, extract the number of online friends via the chat bar, then store the timestamp, and the number of online friends into a CSV file. A user would then schedule this tool to run at a certain frequency, say every 15 minutes, for about two weeks to be able to collect enough data to get a statistically significant answer. You can find the open sourced code on my <a href="https://github.com/bhamodi/facebook-online-friend-tracker" target="_blank">GitHub.</a>
+      </p>
+      <h3>Results</h3>
+      <p>
+        After running the tool for two weeks at 15 minute intervals, it was determined that the best time to post on Facebook is 5:00PM PST for my set of friends. However, it is important to mention that this result is highly personalized as it is completely dependent on the demographic of my friends and their respective time zones. For this reason, each user is expected to attain a different result from this Facebook optimizer tool.
+      </p>
+      <p>
+        In addition to open sourcing the software, I've actually written up a blog post that fully details this project and shares all the key results observed from the data. You can find that blog post on <a href="https://blog.optimizely.com/2015/07/08/how-to-find-the-best-time-to-post-on-facebook/" target="_blank">Optimizely's Blog.</a>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="clear"></div>
+<div class="nav-arrows">
+  <div class="prev-button"></div>
+  <div class="close"></div>
+  <div class="next-button"></div>
+</div>
