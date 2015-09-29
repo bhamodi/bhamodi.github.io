@@ -199,7 +199,7 @@ $(document).ready(function() {
   // Open project and set actual to active project.
   var $actual = null;
   $('.portfolio-element').click(function() {
-    openProject($(this).attr('id'));
+    openProject($(this).attr('id') + '.html');
     $actual = $(this);
   });
 
@@ -218,9 +218,9 @@ $(document).ready(function() {
         changeProject();
         $('html, body').animate({scrollTop: $('#portfolio').offset().top}, 500).promise().done(function() {
           if (history.pushState) {
-            history.pushState(null, null, '#' + projectName);
+            history.pushState(null, null, '#' + projectName.split('.')[0]);
           } else {
-            location.hash = '#' + projectName;
+            location.hash = '#' + projectName.split('.'[0]);
           }
         });
       }
@@ -249,7 +249,7 @@ $(document).ready(function() {
     if ($actual.hasClass('isotope-hidden')) {
       nextProject();
     } else {
-      openProject($actual.attr('id'));
+      openProject($actual.attr('id') + '.html');
     }
   }
 
@@ -262,7 +262,7 @@ $(document).ready(function() {
     if ($actual.hasClass('isotope-hidden')) {
       prevProject();
     } else {
-      openProject($actual.attr('id'));
+      openProject($actual.attr('id') + '.html');
     }
   }
 
