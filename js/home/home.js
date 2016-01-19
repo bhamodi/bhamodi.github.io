@@ -386,13 +386,6 @@ $(document).ready(function() {
         $('.work-exp-left-2').removeClass('hideme');
       }
     });
-
-    $('.work-exp-right-2').on('inview', function(event, visible) {
-      if (visible === true) {
-        $('.work-exp-right-2').addClass('animated fadeInLeft');
-        $('.work-exp-right-2').removeClass('hideme');
-      }
-    });
   }
 
   /* Dynamic Days Left Calculator */
