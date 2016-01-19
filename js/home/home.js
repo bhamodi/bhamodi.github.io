@@ -352,6 +352,13 @@ $(document).ready(function() {
     });
 
     /* Work Experience */
+    $('.work-exp-left-0').on('inview', function(event, visible) {
+      if (visible === true) {
+        $('.work-exp-left-0').addClass('animated fadeInRight');
+        $('.work-exp-left-0').removeClass('hideme');
+      }
+    });
+
     $('.work-exp-right-0').on('inview', function(event, visible) {
       if (visible === true) {
         $('.work-exp-right-0').addClass('animated fadeInLeft');
