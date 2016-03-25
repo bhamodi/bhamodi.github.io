@@ -951,12 +951,15 @@ html, body {
   height: 100%;
   background-color: #f7f7f7;
 }
+.work-logo {
+  padding: 10px 0;
+}
 .work-logo img {
   width: 100px;
   height: 100px;
-  margin-top: 5px;
 }
 .work-description {
+  font-size: 14px;
   text-align: left;
   padding-right: 10px;
 }
