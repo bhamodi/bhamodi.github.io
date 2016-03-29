@@ -48,6 +48,24 @@ $(document).ready(function() {
     }
   });
 
+  /* Validation */
+  $('.contactForm').validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 3,
+      },
+      email: {
+        required: true,
+        email: true,
+      },
+      message: {
+        required: true,
+        minlength: 20,
+      },
+    },
+  });
+
   /* Services RollOver Info */
   function loadServices() {
     $('.skill-icon').mouseenter(function() {

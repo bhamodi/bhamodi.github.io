@@ -704,8 +704,58 @@ html, body {
   text-align: center;
 }
 
-.email {
-  font-size: 20px;
+/* Email Form */
+.error {
+  font-size: 14px;
+  color: #b94a48;
+}
+.bay {
+  overflow: hidden;
+  background-color: transparent;
+}
+.contactForm {
+  display: inline-block;
+  width: 80%;
+}
+.form-section {
+  margin-bottom: 10px;
+}
+.form-section textarea {
+  height: 100px;
+}
+.contactForm .form-section .span9 {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 11px;
+  font-weight: 300;
+  font-size: 13px;
+  color: #a8a8a8;
+  font-family: 'Montserrat', sans-serif;
+  background: #fbfbfb;
+}
+.contour-btn {
+  width: 100%;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 300;
+  display: inline-block;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  padding: 3px 30px;
+  border-radius: 10px;
+  border: none;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.contour-btn:hover {
+  background: #f7f7f7 !important;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 /* Stats */
@@ -932,8 +982,8 @@ html, body {
 
 /* Green Shaders */
 .green .skill-icon,.green .portfolio-element,.green .stat-icon,.green .p-two {background-color: #77be32;}
-.green .menu a:hover,.green #nav .current a,.green .second-title span {color: #77be32 !important;}
-.green .spacer,.green .folio-btn:hover,.green .folio-btn.selected,.green .logo span span {background: #77be32;}
+.green .menu a:hover,.green .contour-btn:hover,.green #nav .current a,.green .second-title span {color: #77be32 !important;}
+.green .spacer,.green .contour-btn,.green .folio-btn:hover,.green .folio-btn.selected,.green .logo span span {background: #77be32;}
 .green .logo span {background: #77be32; background: rgba(119,190,50,0.5);}
 .green .selected {border: 2px solid #77be32 !important; background: #77be32 !important;}
 
@@ -1136,6 +1186,7 @@ html, body {
   #navbar li ul {position: static; padding: 1.25em; padding-top: 0;}
   .portfolio-element div span {font-size: 16px;}
   .portfolio-element div span span.project-position {font-size: 14px;}
+  .contactForm {width: 100%;}
 }
 
 /* Tablet portrait sizes (devices and browsers) */
