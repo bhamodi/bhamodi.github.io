@@ -177,21 +177,16 @@ html, body {
 #video-volume {
   bottom: 80px;
   cursor: pointer;
-  font-size: 24px;
   margin-left: -12px;
   left: 50%;
   position: absolute;
   width: 25px;
   height: 25px;
-  z-index: 10;
   background: url(/img/audio.png) no-repeat;
 }
 .bouncing-arrow {
-  bottom: 40px;
   margin-left: -16px;
   left: 50%;
-  width: 32px !important;
-  height: 32px !important;
   background: url(/img/arrow-down.png) no-repeat;
   -webkit-animation: bounce 1s infinite;
 }
@@ -283,9 +278,6 @@ html, body {
 .continue-button {
   width: 135px;
   margin: 40px auto 0;
-  height: auto;
-  z-index: 10;
-  position: relative;
   color: #fff;
   font-size: 14px;
   font-weight: 700;
@@ -301,7 +293,10 @@ html, body {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.continue-button:hover {border: 2px solid #fff !important; background-color: #77be32;}
+.continue-button:hover {
+  border: 2px solid #fff !important;
+  background-color: #77be32;
+}
 .main-title {
   color: #fff;
   height: 385px;
@@ -317,7 +312,7 @@ html, body {
 .main-title a {text-decoration: none;}
 .main-title .spacer {width: 60px; margin: 30px auto 40px;}
 .title-container {
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
 }
 .main-title ul {
@@ -359,16 +354,35 @@ html, body {
 }
 
 /* Featured Works Caroussel */
-.content {position: relative;}
-.dark {background: #f7f7f7; padding-bottom: 85px;}
+.content {
+  position: relative;
+}
+.dark {
+  background: #f7f7f7;
+  padding-bottom: 85px;
+}
 .title {
   font-weight: 300;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
-.title.one {color: #404141; font-size: 37px; letter-spacing: 5px; padding: 80px 0 30px;}
-.title.two {color: #757575; font-size: 18px; font-family: 'Open Sans', sans-serif; width: 680px; margin: 50px auto;}
-.light {background: #fff; padding-bottom: 20px;}
+.title.one {
+  color: #404141;
+  font-size: 37px;
+  letter-spacing: 5px;
+  padding: 80px 0 30px;
+}
+.title.two {
+  color: #757575;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  width: 680px;
+  margin: 50px auto;
+}
+.light {
+  background: #fff;
+  padding-bottom: 20px;
+}
 .dark:after {
   content: '';
   position: absolute;
@@ -401,10 +415,11 @@ html, body {
   font-family: 'Open Sans', sans-serif;
   font-size: 28px;
   color: #434343;
-  padding-bottom: 50px;
-  margin-top: 10px;
+  margin: 10px 0 50px;
 }
-.title-full-one {padding-top: 80px;}
+.title-full-one {
+  padding-top: 80px;
+}
 
 /* Parallax */
 .parallax .p-dark {color: #404040;}
@@ -511,14 +526,13 @@ html, body {
   float: left;
   text-align: center;
   position: relative;
-  overflow: visible;
 }
 .skill-title {
   font-family: 'Open Sans', sans-serif;
   color: #fff;
   font-size: 24px;
   font-weight: 400;
-  padding-top: 63px;
+  padding-top: 64px;
 }
 .skill-icon {
   cursor: crosshair !important;
@@ -526,8 +540,6 @@ html, body {
   height: 160px;
   border-radius: 50%;
   margin: 30px auto 30px;
-  background-position: center center;
-  background-repeat: no-repeat;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
@@ -767,8 +779,8 @@ html, body {
 }
 .stat-icon {
   background: url(/img/stat-icons.png);
-  width: 73px;
-  height: 71px;
+  width: 70px;
+  height: 70px;
   margin: 0 auto 20px;
 }
 .highlight {
@@ -989,8 +1001,13 @@ html, body {
 
 /* Work Experience */
 .work-container {
+  font-family: 'Open Sans', sans-serif;
   width: 100%;
   text-align: center;
+}
+.work-exp {
+  border: 2px solid #77BE32;
+  border-radius: 25px;
 }
 .work-exp-left-0, .work-exp-right-0, .work-exp-left-1, .work-exp-right-1, .work-exp-left-2 {
   display: block;
@@ -1245,7 +1262,6 @@ html, body {
 
 /* Mobile portrait size to mobile landscape size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-  .title-container {width: 90%;}
   .main-title {height: 300px; top: 50%; margin-top: -150px;}
   .logo {margin-left: 20px;}
   .main-title ul li {line-height: 50px;}
