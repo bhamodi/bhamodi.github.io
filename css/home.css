@@ -62,7 +62,6 @@ textarea {
 }
 
 @media print,
-(-o-min-device-pixel-ratio: 5/4),
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
@@ -120,6 +119,11 @@ textarea {
   }
 }
 
+::-moz-selection {
+  background-color: #77be32;
+  color: #fff;
+}
+
 ::selection {
   background-color: #77be32;
   color: #fff;
@@ -140,15 +144,11 @@ html, body {
 .hideme-slide {opacity: 0; bottom: -100% !important;}
 .fade {
   -webkit-transition: all 1.5s ease-in-out;
-  -moz-transition: all 1.5s ease-in-out;
-  -o-transition: all 1.5s ease-in-out;
-  transition: all 1.5s ease-in-out;
+          transition: all 1.5s ease-in-out;
 }
 .fade.delay {
   -webkit-transition: all 1.5s ease-in-out;
-  -moz-transition: all 1.5s ease-in-out;
-  -o-transition: all 1.5s ease-in-out;
-  transition: all 1.5s ease-in-out;
+          transition: all 1.5s ease-in-out;
 }
 
 /* JumpMenu Styles */
@@ -235,15 +235,11 @@ html, body {
   text-decoration: none;
   color: #414141;
   -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
 }
 .menu a:hover {
   -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
 }
 .logo {
   float: left;
@@ -292,9 +288,7 @@ html, body {
   letter-spacing: 2px;
   pointer-events: auto;
   -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
 }
 .continue-button:hover {
   border: 2px solid #fff !important;
@@ -339,9 +333,7 @@ html, body {
   top: 40px;
   line-height: 100px;
   -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
   transition-timing-function: ease;
   -webkit-transition-timing-function: ease;
 }
@@ -349,9 +341,7 @@ html, body {
   opacity: 1;
   top: 0;
   -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
   transition-timing-function: ease;
   -webkit-transition-timing-function: ease;
 }
@@ -544,9 +534,7 @@ html, body {
   border-radius: 50%;
   margin: 30px auto 30px;
   -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
 }
 .skill-icon:hover {
   background-color: #e6e6e6 !important;
@@ -569,9 +557,7 @@ html, body {
   background: url(/img/color-icons.png) no-repeat;
   cursor: pointer;
   -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
 }
 .portfolio-element:hover .project-title {opacity: 1;}
 .nav-arrows .close {
@@ -603,23 +589,17 @@ html, body {
 .portfolio-element img {
   opacity: 1;
   -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
 }
 .portfolio-element:hover img {
   opacity: 0.1;
   -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
 }
 .portfolio-element:hover div {
   opacity: 1;
   -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
 }
 .portfolio-element {
   overflow: hidden;
@@ -632,9 +612,7 @@ html, body {
   left: 100%;
   opacity: 0;
   -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
 }
 .portfolio-element div span {
   display: block;
@@ -680,16 +658,12 @@ html, body {
   text-decoration: none;
   margin: 0 5px 10px;
   -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
 }
 .folio-btn:hover {
   color: #fff;
   -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
 }
 .folio-btn.active {background: #77be32 !important; color: #fff !important;}
 .portfolio-element {position: relative; list-style: none;}
@@ -761,16 +735,12 @@ html, body {
   border-radius: 10px;
   border: none;
   -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
+          transition: all 0.4s ease-out;
 }
 .contour-btn:hover {
   background: #f7f7f7 !important;
   -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
+          transition: all 0.4s ease-out;
 }
 
 /* Stats */
@@ -872,9 +842,7 @@ html, body {
   height: 65px;
   opacity: 0.6;
   -webkit-transition: opacity 0.4s;
-  -moz-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
-  transition: opacity 0.4s;
+          transition: opacity 0.4s;
 }
 .contact .icons .github {
   background: url(/img/github.png) no-repeat center;
@@ -899,8 +867,7 @@ html, body {
 .contact .icons li a:hover {
   opacity: 1;
   -webkit-transition: opacity 0.3s;
-  -moz-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+          transition: opacity 0.3s;
 }
 .contact .copy-right {
   margin-top: 30px;
@@ -1111,25 +1078,17 @@ html, body {
 .isotope,
 .isotope .isotope-item {
   -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -ms-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .isotope {
   -webkit-transition-property: height, width;
-  -moz-transition-property: height, width;
-  -ms-transition-property: height, width;
-  -o-transition-property: height, width;
-  transition-property: height, width;
+          transition-property: height, width;
 }
 
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
-  -moz-transition-property: -moz-transform, opacity;
-  -ms-transition-property: -ms-transform, opacity;
-  -o-transition-property: -o-transform, opacity;
+          transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
 }
 
@@ -1138,19 +1097,13 @@ html, body {
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
   -webkit-transition-duration: 0s;
-  -moz-transition-duration: 0s;
-  -ms-transition-duration: 0s;
-  -o-transition-duration: 0s;
-  transition-duration: 0s;
+          transition-duration: 0s;
 }
 
 /* disable CSS transitions for containers with infinite scrolling*/
 .isotope.infinite-scrolling {
   -webkit-transition: none;
-  -moz-transition: none;
-  -ms-transition: none;
-  -o-transition: none;
-  transition: none;
+          transition: none;
 }
 
 /* Large tablets and small computer monitors (devices and browsers) */
