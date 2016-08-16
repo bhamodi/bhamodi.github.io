@@ -70,7 +70,7 @@
   </div>
   <section id="home" class="clear">
     <div class="video-mask"></div>
-    <a id="video-volume" onclick="$('#background-video').toggleVolume()"></a>
+    <a class="video-volume" onclick="$('#background-video').toggleVolume(); $(this).toggleClass('video-volume-unmute')"></a>
     <a href="#skills"><div class="bouncing-arrow"></div></a>
 
     <!-- Video Background -->

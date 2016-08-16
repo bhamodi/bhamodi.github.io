@@ -174,7 +174,7 @@ html, body {
   height: 100%;
   background-color: #000;
 }
-#video-volume {
+.video-volume {
   bottom: 80px;
   cursor: pointer;
   margin-left: -12px;
@@ -182,6 +182,9 @@ html, body {
   position: absolute;
   width: 25px;
   height: 25px;
+  background: url(/img/audio-mute.png) no-repeat;
+}
+.video-volume-unmute {
   background: url(/img/audio.png) no-repeat;
 }
 .bouncing-arrow {
@@ -1276,11 +1279,11 @@ html, body {
 
 /* Mobile portrait size to mobile landscape size (devices and browsers) */
 @media only screen and (max-height: 600px) {
-  #video-volume {bottom: 50px;}
+  .video-volume {bottom: 50px;}
 }
 
 /* Mobile portrait size to mobile landscape size (devices and browsers) */
 @media only screen and (max-height: 500px) {
-  #video-volume {bottom: 10px;}
+  .video-volume {bottom: 10px;}
   .bouncing-arrow {display: none;}
 }
