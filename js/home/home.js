@@ -140,7 +140,27 @@ $(document).ready(function() {
   };
 
   /* Main Menu Section Selector */
-  $('#nav').onePageNav();
+  $("#mobile-nav > li > a").first().click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 750);
+    return false;
+  });
+
+  $(".logo").click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 750);
+    return false;
+  });
+
+  $('#nav').onePageNav({
+    currentClass: 'current',
+  });
+
+  $('#mobile-nav').onePageNav({
+    currentClass: 'mobile-current',
+  });
 
   /* Isotope/Portfolio Filter PlugIn */
   var container = $('#portfolio-grid');
