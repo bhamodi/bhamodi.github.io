@@ -981,7 +981,7 @@ html, body {
   border: 2px solid #77BE32;
   border-radius: 25px;
 }
-.work-exp-left-0, .work-exp-right-0, .work-exp-left-1, .work-exp-right-1, .work-exp-left-2 {
+.work-exp-left-0, .work-exp-right-0, .work-exp-left-1, .work-exp-right-1, .work-exp-left-2, .work-exp-right-2 {
   display: block;
   left: 0;
   right: 0;
@@ -1191,7 +1191,7 @@ html, body {
 @media only screen and (max-width: 795px) {
   .main-title ul {margin-top: 0; height: 80px; font-size: 35px;}
   .main-title .spacer {margin: 20px auto;}
-  .work-exp-left-0, .work-exp-right-0, .work-exp-left-1, .work-exp-right-1, .work-exp-left-2 {width: 100%; margin-left: 0;}
+  .work-exp-left-0, .work-exp-right-0, .work-exp-left-1, .work-exp-right-1, .work-exp-left-2, .work-exp-right-2 {width: 100%; margin-left: 0;}
 }
 
 /* Mobile landscape size to tablet portrait (devices and browsers) */
