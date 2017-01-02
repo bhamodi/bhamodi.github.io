@@ -18,6 +18,7 @@ img {
 body {
   background: #fff;
   color: #fff;
+  display: block;
   font: normal 16px "Cardo", georgia, serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
