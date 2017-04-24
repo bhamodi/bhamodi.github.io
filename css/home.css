@@ -809,6 +809,7 @@ html, body {
   color: #646464;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
+  line-height: 1.5em;
   margin-top: 55px;
 }
 .title-project {

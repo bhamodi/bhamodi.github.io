@@ -5,11 +5,11 @@
     <div class="title-project">BALANCE TRACKER</div>
     <div class="spacer"></div>
     <div class="description">
-      <h3>General Overview</h3>
+      <h2>General Overview</h2>
       <p>
         This project has saved me so much time and it allows me to keep a track of all my finances. Balance Tracker has been such a useful application and I am in the process of open-sourcing this tool so that more people can keep track of their finances. Essentially, this tool logs into all your online bank accounts and scrapes your total balances in each account. We have to use web scraping because unfortunately for security reasons, banks do not provide APIs for getting account balances. After it has completed going through all your accounts, it totals up the balance and it outputs the detailed information in a spreadsheet. Additionally, I've implemented a feature that allows the tool to text you the total balance so that you can get updates on the go. This is great for tracking finances and observing where and when you made money or spent money. The best part about this project is that I have set it up with Windows Task Scheduler (or Cron on Unix) so that the tool runs itself every night at 11:00 PM. This makes this tool fully automatic and it runs quietly in the background. Talk about convenience!
       </p>
-      <h3>Software</h3>
+      <h2>Software</h2>
       <p>
         Let's get technical. So perform the web scraping part of the tool, I've used Python and Selenium. This means that for every bank that I want to support, I must hard code the scraping process. Again, this is not the best way to do things but since banks don't offer APIs, they leave me no option. Now for the text feature, I integrated the Twilio API and it allows the tool to text me my total balance and how much it changed from yesterday daily! This is awesome because now I don't even need to be at my computer to check what my daily balance is or how much it went up or down from yesterday. This project will be open sourced in the near future once I abstract the user specific profile.
       </p>
