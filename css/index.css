@@ -152,7 +152,6 @@ h3 {
   width: 45px;
   height: 45px;
   opacity: .6;
-  -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 .contact .icons .github {
@@ -177,7 +176,6 @@ h3 {
 }
 .contact .icons li a:hover {
   opacity: 1;
-  -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 .contact a.mail {
@@ -197,7 +195,7 @@ h3 {
   background: #666;
   content: '';
   opacity: 0;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: opacity 0.3s, transform 0.3s;
   -webkit-transform: translateY(10px);
   transform: translateY(10px);
@@ -731,14 +729,12 @@ h3 {
   border: 1px solid rgb(23,26,28);
   border-radius: 10px;
   padding: 15px 25px;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .button:hover {
   background: rgb(23,26,28);
   color: #fff;
   border: 1px solid rgb(23,26,28);
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
