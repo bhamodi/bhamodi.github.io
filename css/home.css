@@ -979,6 +979,9 @@ html, body {
   width: 100px;
   height: 100px;
 }
+.work-date-range {
+  color: #a9a9a9;
+}
 .work-description {
   font-size: 14px;
   text-align: left;
