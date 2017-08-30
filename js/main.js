@@ -1,7 +1,7 @@
 /* Main INIT Function */
 function initializeSite() {
   "use strict";
-  //OUTLINE DIMENSION AND CENTER
+  // OUTLINE DIMENSION AND CENTER
   (function () {
     function centerInit() {
       var mainTitle = $('.main-title');

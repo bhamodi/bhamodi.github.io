@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://baraa.ca/sitemap.xml
+Sitemap: https://baraa.ca/sitemap.xml
