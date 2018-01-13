@@ -679,9 +679,9 @@ html, body {
 .highlight {
   font-weight: 300;
   font-family: 'Open Sans', sans-serif;
-  font-size: 80px;
+  font-size: 65px;
   color: #000;
-  line-height: 75px;
+  line-height: 65px;
 }
 .stat-details {
   font-weight: 300;
@@ -1028,7 +1028,7 @@ html, body {
   .main-title ul {font-size: 70px;}
   .full {width: 960px;}
   .stat-element {width: 240px;}
-  .highlight {font-size: 65px;}
+  .highlight {font-size: 55px;}
   .stat-details {font-size: 16px;}
   .img-spacer {width: 900px; margin-top: 190px;}
   .img-spacer img {width: 900px;}

@@ -125,7 +125,7 @@ $(document).ready(function() {
       function updateTimer() {
         value += increment;
         loopCount++;
-        $(_this).html(value.toFixed(options.decimals));
+        $(_this).html(Math.round(value).toLocaleString('en-US',{useGrouping:true}));
 
         if (typeof(options.onUpdate) === 'function') {
           options.onUpdate.call(_this, value);
