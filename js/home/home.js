@@ -6,7 +6,9 @@ $(window).load(function() {
   var $target = window.location.hash;
   if ($target.length) {
     if ($target.indexOf('project-') >= 0) {
-      document.getElementById($target.slice(1)).click();
+      $('html, body').animate({scrollTop: $('#project-show').offset().top}, 1000).promise().done(function() {
+        document.getElementById($target.slice(1)).click();
+      });
     }
   }
 });
