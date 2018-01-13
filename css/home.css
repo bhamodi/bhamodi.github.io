@@ -488,7 +488,6 @@ html, body {
   cursor: pointer;
   transition: all 0.4s ease-in-out;
 }
-.portfolio-element:hover .project-title {opacity: 1;}
 .nav-arrows .close {
   background-position: -264px bottom;
   border: none;
@@ -513,7 +512,20 @@ html, body {
   width: 205px;
   margin: 40px auto 50px;
 }
-.portfolio-image {float: left; width: 100%; height: 100%; cursor: pointer;}
+.portfolio-image {
+  float: left;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.portfolio-element {
+  box-sizing: border-box;
+  border: 1px solid rgb(119,190,50);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  list-style: none;
+}
 .portfolio-element img {
   opacity: 1;
   transition: all 0.4s ease-in-out;
@@ -526,8 +538,8 @@ html, body {
   opacity: 1;
   transition: all 0.4s ease-in-out;
 }
-.portfolio-element {
-  overflow: hidden;
+.portfolio-element:hover .project-title {
+  opacity: 1;
 }
 .portfolio-element div {
   cursor: pointer;
@@ -552,7 +564,10 @@ html, body {
 .portfolio-element div span span {
   margin: auto;
 }
-.portfolio-element div span span.project-position {color: #555; font-size: 16px;}
+.portfolio-element div span span.project-position {
+  color: #555;
+  font-size: 16px;
+}
 #options {
   float: right;
   right: 50%;
@@ -566,6 +581,7 @@ html, body {
   position: relative;
 }
 .folio-btn {
+  border: 1px solid #77be32;
   width: 69px;
   text-align: center;
   list-style: none;
@@ -584,11 +600,15 @@ html, body {
   transition: all 0.4s ease-in-out;
 }
 .folio-btn:hover {
+  border: 1px solid #fff;
   color: #fff;
   transition: all 0.4s ease-in-out;
 }
-.folio-btn.active {background: #77be32 !important; color: #fff !important;}
-.portfolio-element {position: relative; list-style: none;}
+.folio-btn.active {
+  border: 1px solid #fff;
+  background: #77be32;
+  color: #fff;
+}
 
 /* Image Footer Spacer */
 .img-spacer {
