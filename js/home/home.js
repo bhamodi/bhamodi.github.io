@@ -1,16 +1,28 @@
 "use strict";
 
 $(window).load(function() {
-  $('.preloader').fadeOut(3000);
-  // Open project content if a user attempts to go directly to a project.
+  // Navigate to section or project specified in URL hash.
   var $target = window.location.hash;
   if ($target.length) {
     if ($target.indexOf('project-') >= 0) {
-      $('html, body').animate({scrollTop: $('#project-show').offset().top}, 1000).promise().done(function() {
-        document.getElementById($target.slice(1)).click();
+      if (parseInt($target.slice(-2)) <= 10) {
+        $('html, body').animate({scrollTop: $('#project-show').offset().top}, 1000).promise().done(function() {
+          // Open project content if a user attempts to go directly to a project.
+          document.getElementById($target.slice(1)).click();
+        });
+      } else {
+        $('html, body').animate({scrollTop: $('#projects').offset().top}, 1000).promise().done(function() {
+          $('html, body').animate({scrollTop: $('#projects').offset().top}, 1000);
+        });
+      }
+    } else if (['#home', '#skills', '#stats', '#experience', '#projects', '#contact'].indexOf($target) >= 0) {
+      $('html, body').animate({scrollTop: $($target).offset().top}, 1000).promise().done(function() {
+        $('html, body').animate({scrollTop: $($target).offset().top}, 1000);
       });
     }
   }
+
+  $('.preloader').fadeOut(3000);
 });
 
 $(document).ready(function() {
