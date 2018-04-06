@@ -120,16 +120,9 @@ html, body {
   margin-left: -16px;
   left: 50%;
   background: url(/img/arrow-down.png) no-repeat;
-  -webkit-animation: bounce 1s infinite;
   animation: bounce 1s infinite;
   width: 32px !important;
   height: 32px !important;
-}
-@-webkit-keyframes bounce {
-  0% {bottom: 45px;}
-  25%, 75% {bottom: 55px;}
-  50% {bottom: 60px;}
-  100% {bottom: 40px;}
 }
 @keyframes bounce {
   0% {bottom: 45px;}
@@ -943,66 +936,32 @@ html, body {
   padding-right: 10px;
 }
 .animated {
-  -webkit-animation-duration: 2s;
   animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 .fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
 .fadeInRight {
-  -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
-}
-
-@-webkit-keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-2000px, 0, 0);
-    transform: translate3d(-2000px, 0, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
 }
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(-2000px, 0, 0);
     transform: translate3d(-2000px, 0, 0);
   }
   100% {
     opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-@-webkit-keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
-    transform: translate3d(2000px, 0, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
     transform: none;
   }
 }
 @keyframes fadeInRight {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(2000px, 0, 0);
     transform: translate3d(2000px, 0, 0);
   }
   100% {
     opacity: 1;
-    -webkit-transform: none;
     transform: none;
   }
 }
@@ -1027,7 +986,6 @@ html, body {
 }
 
 .isotope .isotope-item {
-  transition-property: -webkit-transform, opacity;
   transition-property: transform, opacity;
 }
 

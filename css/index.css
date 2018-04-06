@@ -79,11 +79,8 @@ h3 {
 }
 .layer {position: absolute;}
 .layer div {
-  -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
-  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -195,20 +192,16 @@ h3 {
   background: #666;
   content: '';
   opacity: 0;
-  transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: opacity 0.3s, transform 0.3s;
-  -webkit-transform: translateY(10px);
   transform: translateY(10px);
 }
 .contact a.mail:hover::after, .contact a.mail:focus::after {
   opacity: 1;
-  -webkit-transform: translateY(0px);
   transform: translateY(0px);
 }
 
 /* Flakes Sizing */
 .depth-5 img, .depth-4 img, .depth-3 img, .depth-2 img, .depth-1 img {
-  -webkit-transform: scale(0.6);
   transform: scale(0.6);
 }
 
@@ -353,7 +346,6 @@ h3 {
   .contact .icons {margin-bottom: 12px;}
   /* SIZES */
   .depth-5 img, .depth-4 img, .depth-3 img, .depth-2 img, .depth-1 img {
-    -webkit-transform: scale(0.8);
     transform: scale(0.8);
   }
   /* POSITIONING */
@@ -413,7 +405,6 @@ h3 {
   .contact .icons {margin-bottom: 12px;}
   /* SIZES */
   .depth-5 img, .depth-4 img, .depth-3 img, .depth-2 img, .depth-1 img {
-    -webkit-transform: scale(0.8);
     transform: scale(0.8);
   }
   /* POSITIONING */
@@ -470,24 +461,20 @@ h3 {
   .sub-title {font-size: 25px; line-height: 25px; margin-top: 20px;}
   /* SIZES */
   .depth-5 img, .depth-4 img, .depth-3 img, .depth-2 img, .depth-1 img {
-    -webkit-transform: scale(1);
     transform: scale(1);
   }
   /* POSITIONING */
   .depth-5 {
     right: -10%;
     top: -10%;
-    -webkit-animation: wave 9s 0.1s infinite linear;
     animation: wave 9s 0.1s infinite linear;
   }
   .depth-4 {
     left: -3%;
     top: 15%;
-    -webkit-animation: wave 7s 0.1s infinite linear;
     animation: wave 7s 0.1s infinite linear;
   }
   .depth-3 {
-    -webkit-animation: wave 6s 0.1s infinite linear;
     animation: wave 6s 0.1s infinite linear;
   }
   .depth-3.flake1 {
@@ -512,7 +499,6 @@ h3 {
   }
 
   .depth-2 {
-    -webkit-animation: wave 5s 0.1s infinite linear;
     animation: wave 5s 0.1s infinite linear;
   }
   .depth-2.flake1 {
@@ -525,7 +511,6 @@ h3 {
     display: none;
   }
   .depth-1 {
-    -webkit-animation: wave 4s 0.1s infinite linear;
     animation: wave 4s 0.1s infinite linear;
   }
   .depth-1.flake1 {
@@ -686,26 +671,13 @@ h3 {
 }
 
 /* Animation */
-@-webkit-keyframes wave {
-  0% {
-    -webkit-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
-    transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
-    transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
-  }
-}
 
 @keyframes wave {
   0% {
-    -webkit-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
     transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
   }
 
   100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
     transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
   }
 }
