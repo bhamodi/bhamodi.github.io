@@ -51,7 +51,8 @@ h3 {
 }
 .sub-title {
   font-size: 20px;
-  margin: 0 auto 0 auto;
+  line-height: 20px;
+  margin: 8px auto 0 auto;
 }
 
 /* Content Styles */
@@ -339,7 +340,7 @@ h3 {
 @media all and (min-width: 700px) {
   /* TITLE & CONTACT */
   h1 {font-size: 110px; line-height: 130px;}
-  .sub-title {font-size: 20px; line-height: 20px;}
+  .sub-title {font-size: 20px; line-height: 20px; margin-top: 8px;}
   .title {top: 18%;}
   .line {margin-top: 20px;}
   .contact {bottom: 10%;}
@@ -399,7 +400,7 @@ h3 {
 @media all and (min-width: 900px) {
   /* TITLE & CONTACT */
   h1 {font-size: 120px; line-height: 120px;}
-  .sub-title {font-size: 20px; line-height: 20px; margin-top: 20px;}
+  .sub-title {font-size: 24px; line-height: 24px; margin-top: 24px;}
   .title {top: 15%;}
   .contact {bottom: 8%;}
   .contact .icons {margin-bottom: 12px;}
@@ -458,7 +459,7 @@ h3 {
 @media all and (min-width: 1200px) {
   /* TITLE */
   h1 {font-size: 130px; line-height: 150px;}
-  .sub-title {font-size: 25px; line-height: 25px; margin-top: 20px;}
+  .sub-title {font-size: 26px; line-height: 26px; margin-top: 24px;}
   /* SIZES */
   .depth-5 img, .depth-4 img, .depth-3 img, .depth-2 img, .depth-1 img {
     transform: scale(1);
@@ -535,7 +536,7 @@ h3 {
 @media all and (min-width: 1400px) {
   /* TITLE */
   h1 {font-size: 140px; line-height: 160px;}
-  .sub-title {font-size: 25px; line-height: 25px; margin-top: 20px;}
+  .sub-title {font-size: 26px; line-height: 26px; margin-top: 24px;}
   /* POSITIONING */
   .depth-5 {
     right: -10%;
@@ -601,7 +602,7 @@ h3 {
 @media all and (min-width: 1600px) {
   /* TITLE */
   h1 {font-size: 150px; line-height: 180px;}
-  .sub-title {font-size: 25px; line-height: 25px; margin-top: 25px;}
+  .sub-title {font-size: 26px; line-height: 26px; margin-top: 26px;}
 }
 
 @media all and (min-width: 1920px) {
