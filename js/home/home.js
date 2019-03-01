@@ -374,11 +374,7 @@ $(document).ready(function() {
       if (visible === true && count === 0) {
         count++;
         $('.stat-counter').each(function() {
-          if ($(this).hasClass('dynamic')) {
-            dataValue = calculateDaysToGraduation();
-          } else {
-            dataValue = $(this).attr('data-value');
-          }
+          dataValue = $(this).attr('data-value');
           $(this).find('.stat-count').delay(6000).countTo({
             from: 0,
             to: dataValue,
@@ -445,16 +441,6 @@ $(document).ready(function() {
         $('.work-exp-right-2').removeClass('hideme');
       }
     });
-  }
-
-  /* Dynamic Days Left Calculator */
-  function calculateDaysToGraduation() {
-    var gradDay = new Date('2018-06-16');
-    var today = new Date();
-    var millisecondsPerDay = 24 * 60 * 60 * 1000;
-    var utcToday = Date.UTC(today.getFullYear(), today.getMonth(), today.getDate());
-    var utcGradDay = Date.UTC(gradDay.getFullYear(), gradDay.getMonth(), gradDay.getDate());
-    return Math.floor((utcGradDay - utcToday) / millisecondsPerDay);
   }
 
   /* Load Functions */
