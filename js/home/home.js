@@ -441,6 +441,13 @@ $(document).ready(function() {
         $('.work-exp-right-2').removeClass('hideme');
       }
     });
+
+    $('.work-exp-left-3').on('inview', function(event, visible) {
+      if (visible === true) {
+        $('.work-exp-left-3').addClass('animated fadeInRight');
+        $('.work-exp-left-3').removeClass('hideme');
+      }
+    });
   }
 
   /* Load Functions */
