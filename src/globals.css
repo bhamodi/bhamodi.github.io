@@ -1,0 +1,258 @@
+/* Astryx styles — order matters (reset -> base -> theme token overrides). */
+@import '@astryxdesign/core/reset.css';
+@import '@astryxdesign/core/astryx.css';
+@import '@astryxdesign/theme-neutral/theme.css';
+
+/* ---------------------------------------------------------------------------
+   Brand accent — inject violet into the otherwise-grayscale neutral theme.
+   These are UNLAYERED :root declarations, so they win over the theme's
+   `@layer astryx-theme` tokens and re-tint every Astryx component at once.
+--------------------------------------------------------------------------- */
+:root {
+  --color-accent: light-dark(#7c3aed, #8b5cf6);
+  --color-on-accent: #ffffff;
+  --color-text-accent: light-dark(#6d28d9, #c4b5fd);
+  --color-icon-accent: light-dark(#7c3aed, #a78bfa);
+  --color-accent-muted: light-dark(#f3efff, #241a3d);
+
+  /* Decorative brand colors for gradients / glows. */
+  --brand-1: #8b5cf6;
+  --brand-2: #6d28d9;
+  --brand-3: #22d3ee;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-background-body);
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background-color: var(--color-background-body);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Centered content column shared by every section. */
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+/* Vertical rhythm for page regions. */
+.section {
+  padding-block: 96px;
+}
+
+.section--hero {
+  padding-block: 140px 104px;
+}
+
+.surface {
+  background-color: var(--color-background-surface);
+}
+
+/* Offset in-page anchor targets so the sticky header doesn't cover them. */
+.section-anchor {
+  scroll-margin-top: 88px;
+}
+
+/* Constrain body copy to a comfortable reading width. */
+.measure {
+  max-width: 64ch;
+}
+
+/* ---------------------------------------------------------------------------
+   Header
+--------------------------------------------------------------------------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: color-mix(in srgb, var(--color-background-body) 80%, transparent);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.brand {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Hero — animated aurora backdrop + dot grid + gradient wordmark
+--------------------------------------------------------------------------- */
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: -30% -10% auto -10%;
+  height: 760px;
+  z-index: -2;
+  background:
+    radial-gradient(42% 55% at 18% 18%, color-mix(in srgb, var(--brand-1) 42%, transparent), transparent 60%),
+    radial-gradient(38% 48% at 82% 8%, color-mix(in srgb, var(--brand-3) 28%, transparent), transparent 60%),
+    radial-gradient(52% 60% at 62% 42%, color-mix(in srgb, var(--brand-2) 32%, transparent), transparent 66%);
+  filter: blur(44px) saturate(125%);
+  animation: aurora 20s ease-in-out infinite alternate;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: radial-gradient(circle at 1px 1px, var(--color-border) 1px, transparent 0);
+  background-size: 22px 22px;
+  -webkit-mask-image: radial-gradient(72% 62% at 50% 0%, #000 28%, transparent 76%);
+  mask-image: radial-gradient(72% 62% at 50% 0%, #000 28%, transparent 76%);
+  opacity: 0.55;
+}
+
+@keyframes aurora {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    transform: translate3d(0, -3%, 0) scale(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero::before {
+    animation: none;
+  }
+}
+
+/* Gradient wordmark for the hero name (falls back to inherited color). */
+.hero-name {
+  background: linear-gradient(
+    120deg,
+    var(--brand-1),
+    var(--brand-2) 52%,
+    color-mix(in srgb, var(--brand-3) 65%, var(--brand-2))
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Gradient ring around the monogram avatar. */
+.avatar-ring {
+  display: inline-flex;
+  padding: 3px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--brand-1), var(--brand-3));
+  box-shadow: 0 10px 34px color-mix(in srgb, var(--brand-1) 32%, transparent);
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* ---------------------------------------------------------------------------
+   Section headings — accent kicker bar before the eyebrow label
+--------------------------------------------------------------------------- */
+.kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.kicker::before {
+  content: '';
+  width: 28px;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--brand-1), var(--brand-2));
+}
+
+/* ---------------------------------------------------------------------------
+   Focus cards — icon tiles + hover lift + accent glow
+--------------------------------------------------------------------------- */
+.focus-card {
+  height: 100%;
+  border-radius: var(--radius-container);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+@media (hover: hover) {
+  .focus-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 44px -14px color-mix(in srgb, var(--color-accent) 45%, transparent);
+  }
+}
+
+.icon-tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-element);
+  background: color-mix(in srgb, var(--color-accent) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 26%, transparent);
+}
+
+/* ---------------------------------------------------------------------------
+   Scroll-reveal
+--------------------------------------------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   Footer
+--------------------------------------------------------------------------- */
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding-block: 40px;
+}

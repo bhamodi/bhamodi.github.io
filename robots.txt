@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://baraa.ca/sitemap.xml

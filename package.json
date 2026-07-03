@@ -1,7 +1,7 @@
 {
   "name": "baraa-portfolio",
-  "version": "1.0.0",
-  "description": "Learn more about Baraa and his different skill sets, work experiences, and projects here!",
+  "version": "2.0.0",
+  "description": "Personal website of Baraa Hamodi, Principal Software Engineer at Meta. Built with the Astryx design system.",
   "author": "Baraa Hamodi",
   "homepage": "https://baraa.ca",
   "repository": {
@@ -9,11 +9,24 @@
     "url": "https://github.com/bhamodi/bhamodi.github.io.git"
   },
   "license": "BSD-3-Clause",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@astryxdesign/core": "0.1.2",
+    "@astryxdesign/theme-neutral": "0.1.2",
+    "lucide-react": "^1.18.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
   "devDependencies": {
-    "grunt": "^1.0.0",
-    "grunt-autoprefixer": "^3.0.0",
-    "grunt-contrib-cssmin": "^2.0.0",
-    "grunt-contrib-uglify": "^3.0.0",
-    "grunt-contrib-watch": "^1.0.0"
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7"
   }
 }
