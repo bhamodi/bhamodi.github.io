@@ -20,18 +20,24 @@ export function Hero() {
       <Container>
         <Reveal>
           <VStack gap={5} hAlign="start">
-            <span className="avatar-ring">
-              <Avatar src={site.avatar} name={site.name} size={96} />
-            </span>
-
-            <VStack gap={2} hAlign="start">
-              <Text type="label" color="accent">
-                {site.role}
-              </Text>
-              <Heading level={1} type="display-1">
-                <span className="hero-name">{site.name}</span>
-              </Heading>
-            </VStack>
+            <HStack gap={5} vAlign="center" wrap="wrap">
+              <span className="avatar-ring">
+                <Avatar src={site.avatar} name={site.name} size={96} />
+              </span>
+              <VStack gap={2} hAlign="start">
+                <Heading level={1} type="display-1">
+                  <span className="hero-name">{site.name}</span>
+                </Heading>
+                <Text type="label" color="accent">
+                  {site.role}
+                </Text>
+                <div className="hero-badges">
+                  {site.keywords.map((kw) => (
+                    <Badge key={kw} variant="purple" label={kw} />
+                  ))}
+                </div>
+              </VStack>
+            </HStack>
 
             <Text type="large" color="secondary" maxLines={4}>
               {site.tagline}
@@ -57,12 +63,6 @@ export function Hero() {
                 }
               />
             </HStack>
-
-            <div className="hero-badges">
-              {site.keywords.map((kw) => (
-                <Badge key={kw} variant="purple" label={kw} />
-              ))}
-            </div>
           </VStack>
         </Reveal>
       </Container>
