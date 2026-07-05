@@ -1,4 +1,5 @@
 import {HStack} from '@astryxdesign/core/HStack';
+import {Link} from '@astryxdesign/core/Link';
 import {Text} from '@astryxdesign/core/Text';
 
 import {site} from '../data/site';
@@ -12,11 +13,11 @@ export function Header() {
     <header className="site-header">
       <Container>
         <HStack height={64} vAlign="center" hAlign="between">
-          <a className="brand" href="#top" onClick={scrollToId('top')}>
+          <Link href="#top" onClick={scrollToId('top')}>
             <Text type="label" weight="bold" color="primary">
               {site.name}
             </Text>
-          </a>
+          </Link>
 
           <HStack gap={2} vAlign="center">
             <ThemeToggle />

@@ -1,7 +1,7 @@
 import {useRef} from 'react';
 
 import {Badge} from '@astryxdesign/core/Badge';
-import {Card} from '@astryxdesign/core/Card';
+import {ClickableCard} from '@astryxdesign/core/ClickableCard';
 import {Heading} from '@astryxdesign/core/Heading';
 import {HStack} from '@astryxdesign/core/HStack';
 import {Icon} from '@astryxdesign/core/Icon';
@@ -66,40 +66,39 @@ export function Press() {
 
             <div className="press-scroller" ref={railRef}>
               {site.press.map((item) => (
-                <a
+                <ClickableCard
                   key={item.url}
                   className="press-card"
                   href={item.url}
                   target="_blank"
-                  rel="noopener noreferrer">
-                  <Card padding={4} height="100%">
-                    <VStack gap={3} hAlign="start" height="100%">
-                      <HStack gap={2} vAlign="center" hAlign="between" wrap="wrap">
-                        <Badge
-                          variant={TOPIC_VARIANT[item.topic] ?? 'neutral'}
-                          label={item.topic}
-                        />
-                        <Text type="supporting" color="secondary">
-                          {item.outlet} · {item.date}
-                        </Text>
-                      </HStack>
-                      <Heading level={4} maxLines={3}>
-                        {item.title}
-                      </Heading>
-                      <Text type="body" color="secondary" maxLines={3}>
-                        {item.blurb}
+                  label={item.title}
+                  padding={4}>
+                  <VStack gap={3} hAlign="start" height="100%">
+                    <HStack gap={2} vAlign="center" hAlign="between" wrap="wrap">
+                      <Badge
+                        variant={TOPIC_VARIANT[item.topic] ?? 'neutral'}
+                        label={item.topic}
+                      />
+                      <Text type="supporting" color="secondary">
+                        {item.outlet} · {item.date}
                       </Text>
-                      <div className="press-readmore">
-                        <HStack gap={1} vAlign="center">
-                          <Text type="label" color="accent">
-                            Read article
-                          </Text>
-                          <Icon icon={ArrowUpRight} size="sm" color="accent" />
-                        </HStack>
-                      </div>
-                    </VStack>
-                  </Card>
-                </a>
+                    </HStack>
+                    <Heading level={4} maxLines={3}>
+                      {item.title}
+                    </Heading>
+                    <Text type="body" color="secondary" maxLines={3}>
+                      {item.blurb}
+                    </Text>
+                    <div className="press-readmore">
+                      <HStack gap={1} vAlign="center">
+                        <Text type="label" color="accent">
+                          Read article
+                        </Text>
+                        <Icon icon={ArrowUpRight} size="sm" color="accent" />
+                      </HStack>
+                    </div>
+                  </VStack>
+                </ClickableCard>
               ))}
             </div>
           </VStack>
