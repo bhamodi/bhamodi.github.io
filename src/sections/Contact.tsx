@@ -17,7 +17,7 @@ function openExternal(url: string) {
 
 export function Contact() {
   return (
-    <section id="contact" className="section section-anchor surface">
+    <section id="contact" className="section section-anchor">
       <Container>
         <Reveal>
           <VStack gap={6} hAlign="start">

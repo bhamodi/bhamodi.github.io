@@ -34,6 +34,50 @@ export const site = {
     'Technical Leadership & Community Building',
   ],
 
+  // Press & public work — newest first. topic drives the badge color.
+  press: [
+    {
+      outlet: 'Astryx Blog',
+      date: 'Jun 2026',
+      topic: 'AI · Design Systems',
+      title: 'Introducing Astryx: an open source design system built for how we build now',
+      blurb: 'Meta’s open source, AI-fluent design system — now available in Beta.',
+      url: 'https://astryx.atmeta.com/blog/introducing-astryx',
+    },
+    {
+      outlet: 'TechCrunch',
+      date: 'Dec 2025',
+      topic: 'AI',
+      title: 'Meta centralizes Facebook and Instagram support, tests AI support assistant',
+      blurb: 'A new support hub connecting users to security tools, account recovery, and an AI assistant.',
+      url: 'https://techcrunch.com/2025/12/04/meta-centralizes-facebook-and-instagram-support-tests-ai-support-assistant/',
+    },
+    {
+      outlet: 'TechCrunch',
+      date: 'Dec 2024',
+      topic: 'Trust & Safety',
+      title: 'Meta eases up on issuing ‘first strikes’ for Facebook users and Instagram creators',
+      blurb: 'Expanding a more forgiving enforcement policy for creators after over-moderation.',
+      url: 'https://techcrunch.com/2024/12/05/meta-eases-up-on-issuing-strikes-for-facebook-users-and-instagram-creators/',
+    },
+    {
+      outlet: 'TechCrunch',
+      date: 'Aug 2024',
+      topic: 'Trust & Safety',
+      title: 'Facebook creators have a new way to avoid ‘jail’',
+      blurb: 'A new option that helps creators avoid restrictions on a first violation.',
+      url: 'https://techcrunch.com/2024/08/07/facebook-creators-have-a-new-way-to-avoid-jail/',
+    },
+    {
+      outlet: 'TechCrunch',
+      date: 'Aug 2017',
+      topic: 'Integrity',
+      title: 'Facebook downranks video clickbait and fake play buttons',
+      blurb: 'Cracking down on deceptive fake play buttons and clickbait in News Feed.',
+      url: 'https://techcrunch.com/2017/08/17/facebook-fake-play-buttons/',
+    },
+  ],
+
   email: 'baraa.r.hamodi@gmail.com',
 
   socials: {

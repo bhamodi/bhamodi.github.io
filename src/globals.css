@@ -227,6 +227,58 @@ body {
 }
 
 /* ---------------------------------------------------------------------------
+   Press carousel — horizontal snap-scrolling rail of article cards
+--------------------------------------------------------------------------- */
+.press-scroller {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 4px 4px 18px;
+  margin-inline: -4px;
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--color-accent) 45%, transparent)
+    transparent;
+  -webkit-overflow-scrolling: touch;
+}
+
+.press-scroller::-webkit-scrollbar {
+  height: 8px;
+}
+
+.press-scroller::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--color-accent) 45%, transparent);
+  border-radius: 999px;
+}
+
+.press-scroller::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.press-card {
+  flex: 0 0 320px;
+  max-width: 82vw;
+  scroll-snap-align: start;
+  text-decoration: none;
+  color: inherit;
+  border-radius: var(--radius-container);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Pin the "Read article" link to the bottom of each (equal-height) card. */
+.press-readmore {
+  margin-top: auto;
+  padding-top: 4px;
+}
+
+@media (hover: hover) {
+  .press-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 44px -14px color-mix(in srgb, var(--color-accent) 42%, transparent);
+  }
+}
+
+/* ---------------------------------------------------------------------------
    Scroll-reveal
 --------------------------------------------------------------------------- */
 .reveal {

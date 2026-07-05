@@ -5,6 +5,7 @@ import {About} from './sections/About';
 import {Contact} from './sections/Contact';
 import {Focus} from './sections/Focus';
 import {Hero} from './sections/Hero';
+import {Press} from './sections/Press';
 
 export function App() {
   return (
@@ -14,6 +15,7 @@ export function App() {
         <Hero />
         <About />
         <Focus />
+        <Press />
         <Contact />
       </main>
       <Footer />
