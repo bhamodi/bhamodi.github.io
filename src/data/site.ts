@@ -27,9 +27,9 @@ export const site = {
   // Focus areas — AI-forward, leading with the AI-native transformation work.
   focus: [
     'Driving AI-Native Transformation at Meta',
-    'Championing Agentic AI Across Teams',
+    'Trust & Safety and Integrity Systems',
     'Agentic AI Tools, Workflows & Platforms',
-    'Reskilling Engineers on AI Adoption',
+    'Reskilling Engineers on Agentic AI',
     'Code Quality & Developer Productivity',
     'Technical Leadership & Community Building',
   ],

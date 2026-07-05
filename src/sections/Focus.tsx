@@ -5,7 +5,7 @@ import {Grid} from '@astryxdesign/core/Grid';
 import {Icon} from '@astryxdesign/core/Icon';
 import {Text} from '@astryxdesign/core/Text';
 import {VStack} from '@astryxdesign/core/VStack';
-import {Bot, Gauge, GraduationCap, Sparkles, Users, Workflow} from 'lucide-react';
+import {Gauge, GraduationCap, ShieldCheck, Sparkles, Users, Workflow} from 'lucide-react';
 
 import {Container} from '../components/Container';
 import {Reveal} from '../components/Reveal';
@@ -15,7 +15,7 @@ import {site} from '../data/site';
 // Icons align to the default focus order; falls back gracefully if edited.
 const ICONS: ComponentType<SVGProps<SVGSVGElement>>[] = [
   Sparkles,
-  Bot,
+  ShieldCheck,
   Workflow,
   GraduationCap,
   Gauge,
