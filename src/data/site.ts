@@ -41,7 +41,7 @@ export const site = {
       date: 'Aug 2026',
       topic: 'Invited Talk',
       title: 'Agentic AI Integrity Support: conversational assistance at scale',
-      blurb: 'Deployed on Facebook and Messenger to help users affected by enforcement understand policies and navigate remediation.',
+      blurb: 'Public talk about an agentic AI system on Facebook and Messenger that helps users navigate enforcement and remediation.',
       url: 'https://sites.google.com/view/integrity-workshop-2026',
     },
     {
