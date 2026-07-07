@@ -58,6 +58,12 @@ body {
   padding-block: 140px 104px;
 }
 
+/* Skip render/layout for offscreen sections (not the hero) until scrolled to. */
+.section:not(.section--hero) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 600px;
+}
+
 .surface {
   background-color: var(--color-background-surface);
 }
@@ -80,8 +86,8 @@ body {
   top: 0;
   z-index: 100;
   background-color: color-mix(in srgb, var(--color-background-body) 80%, transparent);
-  backdrop-filter: saturate(180%) blur(12px);
-  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  backdrop-filter: saturate(140%) blur(6px);
+  -webkit-backdrop-filter: saturate(140%) blur(6px);
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -98,7 +104,7 @@ body {
 }
 
 /* ---------------------------------------------------------------------------
-   Hero — animated aurora backdrop + dot grid + gradient wordmark
+   Hero — static aurora glow (z -3) + dot grid (z -2) + digital rain (z -1)
 --------------------------------------------------------------------------- */
 .hero {
   position: relative;
@@ -111,20 +117,20 @@ body {
   position: absolute;
   inset: -30% -10% auto -10%;
   height: 760px;
-  z-index: -2;
+  z-index: -3;
   background:
     radial-gradient(42% 55% at 18% 18%, color-mix(in srgb, var(--brand-1) 42%, transparent), transparent 60%),
     radial-gradient(38% 48% at 82% 8%, color-mix(in srgb, var(--brand-3) 28%, transparent), transparent 60%),
     radial-gradient(52% 60% at 62% 42%, color-mix(in srgb, var(--brand-2) 32%, transparent), transparent 66%);
   filter: blur(44px) saturate(125%);
-  animation: aurora 20s ease-in-out infinite alternate;
+  /* Static: no continuous 60fps blur re-raster (perf). */
 }
 
 .hero::after {
   content: '';
   position: absolute;
   inset: 0;
-  z-index: -1;
+  z-index: -2;
   background-image: radial-gradient(circle at 1px 1px, var(--color-border) 1px, transparent 0);
   background-size: 22px 22px;
   -webkit-mask-image: radial-gradient(72% 62% at 50% 0%, #000 28%, transparent 76%);
@@ -132,19 +138,15 @@ body {
   opacity: 0.55;
 }
 
-@keyframes aurora {
-  0% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  100% {
-    transform: translate3d(0, -3%, 0) scale(1.08);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero::before {
-    animation: none;
-  }
+/* Digital rain canvas, layered over the aurora + grid, below content. */
+.rain-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: block;
+  pointer-events: none;
 }
 
 /* Gradient wordmark for the hero name (falls back to inherited color). */
@@ -279,7 +281,6 @@ body {
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 0.6s ease, transform 0.6s ease;
-  will-change: opacity, transform;
 }
 
 .reveal.is-visible {

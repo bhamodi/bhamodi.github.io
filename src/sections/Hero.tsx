@@ -10,6 +10,7 @@ import {Mail} from 'lucide-react';
 
 import {Container} from '../components/Container';
 import {LinkedinLogo} from '../components/icons';
+import {MatrixRain} from '../components/MatrixRain';
 import {Reveal} from '../components/Reveal';
 import {site} from '../data/site';
 import {smoothScrollTo} from '../lib/scroll';
@@ -17,6 +18,7 @@ import {smoothScrollTo} from '../lib/scroll';
 export function Hero() {
   return (
     <section id="top" className="hero section section--hero section-anchor">
+      <MatrixRain />
       <Container>
         <Reveal>
           <VStack gap={5} hAlign="start">
