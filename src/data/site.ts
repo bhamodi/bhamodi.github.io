@@ -37,6 +37,14 @@ export const site = {
   // Press & public work — newest first. topic drives the badge color.
   press: [
     {
+      outlet: 'Integrity Workshop · KDD 2026',
+      date: 'Aug 2026',
+      topic: 'Invited Talk',
+      title: 'Agentic AI Integrity Support: Conversational Assistance for Content Moderation and User Remediation at Scale',
+      blurb: 'Invited talk (Jeju, Korea) on an agentic AI support system on Facebook and Messenger that gives users multi-turn, context-aware help with content moderation and remediation.',
+      url: 'https://sites.google.com/view/integrity-workshop-2026',
+    },
+    {
       outlet: 'Astryx Blog',
       date: 'Jun 2026',
       topic: 'AI · Design Systems',

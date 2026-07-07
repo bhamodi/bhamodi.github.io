@@ -15,9 +15,10 @@ import {Reveal} from '../components/Reveal';
 import {SectionHeading} from '../components/SectionHeading';
 import {site} from '../data/site';
 
-type BadgeVariant = 'purple' | 'blue' | 'cyan' | 'neutral';
+type BadgeVariant = 'purple' | 'blue' | 'cyan' | 'green' | 'neutral';
 
 const TOPIC_VARIANT: Record<string, BadgeVariant> = {
+  'Invited Talk': 'green',
   'AI · Design Systems': 'purple',
   AI: 'purple',
   'Trust & Safety': 'blue',
@@ -47,7 +48,7 @@ export function Press() {
         <Reveal>
           <VStack gap={6}>
             <HStack hAlign="between" vAlign="center" wrap="wrap" gap={3}>
-              <SectionHeading eyebrow="Press" title="In the news" />
+              <SectionHeading eyebrow="Press & Speaking" title="In the news & talks" />
               <HStack gap={2} vAlign="center">
                 <IconButton
                   label="Scroll to previous"
