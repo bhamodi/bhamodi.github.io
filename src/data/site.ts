@@ -40,8 +40,8 @@ export const site = {
       outlet: 'Integrity Workshop · KDD 2026',
       date: 'Aug 2026',
       topic: 'Invited Talk',
-      title: 'Agentic AI Integrity Support: Conversational Assistance for Content Moderation and User Remediation at Scale',
-      blurb: 'Invited talk (Jeju, Korea) on an agentic AI support system on Facebook and Messenger that gives users multi-turn, context-aware help with content moderation and remediation.',
+      title: 'Agentic AI Integrity Support: conversational assistance at scale',
+      blurb: 'Deployed on Facebook and Messenger to help users affected by enforcement understand policies and navigate remediation.',
       url: 'https://sites.google.com/view/integrity-workshop-2026',
     },
     {

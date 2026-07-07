@@ -75,7 +75,7 @@ export function Press() {
                   label={item.title}
                   padding={4}>
                   <VStack gap={3} hAlign="start" height="100%">
-                    <HStack gap={2} vAlign="center" hAlign="between" wrap="wrap">
+                    <VStack gap={1} hAlign="start">
                       <Badge
                         variant={TOPIC_VARIANT[item.topic] ?? 'neutral'}
                         label={item.topic}
@@ -83,7 +83,7 @@ export function Press() {
                       <Text type="supporting" color="secondary">
                         {item.outlet} · {item.date}
                       </Text>
-                    </HStack>
+                    </VStack>
                     <Heading level={4} maxLines={3}>
                       {item.title}
                     </Heading>
